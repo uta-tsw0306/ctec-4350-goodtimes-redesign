@@ -3,9 +3,7 @@ $nav = "
     <header>
         <nav>
             <a href='index.php' class='navbar-brand'>Goodtimes Chorus</a>
-            <button class='navbar-toggler' type='button' data-target='#main-navigation'>
-                <i class='fa-solid fa-bars'></i>
-            </button>
+            <button class='navbar-toggler' type='button' data-target='#main-navigation'><i class='fa-solid fa-bars'></i></button>
             <ul id='main-navigation' class='navbar'>
                 <li><a href='index.php' title='Home'>Home</a></li>
                 <li class='calendar-tab'><a href='calendar.php' title='Calendar'>Calendar</a>
@@ -100,6 +98,9 @@ $footer = "
         </div>
     </div>
 </footer>";
+
+$js = "<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js' integrity='sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==' crossorigin='anonymous' referrerpolicy='no-referrer'></script>
+<script src='app.js'></script>";
 
 
 ?>
