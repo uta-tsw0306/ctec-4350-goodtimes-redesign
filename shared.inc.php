@@ -14,9 +14,9 @@ $nav = "
                 </li>
                 <li class='about-tab'><a href='about.php' title='About'>About</a>
                     <ul class='about dropdown-content'>
-                        <li><a href='something.php' title='Title Goes Here'>About 1</a></li>
+                        <li><a href='mission.php' title='Mission & Vision'>Mission & Vision</a></li>
                         <li><a href='something.php' title='Title Goes Here'>About 2</a></li>
-                        <li><a href='something.php' title='Title Goes Here'>About 3</a></li>
+                        <li><a href='repertoire.php' title='Repertoire'>Repertoire</a></li>
                         <li><a href='something.php' title='Title Goes Here'>About 4</a></li>
                     </ul>
                 </li>
