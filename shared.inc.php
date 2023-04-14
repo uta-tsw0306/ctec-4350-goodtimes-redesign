@@ -1,6 +1,7 @@
 <?php 
 $nav = "            
     <header>
+    <link rel='stylesheet' href='style.css'>
         <nav>
             <a href='index.php' class='navbar-brand'>Goodtimes Chorus</a>
             <button class='navbar-toggler' type='button' data-target='#main-navigation'><i class='fa-solid fa-bars'></i></button>
@@ -39,11 +40,30 @@ $nav = "
                         <li><a href='something.php' title='Title Goes Here'>Content 3</a></li>
                         <li><a href='something.php' title='Title Goes Here'>Content 4</a></li>
                     </ul>
-                </li>
-                <li><a href='login.php' title='Login'>Login</a> </li>
+                </li>";
+                
+    $logOut = "<li><a href='login.php?logout' title='logout'>Log out</a></li>
             </ul>
         </nav>
     </header>";
+                
+    $userOptions = "
+                <li class='support-tab'><a href='admin_userList.php' title='list Users'>Users</a>
+                    <ul class='support dropdown-content'>
+                        <li><a href='editUserForm.php' title='New User'>Add new User</a></li>
+                    </ul>
+                </li>";
+   
+    $basicNav = $nav . "<li><a href='login.php' title='Login'>Login</a> </li>
+            </ul>
+        </nav>
+    </header>";
+    
+    $adminNav = $nav . $userOptions . $logOut;
+    
+    $loggedInNav = $nav . $logOut;
+                
+
 
 $footer = "   
 <footer>

@@ -1,5 +1,8 @@
 <?php
 	include ('shared.inc.php');
+	include("dbconn.inc.php"); // database connection 
+    include ("shared_session.php");
+    include ('shared.inc.php');
 ?>
 <!doctype html>
     <html>
@@ -12,15 +15,18 @@
 
             <title>Home | Goodtimes Chorus</title>
 
-            <link rel="stylesheet" href="style.css">
-
             <script src="https://kit.fontawesome.com/403c2f4f58.js" crossorigin="anonymous"></script>
 
 
         </head>
 
         <body>
-        <?php echo $nav; ?>
+        <?php 
+        $thisUID = $_SESSION['UID'];
+        $thisUserAdmin = $_SESSION['Admin'];
+        if($thisUserAdmin){echo $adminNav;}
+        else if ($thisUID){echo $loggedInNav;}
+        else{echo $basicNav;} ?>
 
             <main>
                 <div class="container-fluid">

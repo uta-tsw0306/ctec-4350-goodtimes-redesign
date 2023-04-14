@@ -3,6 +3,7 @@ session_start();
 
 if (isset($_GET['logout'])){
     $_SESSION['access'] = false;
+    header("Location: index.php");
 }
 
 include("dbconn.inc.php"); // database connection 
@@ -107,7 +108,7 @@ if (isset($_POST['username']) && isset($_POST['password']) && !empty($_POST['use
         <br>
         <input type="submit" name="submit" value="Log in">        
     </form>
-    <p>If you don't have an account please come visit us at 703 NW Green Oaks Blvd, Arlington, TX 76006 any time 9am-5pm. All users must visit in person to register for security reasons.</p>
+    <p>If you don't have an account please contact our webmaster.</p>
     </div>
     
     </main>
