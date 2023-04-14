@@ -1,4 +1,7 @@
 <?php
+
+
+
 	include ('shared.inc.php');
 ?>
 <!doctype html>
