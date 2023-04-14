@@ -1,0 +1,40 @@
+[13-Apr-2023 18:30:31 UTC] PHP Warning:  include(shared.php): Failed to open stream: No such file or directory in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/test.php on line 3
+[13-Apr-2023 18:30:31 UTC] PHP Warning:  include(): Failed opening 'shared.php' for inclusion (include_path='.:/opt/cpanel/ea-php80/root/usr/share/pear') in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/test.php on line 3
+[13-Apr-2023 18:30:31 UTC] PHP Warning:  mysqli::__construct(): (HY000/1044): Access denied for user 'erm2015_test'@'localhost' to database 'erm2015_goodtimeChorus' in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/dbconn.inc.php on line 17
+[13-Apr-2023 18:30:31 UTC] PHP Fatal error:  Uncaught Error: mysqli object is already closed in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/test.php:22
+Stack trace:
+#0 /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/test.php(22): mysqli->stmt_init()
+#1 {main}
+  thrown in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/test.php on line 22
+[13-Apr-2023 18:30:54 UTC] PHP Warning:  mysqli::__construct(): (HY000/1044): Access denied for user 'erm2015_test'@'localhost' to database 'erm2015_goodtimeChorus' in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/dbconn.inc.php on line 17
+[13-Apr-2023 18:30:54 UTC] PHP Fatal error:  Uncaught Error: mysqli object is already closed in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/test.php:22
+Stack trace:
+#0 /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/test.php(22): mysqli->stmt_init()
+#1 {main}
+  thrown in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/test.php on line 22
+[13-Apr-2023 18:33:59 UTC] PHP Warning:  include(shared.php): Failed to open stream: No such file or directory in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/login.php on line 9
+[13-Apr-2023 18:33:59 UTC] PHP Warning:  include(): Failed opening 'shared.php' for inclusion (include_path='.:/opt/cpanel/ea-php80/root/usr/share/pear') in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/login.php on line 9
+[13-Apr-2023 18:38:04 UTC] PHP Warning:  Undefined variable $UserName in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/login.php on line 37
+[13-Apr-2023 18:38:04 UTC] PHP Warning:  Undefined variable $UserName in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/login.php on line 52
+[13-Apr-2023 18:38:04 UTC] PHP Warning:  Undefined variable $UserName in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/login.php on line 37
+[13-Apr-2023 18:38:04 UTC] PHP Warning:  Undefined variable $UserName in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/login.php on line 52
+[13-Apr-2023 18:38:26 UTC] PHP Warning:  Undefined variable $UserName in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/login.php on line 37
+[13-Apr-2023 18:38:26 UTC] PHP Warning:  Undefined variable $UserName in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/login.php on line 52
+[13-Apr-2023 18:38:26 UTC] PHP Warning:  Undefined variable $UserName in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/login.php on line 37
+[13-Apr-2023 18:38:26 UTC] PHP Warning:  Undefined variable $UserName in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/login.php on line 52
+[13-Apr-2023 18:39:00 UTC] PHP Warning:  Undefined variable $Admin in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/login.php on line 41
+[13-Apr-2023 18:39:00 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/login.php:41) in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/login.php on line 46
+[13-Apr-2023 18:56:40 UTC] PHP Warning:  include(shared.php): Failed to open stream: No such file or directory in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/editUserForm.php on line 4
+[13-Apr-2023 18:56:40 UTC] PHP Warning:  include(): Failed opening 'shared.php' for inclusion (include_path='.:/opt/cpanel/ea-php80/root/usr/share/pear') in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/editUserForm.php on line 4
+[13-Apr-2023 18:56:40 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/shared_session.php on line 3
+[13-Apr-2023 18:56:40 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/editUserForm.php:4) in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/shared_session.php on line 7
+[13-Apr-2023 18:57:09 UTC] PHP Warning:  Undefined variable $admin_nav in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/editUserForm.php on line 93
+[13-Apr-2023 18:57:09 UTC] PHP Warning:  Undefined variable $Footer in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/editUserForm.php on line 128
+[13-Apr-2023 18:57:42 UTC] PHP Warning:  Undefined variable $Footer in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/editUserForm.php on line 121
+[13-Apr-2023 18:58:03 UTC] PHP Warning:  Undefined variable $Footer in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/editUserForm.php on line 121
+[13-Apr-2023 18:58:33 UTC] PHP Warning:  include(shared.php): Failed to open stream: No such file or directory in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/editUser_admin.php on line 4
+[13-Apr-2023 18:58:33 UTC] PHP Warning:  include(): Failed opening 'shared.php' for inclusion (include_path='.:/opt/cpanel/ea-php80/root/usr/share/pear') in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/editUser_admin.php on line 4
+[13-Apr-2023 18:58:33 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/shared_session.php on line 3
+[13-Apr-2023 18:58:33 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/editUser_admin.php:4) in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/shared_session.php on line 7
+[13-Apr-2023 18:59:30 UTC] PHP Warning:  Undefined variable $ParentID in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/editUser_admin.php on line 109
+[13-Apr-2023 18:59:30 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/editUser_admin.php:109) in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/editUser_admin.php on line 131
