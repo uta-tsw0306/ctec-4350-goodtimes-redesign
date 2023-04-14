@@ -57,12 +57,13 @@ body {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5,.h6 {
   font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif;
-  line-height: 3rem;
-  color: var(--dark);
+  line-height: 4rem;
+  color: var();
 }
 
 h1, .h1 {
   font-size: 3.052rem;
+  color: var(--secondary-red)
 }
 
 h2, .h2 {
@@ -77,9 +78,7 @@ h4, .h4 {
   font-size: 1.563rem;
 }
 
-
 /* Grid System */
-
 .container-fluid {
     width: 100%;
     padding-right: 1rem;
@@ -388,14 +387,9 @@ h4, .h4 {
       max-width: var(--col-12);
     }
   }
-
-
   /* End of Grid System */
 
-
-
 /* Header Styles */
-
 
 header {
   margin-bottom: 2rem;
@@ -414,9 +408,9 @@ nav {
 .navbar-brand {
   display: block; 
   overflow: hidden;
-  background: url("../img/logo_.svg") no-repeat 0 0/contain transparent;
+  background: url("full_logo.png") no-repeat 0 0/contain transparent; /* Goodtimes Logo in the nav */
   width: 100%;
-  height: 60px; 
+  height: 78px; /* need to change */
   text-indent: -9999999px; 
   flex: 0 0 calc(100% - 3rem); 
   max-width: calc(100% - 3rem);
@@ -577,11 +571,14 @@ i.fa-solid.fa-bars { /* navbar toggler bars */
 }/* End of Header Styles */
 
 
-
 /* Body Styles */
 
 main p {
   text-align: left;
+}
+
+.center_text {
+  text-align: center;
 }
 
 @media screen and (min-width: 320px) and (max-width:768px){
