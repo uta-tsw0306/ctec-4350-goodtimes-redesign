@@ -1,7 +1,4 @@
 <?php
-
-
-
 	include ('shared.inc.php');
 ?>
 <!doctype html>
@@ -27,6 +24,26 @@
 
             <main>
                 <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h1>Singing in Harmony Since 1962</h1>
+                        </div>
+                        <div class="col-xs-12 col-lg-5">
+                            <img src="gtchorus1.jpg" alt="Choir singing in formal attire">
+                        </div>
+                        <div class="col-xs-12 col-lg-6"><p>Lorem ipsum dolor sit amet consectetur. Etiam sit etiam dapibus sodales tortor risus. Ridiculus tortor vitae ligula in malesuada viverra felis enim. Sapien vivamus et malesuada ullamcorper. Elementum quisque pulvinar feugiat volutpat fusce. Hendrerit imperdiet orci felis eget at. Et volutpat dui arcu feugiat egestas est enim nullam nunc. Nisl eget sodales ultricies sit consequat nec venenatis nisl. Non purus massa ipsum felis. Ut consectetur pulvinar mauris odio sapien sit. Et ut congue cursus volutpat diam. Pellentesque dignissim pulvinar cras semper. Erat id nulla vitae malesuada fusce fringilla id vitae eu. Et justo purus id odio proin ultricies diam diam cras. Faucibus enim purus posuere lectus et convallis congue.</p>
+                        </div>
+                        <div class="col-xs-12 col-lg-6">
+                            <h1 class="heading center_text">All Singers Welcome!</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur. Etiam sit etiam dapibus sodales tortor risus. Ridiculus tortor vitae ligula in malesuada viverra felis enim. Sapien vivamus et malesuada ullamcorper. Elementum quisque pulvinar feugiat volutpat fusce. Hendrerit imperdiet orci felis eget at. Et volutpat dui arcu feugiat egestas est enim nullam nunc. Nisl eget sodales ultricies sit consequat nec venenatis nisl.</p>
+                        </div>
+                        <div class="col-xs-12 col-lg-6">
+                            <h1 class="heading center_text">Hire Us</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur. Etiam sit etiam dapibus sodales tortor risus. Ridiculus tortor vitae ligula in malesuada viverra felis enim. Sapien vivamus et malesuada ullamcorper. Elementum quisque pulvinar feugiat volutpat fusce. Hendrerit imperdiet orci felis eget at. Et volutpat dui arcu feugiat egestas est enim nullam nunc. Nisl eget sodales ultricies sit consequat nec venenatis nisl.</p>
+                        </div>
+                    </div>
+
+
 
 
                 
