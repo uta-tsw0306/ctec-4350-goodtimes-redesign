@@ -23,7 +23,7 @@
         <?php echo $nav; ?>
 
             <main>
-                <div class="container-fluid">
+                <div class="container">
                     <div class="row">
                         
                         <div class="col-xs-12 col-lg-6">

@@ -29,7 +29,7 @@ $nav = "
                 <li class='community-tab'><a href='community.php' title='Community'>Community</a>
                     <ul class='community dropdown-content'>
                         <li><a href='something.php' title='Title Goes Here'>Content 1</a></li>
-                        <li><a href='something.php' title='Title Goes Here'>Content 2</a></li>
+                        <li><a href='supporters.php' title='Supporters'>Our Supporters</a></li>
                         <li><a href='something.php' title='Title Goes Here'>Content 3</a></li>
                         <li><a href='something.php' title='Title Goes Here'>Content 4</a></li>
                     </ul>
