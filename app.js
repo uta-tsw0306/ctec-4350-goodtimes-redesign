@@ -19,9 +19,9 @@ $(function(){
     // Dropdown Toggler
     // 1.- Listen for click on .dropdown > a
     // 2.- Toggle the class of "open" on the .dropdown element
-    /*$(".navbar .dropdown > a").on("click", function(e){
+    $(".navbar .dropdown > a").on("click", function(e){
        e.preventDefault();
         $(this).parent().toggleClass("open");
-    })*/
+    })
 
 })
