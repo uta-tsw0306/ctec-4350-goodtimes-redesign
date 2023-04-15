@@ -6,35 +6,35 @@ $nav = "
             <button class='navbar-toggler' type='button' data-target='#main-navigation'><i class='fa-solid fa-bars'></i></button>
             <ul id='main-navigation' class='navbar'>
                 <li><a href='index.php' title='Home'>Home</a></li>
-                <li class='calendar-tab'><a href='calendar.php' title='Calendar'>Calendar</a>
+                <li class='calendar-tab dropdown'><a href='#' title='Calendar'>Calendar</a>
                     <ul class='calendar dropdown-content'>
                         <li><a href='something.php' title='Title Goes Here'>Content 1</a></li>
                         <li><a href='something.php' title='Title Goes Here'>Content 2</a></li>
                     </ul>
                 </li>
-                <li class='about-tab'><a href='about.php' title='About'>About</a>
+                <li class='about-tab dropdown'><a href='#' title='About'>About</a>
                     <ul class='about dropdown-content'>
-                        <li><a href='mission.php' title='Mission & Vision'>Mission & Vision</a></li>
+                        <li><a href='something.php' title='Title Goes Here'>About 1</a></li>
                         <li><a href='something.php' title='Title Goes Here'>About 2</a></li>
-                        <li><a href='repertoire.php' title='Repertoire'>Repertoire</a></li>
+                        <li><a href='something.php' title='Title Goes Here'>About 3</a></li>
                         <li><a href='something.php' title='Title Goes Here'>About 4</a></li>
                     </ul>
                 </li>
-                <li class='connect-tab'><a href='connect.php' title='Connect'>Connect</a>
+                <li class='connect-tab dropdown'><a href='#' title='Connect'>Connect</a>
                     <ul class='connect dropdown-content'>
                         <li><a href='something.php' title='Title Goes Here'>Content 1</a></li>
                         <li><a href='something.php' title='Title Goes Here'>Content 2</a></li>
                     </ul>
                 </li>
-                <li class='community-tab'><a href='community.php' title='Community'>Community</a>
+                <li class='community-tab dropdown'><a href='#' title='Community'>Community</a>
                     <ul class='community dropdown-content'>
                         <li><a href='something.php' title='Title Goes Here'>Content 1</a></li>
-                        <li><a href='supporters.php' title='Supporters'>Our Supporters</a></li>
+                        <li><a href='something.php' title='Title Goes Here'>Content 2</a></li>
                         <li><a href='something.php' title='Title Goes Here'>Content 3</a></li>
                         <li><a href='something.php' title='Title Goes Here'>Content 4</a></li>
                     </ul>
                 </li>
-                <li class='support-tab'><a href='support.php' title='Support Us'>Support Us</a>
+                <li class='support-tab dropdown'><a href='#' title='Support Us'>Support Us</a>
                     <ul class='support dropdown-content'>
                         <li><a href='something.php' title='Title Goes Here'>Content 3</a></li>
                         <li><a href='something.php' title='Title Goes Here'>Content 4</a></li>
@@ -53,7 +53,7 @@ $footer = "
                 <div class='footer-text'>
                     <h3>Location</h3>
                     <p class='footer-subhead'>Rehearsals</p>
-                    <address><a href='https://goo.gl/maps/t8qsr49SpQfC7ELc8' target='_blank' title='Google Maps'>Epworth United Methodist Church <br> 1400 S Cooper St <br> Arlington, TX 76013</a></address><br>
+                    <address><a href='https://goo.gl/maps/9k2Ftwj42KqgxsKu5' target='_blank' title='Google Maps'>Epworth United Methodist Church <br> 1400 S Cooper St <br> Arlington, TX 76013</a></address><br>
                     <p> Tuesdays 7:00PM - 9:00PM</p>
                 </div>
             </div>
@@ -75,10 +75,10 @@ $footer = "
                     <h3>Contact</h3>
 
                     <p class='footer-subhead'>Mailing Address</p>
-                    <address><a href='https://goo.gl/maps/t8qsr49SpQfC7ELc8' target='_blank' title='Google Maps' class='links'>PO Box 1522 <br> Arlington, TX 76004</a>
-                    </address>
+                    <p>PO Box 1522 <br> Arlington, TX 76004</p>
+                    
 
-                    <p>(682) -233-3606</p>
+                    <p>(682) 233-3606</p>
 
                     <p class='footer_text_center'><a href='mailto:username@domain.com' title='Webmaster's Email' target='_blank' class='links'>gtchorus@gmail.com</a></p>
 
