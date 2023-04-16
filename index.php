@@ -1,5 +1,8 @@
 <?php
-	include ('shared.inc.php');
+	  include ('shared.inc.php');
+	  include("dbconn.inc.php"); // database connection 
+    include ("shared_session.php");
+    include ('shared.inc.php');
 ?>
 <!doctype html>
     <html>
@@ -20,8 +23,15 @@
         </head>
 
         <body>
-        <?php echo $nav; ?>
-
+         <?php 
+        if(is_session_started() === FALSE || empty($_SESSION['access'])){echo $basicNav;}
+        else if ($_SESSION['access'] == true){
+            $thisUID = $_SESSION['UID'];
+            $thisUserAdmin = $_SESSION['Admin'];
+            if($thisUserAdmin){echo $adminNav;}
+            else {echo $loggedInNav;}
+        }else {echo $basicNav;}
+        ?>
             <main>
                 <div class="hero-image">
                     <div class="hero-text">
