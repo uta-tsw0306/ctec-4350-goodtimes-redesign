@@ -30,6 +30,7 @@
   --neutral-white: #f2f5f9;
   --text-primary: var(--light);
   --light-text: var(--neutral-white);
+  --navbutton-hover: var(rgba(235,235,235,92));
 }
 
 img {
@@ -57,12 +58,13 @@ body {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5,.h6 {
   font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif;
-  line-height: 3rem;
-  color: var(--dark);
+  line-height: 4rem;
+  color: var();
 }
 
 h1, .h1 {
   font-size: 3.052rem;
+  color: var(--secondary-red)
 }
 
 h2, .h2 {
@@ -77,9 +79,7 @@ h4, .h4 {
   font-size: 1.563rem;
 }
 
-
 /* Grid System */
-
 .container-fluid {
     width: 100%;
     padding-right: 1rem;
@@ -388,18 +388,9 @@ h4, .h4 {
       max-width: var(--col-12);
     }
   }
-
-
   /* End of Grid System */
 
-
-
 /* Header Styles */
-
-
-header {
-  margin-bottom: 2rem;
-}
 
 nav { 
   display: flex;
@@ -414,9 +405,9 @@ nav {
 .navbar-brand {
   display: block; 
   overflow: hidden;
-  background: url("../img/logo_.svg") no-repeat 0 0/contain transparent;
+  background: url("full_logo.png") no-repeat 0 0/contain transparent; /* Goodtimes Logo in the nav */
   width: 100%;
-  height: 60px; 
+  height: 78px; /* need to change */
   text-indent: -9999999px; 
   flex: 0 0 calc(100% - 3rem); 
   max-width: calc(100% - 3rem);
@@ -431,8 +422,7 @@ a:visited {
 }
 
 nav ul a:hover { /* hovering over li */
-  background-color: var(--secondary-hover);
-  color: var(--light);
+
 }
 
 .navbar-toggler { 
@@ -440,7 +430,7 @@ nav ul a:hover { /* hovering over li */
   background-color: var(--secondary);
   color: var(--dark);
   width: 2rem;
-  height: 60px;
+  height: 76px;
   flex: 0 0 2rem;
   max-width: 2rem;
   font-size: 1rem;
@@ -448,19 +438,15 @@ nav ul a:hover { /* hovering over li */
   cursor: pointer; 
 }
 
-button.navbar-toggler:hover {
-  background-color: var(--dark-gray);
-  transition-duration: 0.4s;
-}
-
-.navbar.open {
-  display: block;
-}
-
 .navbar { 
   flex: 0 0 100%;
   max-width: 100%;
   display: none;
+}
+
+/* when a dropdown option is clicked = open */
+.navbar.open {
+  display: block;
 }
 
 .navbar, 
@@ -476,16 +462,22 @@ padding: 0.2rem 0rem;
 }
 
 #main-navigation li a {
-  padding: 40px 25px;
+  padding: 25px 25px;
 }
 
+#main-navigation .dropdown-content li { /* No padding for the nav dropdown options */
+  padding: 0;
+}
+
+/* hovering over the navigation bar tabs */
 #main-navigation li a:hover {
     box-shadow: 0 -5px 0px var(--lightest-gray) inset,
     768px 0 0 rgba(235,235,235,92)inset;
 }
 
-#main-navigation .dropdown-content li { /* No padding for the nav dropdown options */
-  padding: 0;
+button.navbar-toggler:hover {
+  background-color: rgba(235,235,235,92);
+  transition-duration: 0.4s;
 }
 
 .navbar a:link,
@@ -499,35 +491,26 @@ padding: 0.2rem 0rem;
   transition-duration: 0.4s; 
 }
 
-.navbar .dropdown-content ul a:link,
-.navbar .dropdown-content ul a:active,
-.navbar .dropdown-content ul a:hover,
-.navbar .dropdown-content ul a:visited { 
-  background-color: var(--tertiary);
-  color: var(--light);
+i.fa-solid.fa-bars { /* hamburger color */
+  color: var();
 }
 
-i.fa-solid.fa-bars { /* navbar toggler bars */
-  color: var(--light);
+/* down arrow is displayed next to dropdown options when it's not clicked */
+.navbar .dropdown > a:after {
+  content: '\f0d7';
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  margin-left: 0.618rem;
+  right: 0;
 }
 
-/*hover over calendar tab*/
-.calendar-tab:hover .calendar.dropdown-content {display: block;}
+/* up arrow is displayed next to dropdown options when it's been clicked */
+.navbar .dropdown.open > a:after {
+  content: '\f0d8';
+}
 
-/*hover over about tab*/
-.about-tab:hover .about.dropdown-content {display: block;}
-
-/*hover over connect tab*/
-.connect-tab:hover .connect.dropdown-content {display: block;}
-
-/*hover over community tab*/
-.community-tab:hover .community.dropdown-content {display: block;}
-
-/*hover over support tab*/
-.support-tab:hover .support.dropdown-content {display: block;}
-
-
-.dropdown-content {/*DROPDOWN CONTENT*/
+/*DROPDOWN CONTENT*/
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
@@ -574,8 +557,22 @@ i.fa-solid.fa-bars { /* navbar toggler bars */
     text-align: left;
   }
 
-}/* End of Header Styles */
+  /*hover over calendar tab*/
+  .calendar-tab:hover .calendar.dropdown-content {display: block;}
 
+  /*hover over about tab*/
+  .about-tab:hover .about.dropdown-content {display: block;}
+
+  /*hover over connect tab*/
+  .connect-tab:hover .connect.dropdown-content {display: block;}
+
+  /*hover over community tab*/
+  .community-tab:hover .community.dropdown-content {display: block;}
+
+  /*hover over support tab*/
+  .support-tab:hover .support.dropdown-content {display: block;}
+
+}/* End of Header Styles */
 
 
 /* Body Styles */
@@ -584,45 +581,60 @@ main p {
   text-align: left;
 }
 
+.center_text {
+  text-align: center;
+}
+
+
+
+.home_pg_text {
+  margin-top: 0;
+}
+
 @media screen and (min-width: 320px) and (max-width:768px){
-
-  .content.secondary p{
-    margin-top: 1rem;
-    
-  }
-
-  .content.nowrap {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: flex-start;
-    align-content: flex-start;
-    justify-content: center;
-  }
-  
-  main .about_pg_text {
-    padding: 0;
-    text-align: left;
-  }
-
-  main .iframe {
-    width: 350px;
-    height: 315px;
-  }
-
-  main .main-content h1{
-    line-height: 3.815rem;
-    margin-top: 2rem;
-  }
 
   .dropdown-content {/* Length of secondary dropdown options */
     min-width: 500px;
+  }
+
+  .navbar .dropdown ul {
+    display: none;
+  }
+  
+  .navbar .dropdown.open ul {
+    display: block;
+  }
+
+  .home_pg_text {
+    margin-top: 1rem;
+  }
 
 }
 
-}
 
 /* End of Body Styles */
 
+/* Image styles */
+
+
+/* End of image styles */
+.hero-image {
+  background-image: url("new1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  margin-bottom: 2rem; 
+}
+
+.hero-text h1 {
+  color: var(--neutral-white);
+  text-align: center;
+}
 
 
 /* Footer Styles */
@@ -636,6 +648,10 @@ footer .sitemap {
 
 footer .main-footer {
   padding: 1rem 1rem 3rem 8rem;
+}
+
+.home_para {
+  margin-bottom: 2rem;
 }
 }
 
@@ -672,10 +688,6 @@ footer .main-footer h3 {
   color: var(--light);
   font-weight: bolder;
   line-height: 1.25rem;
-}
-
-footer .main-footer p {
-  font-family: Arial, Verdana, sans-serif;
 }
 
 footer .main-footer a.links {

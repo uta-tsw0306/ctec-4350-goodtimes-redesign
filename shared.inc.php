@@ -62,8 +62,6 @@ $nav = "
     $adminNav = $nav . $userOptions . $logOut;
     
     $loggedInNav = $nav . $logOut;
-                
-
 
 $footer = "   
 <footer>
@@ -73,7 +71,7 @@ $footer = "
                 <div class='footer-text'>
                     <h3>Location</h3>
                     <p class='footer-subhead'>Rehearsals</p>
-                    <address><a href='https://goo.gl/maps/t8qsr49SpQfC7ELc8' target='_blank' title='Google Maps'>Epworth United Methodist Church <br> 1400 S Cooper St <br> Arlington, TX 76013</a></address><br>
+                    <address><a href='https://goo.gl/maps/9k2Ftwj42KqgxsKu5' target='_blank' title='Google Maps'>Epworth United Methodist Church <br> 1400 S Cooper St <br> Arlington, TX 76013</a></address><br>
                     <p> Tuesdays 7:00PM - 9:00PM</p>
                 </div>
             </div>
@@ -95,10 +93,10 @@ $footer = "
                     <h3>Contact</h3>
 
                     <p class='footer-subhead'>Mailing Address</p>
-                    <address><a href='https://goo.gl/maps/t8qsr49SpQfC7ELc8' target='_blank' title='Google Maps' class='links'>PO Box 1522 <br> Arlington, TX 76004</a>
-                    </address>
+                    <p>PO Box 1522 <br> Arlington, TX 76004</p>
+                    
 
-                    <p>(682) -233-3606</p>
+                    <p>(682) 233-3606</p>
 
                     <p class='footer_text_center'><a href='mailto:username@domain.com' title='Webmaster's Email' target='_blank' class='links'>gtchorus@gmail.com</a></p>
 
