@@ -204,3 +204,16 @@ Stack trace:
 [14-Apr-2023 20:12:14 UTC] PHP Warning:  Undefined array key "access" in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/editUserForm.php on line 189
 [14-Apr-2023 20:12:23 UTC] PHP Warning:  Undefined array key "access" in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/editUserForm.php on line 189
 [14-Apr-2023 20:13:14 UTC] PHP Warning:  Undefined array key "access" in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/editUserForm.php on line 188
+[16-Apr-2023 18:41:26 UTC] PHP Warning:  Undefined variable $conn in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/photos.php on line 11
+[16-Apr-2023 18:41:26 UTC] PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on null in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/photos.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/photos.php on line 11
+[16-Apr-2023 18:42:43 UTC] PHP Warning:  Undefined variable $conn in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/photos.php on line 10
+[16-Apr-2023 18:42:43 UTC] PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on null in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/photos.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/photos.php on line 10
+[16-Apr-2023 18:57:52 UTC] PHP Warning:  Undefined variable $url in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/videos.php on line 29
+[16-Apr-2023 18:58:35 UTC] PHP Warning:  Undefined variable $url in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/videos.php on line 29
+[16-Apr-2023 18:58:35 UTC] PHP Warning:  Undefined variable $url in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/videos.php on line 33

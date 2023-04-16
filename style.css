@@ -616,8 +616,6 @@ main p {
 
 /* Image styles */
 
-
-/* End of image styles */
 .hero-image {
   background-image: url("new1.png");
   background-position: center;
@@ -635,6 +633,8 @@ main p {
   color: var(--neutral-white);
   text-align: center;
 }
+
+/* End of image styles */
 
 
 /* Footer Styles */
@@ -755,3 +755,19 @@ form div label:first-of-type {display: inline-block; width: 250px; text-align: r
 .errMsg {display: block; background-color: white; color: #ff6600; font-size: 0.8em; padding: 2px; width: 500px; position: relative; left: 250px;}
 
 /*end tips styles*/
+
+/* Photo page styles */
+.centerImage{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.width100{
+    width: 100%;
+    height: 28vw;
+    padding: 10px;
+}
+/* End Photo page styles */
