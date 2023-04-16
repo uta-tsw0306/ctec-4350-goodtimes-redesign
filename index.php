@@ -22,11 +22,14 @@
 
         <body>
         <?php 
-        $thisUID = $_SESSION['UID'];
-        $thisUserAdmin = $_SESSION['Admin'];
-        if($thisUserAdmin){echo $adminNav;}
-        else if ($thisUID){echo $loggedInNav;}
-        else{echo $basicNav;} ?>
+        if(is_session_started() === FALSE || empty($_SESSION['access'])){echo $basicNav;}
+        else if ($_SESSION['access'] == true){
+            $thisUID = $_SESSION['UID'];
+            $thisUserAdmin = $_SESSION['Admin'];
+            if($thisUserAdmin){echo $adminNav;}
+            else {echo $loggedInNav;}
+        }else {echo $basicNav;}
+        ?>
 
             <main>
                 <div class="container-fluid">

@@ -1,7 +1,7 @@
 <?php
 // acquire shared info from other files
 include("dbconn.inc.php"); // database connection 
-//include("shared.php"); // stored shared contents, such as HTML header and page title, page footer, etc. in variables
+include("shared.inc.php"); // stored shared contents, such as HTML header and page title, page footer, etc. in variables
 include ("shared_session.php");
 
 // make database connection
@@ -13,7 +13,6 @@ if (isset($_POST['Submit'])) {
 	// ==========================
 	//vaUIDate user input
 	
-	//`UID`, `UserName`, `Password`, `EmailAdress`, `StreetAdress`, `City`, `State`, `Zip`, `UserImageURL`, `Admin`, `ParentID`, `ForumAcess`
 	
 	// set up the required array 
 	$ThisUserAdmin = $_SESSION['Admin'];
@@ -89,7 +88,7 @@ if (isset($_POST['Submit'])) {
 			// Ensure $pid contains an integer. 
 			$UID = intval($UID); 
 
-			$sql = "UPDATE `Users` SET `UserName`=?,`Password`=?,`FirstName`=?,`LastName`=?,`EmailAdress`=?,`StreetAdress`=?,`City`=?,`State`=?,`Zip`=?,`Admin`=?,`TrustedUser`=?,`ParentID`=?,`ForumAcess`=? WHERE UID=?";
+			$sql = "UPDATE `USER` SET `Uname`=?,`password`=?,`admin`=? WHERE UID=?";
 				
 			//echo("URL: $URL, AT: $anchorText, CID: $categoryID, UID: $UID");
 			
@@ -98,7 +97,7 @@ if (isset($_POST['Submit'])) {
 			    if(empty($Zip)){$Zip=0;}
 
 				// Note: user input could be an array, the code to deal with array values should be added before the bind_param statment.
-				$stmt->bind_param('ssssssssiiiiii', $UserName, $Password, $FirstName, $LastName, $EmailAdress, $StreetAdress, $City, $State, $Zip, $Admin, $TrustedUser, $ParentID, $ForumAcess, $UID);
+				$stmt->bind_param('ssii', $UserName, $Password, $Admin, $UID);
 				$stmt_prepared = 1;// set up a variable to signal that the query statement is successfully prepared.
 			}
 
@@ -127,7 +126,7 @@ if (isset($_POST['Submit'])) {
                 
 				$output = "<span class='success'>Success!</span><p>The following information has been saved in the database:</p>";
 				
-				 header("Location:test.php");
+				 header("Location:admin_userList.php");
                  exit;
 			} else {
 				//$stmt->execute() failed.
@@ -163,21 +162,22 @@ if (isset($_POST['Submit'])) {
 ?>
 
 <?php 
-$ThisUserAdmin = $_SESSION['Admin'];
-
-if($ThisUserAdmin){echo $admin_nav;}
-else {echo $normal_nav;}
- ?>
+        $thisUID = $_SESSION['UID'];
+        $thisUserAdmin = $_SESSION['Admin'];
+        if($thisUserAdmin){echo $adminNav;}
+        else if ($thisUID){echo $loggedInNav;}
+        else{echo $basicNav;} ?>
 
 <main class='flexboxContainer'>
     
+
     <div class="title">   
         <?= $output ?>
     </div>
 
 </main>
 
-<?php print $Footer; ?>
+<?php print $footer; ?>
 
 </body>
 </html>

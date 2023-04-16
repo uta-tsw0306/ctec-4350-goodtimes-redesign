@@ -727,3 +727,19 @@ footer .align_left {
   text-align: left;
 }
 /* End of Footer Styles */
+
+/*Tips styles*/
+
+form div {margin: 10px; font-family: arial, sans-serif; vertical-align: text-top; clear: left; margin: 20px 5px;}
+
+form div label:first-of-type {display: inline-block; width: 250px; text-align: right; padding: 0px 5px; }
+
+.tips {border: 10px solid #ddd; border-radius: 0 30px 30px 30px; padding: 30px; background-color: #ccffff; display: none; position: absolute;}
+
+#termsAndConditions {
+	display: none;
+}
+
+.errMsg {display: block; background-color: white; color: #ff6600; font-size: 0.8em; padding: 2px; width: 500px; position: relative; left: 250px;}
+
+/*end tips styles*/
