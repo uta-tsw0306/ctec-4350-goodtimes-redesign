@@ -1,5 +1,7 @@
 <?php
 	include ('shared.inc.php');
+    include("dbconn.inc.php"); // database connection 
+  include ("shared_session.php");
 ?>
 <!doctype html>
     <html>
@@ -20,7 +22,15 @@
         </head>
 
         <body>
-        <?php echo $nav; ?>
+        <?php 
+            if(is_session_started() === FALSE || empty($_SESSION['access'])){echo $basicNav;}
+            else if ($_SESSION['access'] == true){
+                $thisUID = $_SESSION['UID'];
+                $thisUserAdmin = $_SESSION['Admin'];
+                if($thisUserAdmin){echo $adminNav;}
+                else {echo $loggedInNav;}
+            }else {echo $basicNav;}
+        ?>
 
             <main>
                 <div class="container">
@@ -30,7 +40,7 @@
                         </div>
 
                         <div class="col-xs-12">
-                            <h2 class="heading center_text">The members of the Arlington Goodtimes Chorus wish to thank the following individuals and firms who sponsor some or all of our events:</h2>
+                            <h3 class="center_text s_head">The members of the Arlington Goodtimes Chorus wish to thank the following individuals and firms who sponsor some or all of our events:</h3>
                         </div>
 
                         <div class="col-xs-12 col-lg-6">

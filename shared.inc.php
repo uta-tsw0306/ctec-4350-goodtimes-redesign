@@ -65,7 +65,7 @@ $nav = "
 
 $footer = "   
 <footer>
-    <div class='container-fluid'>
+    <div class='container'>
         <div class='row main-footer'>
             <div class='col-xs-12 col-md-4'>
                 <div class='footer-text'>
