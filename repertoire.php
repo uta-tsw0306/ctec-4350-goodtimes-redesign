@@ -1,6 +1,8 @@
 <?php
 	include ('shared.inc.php');
-?>
+    include("dbconn.inc.php"); // database connection 
+  include ("shared_session.php");
+  ?>
 <!doctype html>
     <html>
         <head>
@@ -20,7 +22,15 @@
         </head>
 
         <body>
-        <?php echo $nav; ?>
+            <?php 
+                if(is_session_started() === FALSE || empty($_SESSION['access'])){echo $basicNav;}
+                else if ($_SESSION['access'] == true){
+                    $thisUID = $_SESSION['UID'];
+                    $thisUserAdmin = $_SESSION['Admin'];
+                    if($thisUserAdmin){echo $adminNav;}
+                    else {echo $loggedInNav;}
+                }else {echo $basicNav;}
+            ?>
 
             <main>
                 <div class="container">
@@ -31,8 +41,8 @@
                     <div class="row">
 
                         <div class="col-xs-6 col-lg-4">
-                            <h3>Patriotic</h3>
-                            <ul>
+                            <h3 class="s_head">Patriotic</h3>
+                            <ul class="songs">
                                 <li>Armed Forces Medley</li>
                                 <li>God Bless America</li>
                                 <li>O Canada</li>
@@ -41,8 +51,8 @@
                         </div>
 
                         <div class="col-xs-6 col-lg-4">
-                            <h3>Spiritual</h3>
-                            <ul>
+                            <h3 class="s_head">Spiritual</h3>
+                            <ul class="songs">
                                 <li>I believe</li>
                                 <li>I'll Fly Away</li>
                                 <li>I'm Feelin' Fine</li>
@@ -52,8 +62,8 @@
                         </div>
 
                         <div class="col-xs-6 col-lg-4">
-                            <h3>Ballads</h3>
-                            <ul>
+                            <h3 class="s_head">Ballads</h3>
+                            <ul class="songs">
                                 <li>Can You Feel The Love Tonight</li>
                                 <li>Kentucky Babe</li>
                                 <li>Old Saint Louis</li>
@@ -65,8 +75,8 @@
                         </div>
 
                         <div class="col-xs-6 col-lg-4">
-                            <h3>Up-tunes/General</h3>
-                            <ul>
+                            <h3 class="s_head">Up-tunes/General</h3>
+                            <ul class="songs">
                                 <li>Beach Boy Medley</li>
                                 <li>California Here I Come</li>
                                 <li>Coney Island Baby - We All Fall Medley</li>
@@ -82,7 +92,7 @@
 
                         <div class="col-xs-6 col-lg-4">
                             <h3>Valentines</h3>
-                            <ul>
+                            <ul class="songs">
                                 <li>Let Me Call You Sweetheart</li>
                                 <li>Story Of The Rose</li>
                             </ul>
