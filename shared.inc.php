@@ -28,8 +28,8 @@ $nav = "
                 </li>
                 <li class='community-tab dropdown'><a href='#' title='Community'>Community</a>
                     <ul class='community dropdown-content'>
-                        <li><a href='#' title='UTA Voice Scholarship'>UTA Voice Scholarship</a></li>
-                        <li><a href='#' title='Our Supporters'>Our Supporters</a></li>
+                        <li><a href='uta_scholarship.php' title='UTA Voice Scholarship'>UTA Voice Scholarship</a></li>
+                        <li><a href='supporters.php' title='Our Supporters'>Our Supporters</a></li>
                         <li><a href='music_team.php' title='Music Team'>Music Team</a></li>
                     </ul>
                 </li>
