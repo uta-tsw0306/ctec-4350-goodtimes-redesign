@@ -765,9 +765,21 @@ form div label:first-of-type {display: inline-block; width: 250px; text-align: r
     padding: 20px;
 }
 
+.spreadIcons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 10px;
+}
+
 .width100{
     width: 100%;
     height: 28vw;
     padding: 10px;
+}
+
+.width20{
+    width: 20%;
 }
 /* End Photo page styles */
