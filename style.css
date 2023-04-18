@@ -31,6 +31,7 @@
   --text-primary: var(--light);
   --light-text: var(--neutral-white);
   --navbutton-hover: var(rgba(235,235,235,92));
+  --primary-btn: var(--dark-gray);
 }
 
 img {
@@ -64,11 +65,12 @@ h1, h2, h3, h4, h5, h6,
 
 h1, .h1 {
   font-size: 3.052rem;
-  color: var(--secondary-red)
+  color: var(--secondary-red);
 }
 
 h2, .h2 {
   font-size: 2.441rem;
+  color: var(--secondary-red);
 }
 
 h3, .h3 {
@@ -418,7 +420,7 @@ nav ul
 a:link, 
 a:active,
 a:visited {
-  color: var(--light);
+  color: var(--primary-blue);
 }
 
 nav ul a:hover { /* hovering over li */
@@ -458,11 +460,14 @@ nav ul a:hover { /* hovering over li */
 }
 
 #main-navigation li {
-padding: 0.2rem 0rem;
+  padding: 0.2rem 0rem;
 }
 
+/* nav links */
 #main-navigation li a {
   padding: 25px 25px;
+  color: black;
+
 }
 
 #main-navigation .dropdown-content li { /* No padding for the nav dropdown options */
@@ -584,11 +589,24 @@ main p {
 .center_text {
   text-align: center;
 }
-
-
-
+ 
 .home_pg_text {
   margin-top: 0;
+}
+
+/* list of donation amounts on the Support Us page */
+.donationP {
+  color: var(--secondary-red);
+  font-weight: bold;
+}
+
+/* hr line on the Support Us page */
+.container.support hr {
+  margin: 2rem 0rem;
+}
+
+.container.home p {
+  line-height: 2rem;
 }
 
 @media screen and (min-width: 320px) and (max-width:768px){
@@ -611,6 +629,29 @@ main p {
 
 }
 
+.button {
+  background-color: var(--primary-btn);
+  border: none;
+  color:var(--neutral-white);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.button_div {
+  display: flex;
+  justify-content: center;
+}
+
+.button_div button:hover {
+  background-color: var(--light-gray);
+}
+
 
 /* End of Body Styles */
 
@@ -619,7 +660,7 @@ main p {
 
 /* End of image styles */
 .hero-image {
-  background-image: url("new1.png");
+  background-image: url("gtc1.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -627,8 +668,7 @@ main p {
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 100vh;
-  margin-bottom: 2rem; 
+  height: 70vh;
 }
 
 .hero-text h1 {
@@ -739,63 +779,3 @@ footer .align_left {
   text-align: left;
 }
 /* End of Footer Styles */
-
-/*Tips styles*/
-
-form div {margin: 10px; font-family: arial, sans-serif; vertical-align: text-top; clear: left; margin: 20px 5px;}
-
-form div label:first-of-type {display: inline-block; width: 250px; text-align: right; padding: 0px 5px; }
-
-.tips {border: 10px solid #ddd; border-radius: 0 30px 30px 30px; padding: 30px; background-color: #ccffff; display: none; position: absolute;}
-
-#termsAndConditions {
-	display: none;
-}
-
-.errMsg {display: block; background-color: white; color: #ff6600; font-size: 0.8em; padding: 2px; width: 500px; position: relative; left: 250px;}
-
-/*end tips styles*/
-
-/*supporter styles*/
-
-.supporter_list li {
-  list-style-type: none;
-  text-align: center;
-  font-weight: 900;
-  font-size: 1.5rem;
-  padding: 1rem 0rem;
-}
-
-.s_head {
-  font-size: 2.2rem;
-}
-
-
-/*end supporter styles*/
-
-
-/*repertoire styles*/
-
-.songs li{
-  font-size: 1.5rem;
-}
-
-
-/*end repertoire styles*/
-
-
-/*music team styles*/
-
-table {
-  font-size: 1.5rem;
-}
-
-td{
-  padding-right: 8rem;
-}
-
-.team_name{
-  font-weight: 900;
-}
-
-/*end music team styles*/
