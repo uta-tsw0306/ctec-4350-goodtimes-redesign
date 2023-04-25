@@ -221,3 +221,7 @@ Stack trace:
 Stack trace:
 #0 {main}
   thrown in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/calender.php on line 21
+[18-Apr-2023 17:54:17 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function is_session_started() in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/index.php on line 24

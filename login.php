@@ -44,7 +44,7 @@ if (isset($_POST['username']) && isset($_POST['password']) && !empty($_POST['use
     			
             	//if(!$Admin){header("Location: admin_threadList.php");}
             	//else{header("Location: unapproved.php");}
-            	header("Location: test.php");
+            	header("Location: index.php");
             	exit;
     		}
         
@@ -95,21 +95,25 @@ if (isset($_POST['username']) && isset($_POST['password']) && !empty($_POST['use
 	<body>
 
 	<main>
-
-    <div class="title">
-		<h2  class="title">Log In</h2>
-	</div>
-
-    <div class="center">
-        <?= $message ?>
-    <form action="" method="post">
-        User name: <input type='text' name="username"> <br>
-        Password: <input type='password' name="password">
-        <br>
-        <input type="submit" name="submit" value="Log in">        
-    </form>
-    <p>If you don't have an account please contact our webmaster.</p>
+	    
+	<div class="container">
+        <div class="row centerImage">
+            <div class="col-xs-12">
+                <h2 class="center_text">Log In</h2>
+            </div>
+            <div class="col-xs-12">
+                <?= $message ?>
+                <form action="" method="post">
+                User name: <input type='text' name="username"> <br>
+                Password: <input type='password' name="password">
+                <br>
+                <input type="submit" name="submit" value="Log in">        
+                </form>
+                <p>If you don't have an account please contact our webmaster.</p>
+            </div>
+        </div>
     </div>
+    
     
     </main>
     </body>
