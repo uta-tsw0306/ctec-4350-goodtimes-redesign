@@ -16,11 +16,17 @@ if (isset($_POST['username']) && isset($_POST['password']) && !empty($_POST['use
     $username = $_POST['username'];
     $password = $_POST['password'];
     
+    $error = "";
+    
 	$sql = "SELECT `UID`, `Uname`, `password`, `admin` FROM `USER`";
 
 	$stmt = $conn->stmt_init();
 	
 	$found = false;
+	
+	if (str_contains($username, ' ') || str_contains($password, ' ')) {
+    $error = "Either your Username or Password contains spaces. This is not a valid login. ";
+    }
 
 	if ($stmt->prepare($sql)) {
 		
@@ -35,7 +41,7 @@ if (isset($_POST['username']) && isset($_POST['password']) && !empty($_POST['use
 		while ($stmt->fetch()) { // there should be only one record, therefore, no need for a while loop
 		//echo ("UID: $UID, UN: $UserName, P: $Password, $ForumAcess, $Admin");
     		
-            if($username == $UserName && $Password==$password){
+            if($username == $UserName && $Password==$password && !$error){
                 
     		    $_SESSION['access'] = true;
     			$_SESSION['UID'] = $UID;
@@ -58,10 +64,14 @@ if (isset($_POST['username']) && isset($_POST['password']) && !empty($_POST['use
     	
 		}
 		
-		if($UNfound == 0){	$message = "Your username is found but your password appears to be incorrect. Please try to fix it.<br>";}
-		else{ $message = "This login is not found<br>";}
+		$message = "";
 		
-		$message .=  "If you need your username or password reset please contact our user support or come by the Living Science Center in person.";
+		if($UNfound == 0 && !$error){	$message .= "Your username is found but your password appears to be incorrect. Please try to fix it.<br>";}
+		else{ $message .= "This login is not found<br>";}
+		
+		if($error){ $message .= $error;}
+		
+		$message .=  "If you need your username or password reset please contact our user support or come by a chorus meeting in person.";
 		
 	} else {
 		print ("<div class='error'>Query failed</div>");
