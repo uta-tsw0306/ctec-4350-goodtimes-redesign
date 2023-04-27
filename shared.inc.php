@@ -50,16 +50,25 @@ $nav = "
     $userOptions = "
                 <li class='support-tab dropdown'><a href='admin_userList.php' title='list Users'>Users</a>
                     <ul class='support dropdown-content'>
+                        <li><a href='admin_userList.php' title='New User'>List Users</a></li>
                         <li><a href='editUserForm.php' title='New User'>Add new User</a></li>
                     </ul>
                 </li>";
+                
+    $PhandVidOptions = "
+            <li class='support-tab dropdown'><a href='photo_video_list.php' title='list Photos and Videos'>Photo and Video</a>
+                <ul class='support dropdown-content'>
+                    <li><a href='photo_video_list.php' title='New User'>List Photos and Videos</a></li>
+                    <li><a href='photo_video_form.php' title='New User'>Add new Photo or Video</a></li>
+                </ul>
+            </li>";
 
     $basicNav = $nav . "<li><a href='login.php' title='Login'>Login</a> </li>
             </ul>
         </nav>
     </header>";
 
-    $adminNav = $nav . $userOptions . $logOut;
+    $adminNav = $nav . $userOptions . $PhandVidOptions . $logOut;
 
     $loggedInNav = $nav . $logOut;
 

@@ -120,6 +120,7 @@ if (isset($_GET['PVID'])) {
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="style.css">
 <title>File upload</title>
 </head>
 
@@ -141,7 +142,7 @@ if (isset($_GET['PVID'])) {
     <p>
         <h1>Photos and Videos Upload</h1>
         <label for="media_type">Media Type:</label>
-        <input class = "width20" type="radio" id="media_photo" name="media_type" value="1" <?php if($TID == 1){echo("checked");} ?>>Photo&emsp;<input class = "width20" type="radio" id="media_video" name="media_type" value="2" >Video&emsp;
+        <input class = "width20" type="radio" id="media_photo" name="media_type" value="1" <?php if($TID == 1){echo("checked");} ?>>Photo&emsp;<input class = "width20" type="radio" id="media_video" name="media_type" value="2" <?php if($TID == 2){echo("checked");} ?>>Video&emsp;
         
         <div id="formBase">
         
@@ -171,6 +172,7 @@ if (isset($_GET['PVID'])) {
         <div id= "URLinput">
 		<label for="URL" id="URLLabel">URL (for youtube videos): </label>
 		<input id="URL" type="text" name="URL" size="100" value="<?=$URL?>" >
+		<p>In this box you must put the Video ID of the YouTube Video. The video ID will be located in the URL of the video page, right after the v= URL parameter. In this case, the URL of the video is: https://www.youtube.com/watch?v=aqz-KE-bpKQ. Therefore, the ID of the video is aqz-KE-bpKQ. If this is not input correctly the Video will not work.</p>
 		</div>
         
         <div id = "imgUpload">

@@ -18,7 +18,7 @@ if (isset($_POST['username']) && isset($_POST['password']) && !empty($_POST['use
     
     $error = "";
     
-	$sql = "SELECT `UID`, `Uname`, `password`, `admin` FROM `USER`";
+	$sql = "SELECT `UID`, `Uname`, `password`, `admin`, `active` FROM `USER`";
 
 	$stmt = $conn->stmt_init();
 	
@@ -35,13 +35,13 @@ if (isset($_POST['username']) && isset($_POST['password']) && !empty($_POST['use
 		$stmt->execute();
 
 		/* bind result variables */
-		$stmt->bind_result($UID, $UserName, $Password, $Admin);
+		$stmt->bind_result($UID, $UserName, $Password, $Admin, $Active);
 
 		/* fetch values */
 		while ($stmt->fetch()) { // there should be only one record, therefore, no need for a while loop
 		//echo ("UID: $UID, UN: $UserName, P: $Password, $ForumAcess, $Admin");
     		
-            if($username == $UserName && $Password==$password && !$error){
+            if($username == $UserName && $Password==$password && !$error && $Active){
                 
     		    $_SESSION['access'] = true;
     			$_SESSION['UID'] = $UID;
@@ -58,6 +58,10 @@ if (isset($_POST['username']) && isset($_POST['password']) && !empty($_POST['use
         
             if($username == $UserName){
                $UNfound = 1;
+               
+               if(!$Active){
+		         $error .= "<br>This user has been deactivated<br>";
+		        }
     
     		} 
     		 
@@ -70,6 +74,8 @@ if (isset($_POST['username']) && isset($_POST['password']) && !empty($_POST['use
 		else{ $message .= "This login is not found<br>";}
 		
 		if($error){ $message .= $error;}
+		
+
 		
 		$message .=  "If you need your username or password reset please contact our user support or come by a chorus meeting in person.";
 		

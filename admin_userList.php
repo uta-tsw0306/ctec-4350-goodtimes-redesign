@@ -21,7 +21,7 @@ function confirmDel(title, UID) {
 // javascript function to ask for deletion confirmation
 
 	url = "deleteUser.php?UID="+UID;
-	var agree = confirm("Delete this item: <" + title + "> ? ");
+	var agree = confirm("Deactivate this user: <" + title + "> ? ");
 	if (agree) {
 		// redirect to the deletion script
 		location.href = url;
@@ -68,7 +68,7 @@ $defaultSortingField = "LinkCategory.CID";
 	} else $order= "ASC";
 
 // Retrieve the product & category info
-	$sql = "SELECT `UID`, `Uname`, `password`, `admin` FROM `USER`";
+	$sql = "SELECT `UID`, `Uname`, `notes`, `password`, `admin`, `active` FROM `USER`";
 
 
 	$stmt = $conn->stmt_init();
@@ -76,7 +76,7 @@ $defaultSortingField = "LinkCategory.CID";
 	if ($stmt->prepare($sql)){
 
 		$stmt->execute();
-		$stmt->bind_result($UID, $UserName, $password, $admin);
+		$stmt->bind_result($UID, $UserName, $notes, $password, $admin, $active);
 	
 		$tblRows = "";
 		while($stmt->fetch()){
@@ -84,15 +84,14 @@ $defaultSortingField = "LinkCategory.CID";
 			$tblRows = $tblRows."<tr>";
 				/*<td><a href='javascript:confirmDel(\"$Title_js\",$TID)'>Delete</a> </td>*/
 				
-			if($thisUserAdmin){$tblRows = $tblRows."<td><a href='editUserForm.php?UID=$UID'>Edit</a></td><td><a href='javascript:confirmDel(\"$UserName\",$UID)'>Delete</a></td>";}
+			if($thisUserAdmin && $UID != 0){$tblRows = $tblRows."<td><a href='editUserForm.php?UID=$UID'>Edit</a></td><td><a href='reactivateUser.php?UID=$UID'>Reactivate</a></td><td><a href='javascript:confirmDel(\"$UserName\",$UID)'>Deactivate</a></td>";}
 		
-		    else if($thisUID == $UID){$tblRows = $tblRows."<td><a href='editUserForm.php?UID=$UID'>Edit</a></td><td><a href='javascript:confirmDel(\"$UserName\",$UID)'>Delete</a></td>";}else{$tblRows = $tblRows."<td></td>
-		    <td></td>";}
+		    else{$tblRows = $tblRows."<td></td><td></td><td></td>";} 
 		
 		
 		//editUserForm.php
 				
-			$tblRows = $tblRows."<td>$UserName</td>";
+			$tblRows = $tblRows."<td>$UID</td><td>$UserName</td><td>$admin</td><td>$active</td><td>$notes</td>";
 			
 		}
 		
@@ -104,7 +103,12 @@ $defaultSortingField = "LinkCategory.CID";
 		<tr>
 		<th></th>
 		<th></th>
+		<th></th>
+		<th>UID</th>
 		<th>UserName</th>
+		<th>Admin</th>
+		<th>Active</th>
+		<th>Notes</th>
 		
 	    </tr>\n".$tblRows.
 		"</table>\n";

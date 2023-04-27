@@ -11,10 +11,11 @@ $conn = dbConnect();
 if (isset($_POST['upload'])) {
     
     
-    echo("hello post is set <br>");
+    //echo("hello post is set <br>");
     
-    if (array_key_exists('upload', $_POST)) {
-        echo("hello array_key_exists <br>");
+    if (!empty($_FILES['image']['tmp_name']) && $_FILES['image']['size'] > 0) {
+
+        //echo("hello array_key_exists <br>");
         $allowedTypes = array(IMAGETYPE_PNG, IMAGETYPE_JPEG, IMAGETYPE_GIF); 
         $isAllowed = 0;
         $upload = 0;
@@ -43,7 +44,7 @@ if (isset($_POST['upload'])) {
                   // upload successful
                   $message = "The selected file has been successfully uploaded.";
                   $upload = 1;
-                  echo("upload 1");
+                  //echo("upload 1");
               } else {
                   // something is wrong
                   $message = "We have encountered issues in uploading this file.  Please try again later or contact the web master. ";
@@ -51,6 +52,8 @@ if (isset($_POST['upload'])) {
           } else{
               echo("This type of file is not allowed.<br>");
           }
+} else{
+    $upload = 0;
 }
 	// ==========================
 	//vaUIDate user input
@@ -123,7 +126,7 @@ if (isset($_POST['upload'])) {
 
 	/* proceed only if there is no required fields missing and all other data vaUIDation rules are satisfied */
 	if (empty($missing)){
-	    	echo("hello right after empty missing");
+	    	//echo("hello right after empty missing");
 	    if(!$galleryBit){ $galleryBit = 0;}
 
 		//========================
@@ -136,7 +139,7 @@ if (isset($_POST['upload'])) {
 		
 		//echo("UID: $UID<br>");
 		$stmt_prepared = 0;
-		echo("hello right before PVID !=");
+		//echo("hello right before PVID !=");
 		if ($PVID != "") {
 		    //echo("<br> UID != NOTHING");
 			/* there is an existing pid ==> need to deal with an existing reocrd ==> use an update query */ 
@@ -144,7 +147,7 @@ if (isset($_POST['upload'])) {
 			// Ensure $pid contains an integer. 
 			$UID = intval($UID); 
 			$media_type = intval($media_type);
-			echo("hello right before sql");
+			//echo("hello right before sql");
 
 			$sql = "UPDATE `PHOTOS_VIDEOS` SET `UID`=?,`TID`=?, `Name`=?,`URL`=?,`altTxt`=?,`caption`=?,`inGallery`=? WHERE `PVID`= ?";
 				
@@ -187,7 +190,7 @@ if (isset($_POST['upload'])) {
 				$output = "<span class='success'>Success!</span><p>The following information has been saved in the database:</p>";
 				
 				
-				 header("photo_video_list.php");
+				 header("Location:photo_video_list.php");
                  exit; 
                  
 			} else {
