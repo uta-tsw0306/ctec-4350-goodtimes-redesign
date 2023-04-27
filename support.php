@@ -1,7 +1,5 @@
 <?php
-	  include("dbconn.inc.php"); 
-      include ("shared_session.php");
-      include ('shared.inc.php');
+	include ('shared.inc.php');
 ?>
 <!doctype html>
     <html>
@@ -22,15 +20,7 @@
         </head>
 
         <body>
-        <?php 
-        if(is_session_started() === FALSE || empty($_SESSION['access'])){echo $basicNav;}
-        else if ($_SESSION['access'] == true){
-            $thisUID = $_SESSION['UID'];
-            $thisUserAdmin = $_SESSION['Admin'];
-            if($thisUserAdmin){echo $adminNav;}
-            else {echo $loggedInNav;}
-        }else {echo $basicNav;}
-        ?>
+        <?php echo $basicNav; ?>
 
             <main>
                 <div class="container support">
@@ -56,6 +46,7 @@
                         <div class="col-xs-12 col-lg-6">
                             
                             <p class="donationP">$50-99</p>
+                            <img src="sheet-music.jpg" alt="Sheet music">
                             <ul>
                                 <li>Buy the sheet music rights for one new song</li>
                                 <li>Buy Goodtimes Chorus shirts for 2-4 new members</li>
@@ -63,11 +54,13 @@
                             </ul>
 
                             <p class="donationP">$100-199</p>
+                            <img src="tuxedo.jpg" alt="Image of a tuxedo">
                             <ul>
                                 <li>Buy a tuxedo for a new member</li>
                             </ul>
 
                             <p class="donationP">$200-299</p>
+                            <img src="riser.jpeg" alt="Riser and rail">
                             <ul>
                                 <li>Buy a riser back rail</li>
                                 <li>Buy a riser 4th row</li>
@@ -76,17 +69,20 @@
 
                         <div class="col-xs-12 col-lg-6">
                             <p class="donationP">$400-1599</p>
+                            <img src="riser-section.jpeg" alt="Image of a riser stand">
                             <ul>
                                 <li>Buy a new riser section</li>
                                 <li>Send a music teacher to a week-long training school focused on a cappella singing</li>
                             </ul>
 
                             <p class="donationP">$1400-2999</p>
+                            <img src="sound-system.jpg" alt="Image of a music speaker">
                             <ul>
                                 <li>Buy a new sound system</li>
                             </ul>
 
                             <p class="donationP">$3000+</p>
+                            <img src="acoustic-shell.jpeg" alt="Image of an acoustic shell">
                             <ul>
                                 <li>Underwrite our annual show</li>
                                 <li>Buy an acoustic shell for singing outdoors or in noisy locations</li>
