@@ -221,3 +221,67 @@ Stack trace:
 Stack trace:
 #0 {main}
   thrown in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/calender.php on line 21
+[18-Apr-2023 17:54:17 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function is_session_started() in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/index.php on line 24
+[25-Apr-2023 17:26:06 UTC] PHP Warning:  Undefined array key "UID" in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/edit_photo_video.php on line 18
+[25-Apr-2023 17:26:06 UTC] PHP Warning:  Undefined variable $Password in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/edit_photo_video.php on line 58
+[25-Apr-2023 17:26:06 UTC] PHP Warning:  Undefined variable $Footer in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/edit_photo_video.php on line 173
+[25-Apr-2023 17:26:49 UTC] PHP Warning:  Undefined array key "UID" in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/edit_photo_video.php on line 18
+[25-Apr-2023 17:26:49 UTC] PHP Warning:  Undefined array key "UID" in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/edit_photo_video.php on line 20
+[25-Apr-2023 17:26:49 UTC] PHP Warning:  Undefined variable $Password in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/edit_photo_video.php on line 60
+[25-Apr-2023 17:26:49 UTC] PHP Warning:  Undefined variable $Footer in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/edit_photo_video.php on line 175
+[25-Apr-2023 17:27:26 UTC] PHP Warning:  Undefined variable $Password in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/edit_photo_video.php on line 60
+[25-Apr-2023 17:27:26 UTC] PHP Warning:  Undefined variable $Footer in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/edit_photo_video.php on line 175
+[25-Apr-2023 17:27:54 UTC] PHP Warning:  Undefined variable $Footer in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/edit_photo_video.php on line 175
+[25-Apr-2023 17:29:02 UTC] PHP Warning:  Undefined variable $Footer in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/edit_photo_video.php on line 175
+[25-Apr-2023 17:33:56 UTC] PHP Warning:  Undefined variable $Footer in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/edit_photo_video.php on line 176
+[25-Apr-2023 17:36:17 UTC] PHP Warning:  Undefined variable $Footer in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/edit_photo_video.php on line 176
+[25-Apr-2023 17:46:12 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "galleryBit" in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/edit_photo_video.php:73
+Stack trace:
+#0 {main}
+  thrown in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/edit_photo_video.php on line 73
+[25-Apr-2023 17:52:22 UTC] PHP Warning:  Undefined variable $inGallery in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/edit_photo_video.php on line 100
+[25-Apr-2023 18:25:37 UTC] PHP Warning:  Undefined array key "PVID" in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/edit_photo_video.php on line 143
+[25-Apr-2023 18:31:46 UTC] PHP Warning:  Undefined variable $message in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/photo_video_form.php on line 137
+[25-Apr-2023 18:31:46 UTC] PHP Warning:  Undefined variable $PVID in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/photo_video_form.php on line 140
+[25-Apr-2023 18:31:53 UTC] PHP Warning:  Undefined variable $message in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/photo_video_form.php on line 137
+[25-Apr-2023 18:31:53 UTC] PHP Warning:  Undefined variable $PVID in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/photo_video_form.php on line 140
+[25-Apr-2023 18:33:01 UTC] PHP Warning:  Undefined variable $PVID in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/photo_video_form.php on line 140
+[25-Apr-2023 18:38:14 UTC] PHP Warning:  Undefined variable $PVID in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/photo_video_form.php on line 140
+[25-Apr-2023 18:38:51 UTC] PHP Warning:  Undefined variable $PVID in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/photo_video_form.php on line 140
+[25-Apr-2023 18:39:49 UTC] PHP Warning:  Undefined variable $PVID in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/photo_video_form.php on line 140
+[25-Apr-2023 19:06:03 UTC] PHP Warning:  Undefined variable $UserName in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/photo_video_list.php on line 86
+[25-Apr-2023 19:06:03 UTC] PHP Warning:  Undefined variable $UserName in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/photo_video_list.php on line 86
+[25-Apr-2023 19:06:03 UTC] PHP Warning:  Undefined variable $UserName in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/photo_video_list.php on line 86
+[25-Apr-2023 19:06:03 UTC] PHP Warning:  Undefined variable $UserName in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/photo_video_list.php on line 86
+[25-Apr-2023 19:06:03 UTC] PHP Warning:  Undefined variable $UserName in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/photo_video_list.php on line 86
+[25-Apr-2023 19:06:03 UTC] PHP Warning:  Undefined variable $UserName in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/photo_video_list.php on line 86
+[25-Apr-2023 19:06:03 UTC] PHP Warning:  Undefined variable $UserName in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/photo_video_list.php on line 86
+[25-Apr-2023 19:06:03 UTC] PHP Warning:  Undefined variable $UserName in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/photo_video_list.php on line 86
+[25-Apr-2023 19:06:03 UTC] PHP Warning:  Undefined variable $UserName in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/photo_video_list.php on line 86
+[25-Apr-2023 19:06:03 UTC] PHP Warning:  Undefined variable $UserName in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/photo_video_list.php on line 86
+[25-Apr-2023 19:06:03 UTC] PHP Warning:  Undefined variable $UserName in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/photo_video_list.php on line 86
+[25-Apr-2023 19:06:03 UTC] PHP Warning:  Undefined variable $UserName in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/photo_video_list.php on line 86
+[25-Apr-2023 19:06:03 UTC] PHP Warning:  Undefined variable $UserName in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/photo_video_list.php on line 86
+[25-Apr-2023 19:06:03 UTC] PHP Warning:  Undefined variable $UserName in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/photo_video_list.php on line 86
+[25-Apr-2023 19:06:03 UTC] PHP Warning:  Undefined variable $UserName in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/photo_video_list.php on line 86
+[25-Apr-2023 20:11:49 UTC] PHP Warning:  Undefined array key "UID" in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/photo_video_list.php on line 38
+[25-Apr-2023 20:11:49 UTC] PHP Warning:  Undefined array key "Admin" in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/photo_video_list.php on line 39
+[25-Apr-2023 20:11:55 UTC] PHP Warning:  Undefined array key "UID" in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/photo_video_list.php on line 38
+[25-Apr-2023 20:11:55 UTC] PHP Warning:  Undefined array key "Admin" in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/photo_video_list.php on line 39
+[25-Apr-2023 20:12:09 UTC] PHP Warning:  Undefined array key "UID" in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/photo_video_list.php on line 38
+[25-Apr-2023 20:12:09 UTC] PHP Warning:  Undefined array key "Admin" in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/photo_video_list.php on line 39
+[25-Apr-2023 20:33:46 UTC] PHP Warning:  Undefined array key "UID" in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/photo_video_list.php on line 38
+[25-Apr-2023 20:33:46 UTC] PHP Warning:  Undefined array key "Admin" in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/photo_video_list.php on line 39
+[25-Apr-2023 20:33:47 UTC] PHP Warning:  Undefined array key "UID" in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/photo_video_list.php on line 38
+[25-Apr-2023 20:33:47 UTC] PHP Warning:  Undefined array key "Admin" in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/photo_video_list.php on line 39
+[25-Apr-2023 20:34:07 UTC] PHP Warning:  Undefined array key "UID" in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/photo_video_list.php on line 38
+[25-Apr-2023 20:34:07 UTC] PHP Warning:  Undefined array key "Admin" in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/photo_video_list.php on line 39
+[26-Apr-2023 23:20:55 UTC] PHP Warning:  Undefined array key "UID" in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/photo_video_list.php on line 38
+[26-Apr-2023 23:20:55 UTC] PHP Warning:  Undefined array key "Admin" in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/photo_video_list.php on line 39
+[26-Apr-2023 23:21:39 UTC] PHP Warning:  Undefined variable $upload in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/edit_photo_video.php on line 104
+[26-Apr-2023 23:21:39 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/edit_photo_video.php:14) in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/edit_photo_video.php on line 191
+[26-Apr-2023 23:22:28 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/edit_photo_video.php:14) in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/edit_photo_video.php on line 193
+[26-Apr-2023 23:23:05 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/edit_photo_video.php:129) in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/edit_photo_video.php on line 193

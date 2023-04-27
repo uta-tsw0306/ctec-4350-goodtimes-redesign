@@ -21,7 +21,7 @@ function confirmDel(title, UID) {
 // javascript function to ask for deletion confirmation
 
 	url = "deleteUser.php?UID="+UID;
-	var agree = confirm("Deactivate this user: <" + title + "> ? ");
+	var agree = confirm("Delete this item: <" + title + "> ? ");
 	if (agree) {
 		// redirect to the deletion script
 		location.href = url;
@@ -68,7 +68,9 @@ $defaultSortingField = "LinkCategory.CID";
 	} else $order= "ASC";
 
 // Retrieve the product & category info
-	$sql = "SELECT `UID`, `Uname`, `notes`, `password`, `admin`, `active` FROM `USER`";
+	$sql = "SELECT PV.PVID, PV.UID, PV.TID, PV.Added, PV.Name, PV.URL, PV.altTxt, PV.caption, PV.inGallery, U.Uname, U.notes 
+FROM PHOTOS_VIDEOS as PV
+NATURAL JOIN USER as U";
 
 
 	$stmt = $conn->stmt_init();
@@ -76,39 +78,37 @@ $defaultSortingField = "LinkCategory.CID";
 	if ($stmt->prepare($sql)){
 
 		$stmt->execute();
-		$stmt->bind_result($UID, $UserName, $notes, $password, $admin, $active);
+		$stmt->bind_result($PVID, $UID, $TID, $Added, $Name, $URL, $altTxt, $caption, $inGallery, $Uname, $notes);
 	
 		$tblRows = "";
 		while($stmt->fetch()){
+		    $tblRows = $tblRows."<tr>";
+		    
+		    if($TID == 1){
+		        $tblRows = $tblRows."<td class='width20'><img src='$URL'></td>";
+		    }
+		    
+		    if($TID == 2){
+		        $tblRows = $tblRows."<td>$URL</td>";
+		    }
 
-			$tblRows = $tblRows."<tr>";
-				/*<td><a href='javascript:confirmDel(\"$Title_js\",$TID)'>Delete</a> </td>*/
+			$tblRows = $tblRows."<td><a href='photo_video_form.php?PVID=$PVID'>Edit</a></td><td><a href='javascript:confirmDel(\"$Name\",$PVID)'>Delete</a></td>";
 				
-			if($thisUserAdmin && $UID != 0){$tblRows = $tblRows."<td><a href='editUserForm.php?UID=$UID'>Edit</a></td><td><a href='reactivateUser.php?UID=$UID'>Reactivate</a></td><td><a href='javascript:confirmDel(\"$UserName\",$UID)'>Deactivate</a></td>";}
-		
-		    else{$tblRows = $tblRows."<td></td><td></td><td></td>";} 
-		
-		
-		//editUserForm.php
-				
-			$tblRows = $tblRows."<td>$UID</td><td>$UserName</td><td>$admin</td><td>$active</td><td>$notes</td>";
+			$tblRows = $tblRows."<td>$PVID</td><td>$UID</td><td>$TID</td><td>$Added</td><td>$Name</td><td>$altTxt</td><td>$caption</td><td>$inGallery</td><td>$Uname</td><td>$notes</td>";
 			
+			$tblRows = $tblRows."</tr>";
 		}
 		
 		$output = "
         <div class=\"title\">
-		<h2  class=\"title\">User List</h2>
+		<h2  class=\"title\">Photo and Video List</h2>
 		</div>
         <table class=\"styled-table\">\n
 		<tr>
 		<th></th>
 		<th></th>
-		<th></th>
-		<th>UID</th>
-		<th>UserName</th>
-		<th>Admin</th>
-		<th>Active</th>
-		<th>Notes</th>
+		
+		<th></th><th>PVID</th><th>UID</th><th>TID</th><th>Added</th><th>Name</th><th>altTxt</th><th>caption</th><th>inGallery</th><th>Uname</th><th>notes</th>
 		
 	    </tr>\n".$tblRows.
 		"</table>\n";

@@ -13,7 +13,7 @@
             <meta name="description" content="">
             <meta name="author" content="Web Wise Media">
 
-            <title>Photos | Goodtimes Chorus</title>
+            <title>Calender | Goodtimes Chorus</title>
 
             <link rel="stylesheet" href="style.css">
 

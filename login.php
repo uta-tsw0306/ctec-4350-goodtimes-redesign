@@ -16,11 +16,17 @@ if (isset($_POST['username']) && isset($_POST['password']) && !empty($_POST['use
     $username = $_POST['username'];
     $password = $_POST['password'];
     
-	$sql = "SELECT `UID`, `Uname`, `password`, `admin` FROM `USER`";
+    $error = "";
+    
+	$sql = "SELECT `UID`, `Uname`, `password`, `admin`, `active` FROM `USER`";
 
 	$stmt = $conn->stmt_init();
 	
 	$found = false;
+	
+	if (str_contains($username, ' ') || str_contains($password, ' ')) {
+    $error = "Either your Username or Password contains spaces. This is not a valid login. ";
+    }
 
 	if ($stmt->prepare($sql)) {
 		
@@ -29,13 +35,13 @@ if (isset($_POST['username']) && isset($_POST['password']) && !empty($_POST['use
 		$stmt->execute();
 
 		/* bind result variables */
-		$stmt->bind_result($UID, $UserName, $Password, $Admin);
+		$stmt->bind_result($UID, $UserName, $Password, $Admin, $Active);
 
 		/* fetch values */
 		while ($stmt->fetch()) { // there should be only one record, therefore, no need for a while loop
 		//echo ("UID: $UID, UN: $UserName, P: $Password, $ForumAcess, $Admin");
     		
-            if($username == $UserName && $Password==$password){
+            if($username == $UserName && $Password==$password && !$error && $Active){
                 
     		    $_SESSION['access'] = true;
     			$_SESSION['UID'] = $UID;
@@ -44,7 +50,7 @@ if (isset($_POST['username']) && isset($_POST['password']) && !empty($_POST['use
     			
             	//if(!$Admin){header("Location: admin_threadList.php");}
             	//else{header("Location: unapproved.php");}
-            	header("Location: test.php");
+            	header("Location: index.php");
             	exit;
     		}
         
@@ -52,16 +58,26 @@ if (isset($_POST['username']) && isset($_POST['password']) && !empty($_POST['use
         
             if($username == $UserName){
                $UNfound = 1;
+               
+               if(!$Active){
+		         $error .= "<br>This user has been deactivated<br>";
+		        }
     
     		} 
     		 
     	
 		}
 		
-		if($UNfound == 0){	$message = "Your username is found but your password appears to be incorrect. Please try to fix it.<br>";}
-		else{ $message = "This login is not found<br>";}
+		$message = "";
 		
-		$message .=  "If you need your username or password reset please contact our user support or come by the Living Science Center in person.";
+		if($UNfound == 0 && !$error){	$message .= "Your username is found but your password appears to be incorrect. Please try to fix it.<br>";}
+		else{ $message .= "This login is not found<br>";}
+		
+		if($error){ $message .= $error;}
+		
+
+		
+		$message .=  "If you need your username or password reset please contact our user support or come by a chorus meeting in person.";
 		
 	} else {
 		print ("<div class='error'>Query failed</div>");
@@ -95,21 +111,25 @@ if (isset($_POST['username']) && isset($_POST['password']) && !empty($_POST['use
 	<body>
 
 	<main>
-
-    <div class="title">
-		<h2  class="title">Log In</h2>
-	</div>
-
-    <div class="center">
-        <?= $message ?>
-    <form action="" method="post">
-        User name: <input type='text' name="username"> <br>
-        Password: <input type='password' name="password">
-        <br>
-        <input type="submit" name="submit" value="Log in">        
-    </form>
-    <p>If you don't have an account please contact our webmaster.</p>
+	    
+	<div class="container">
+        <div class="row centerImage">
+            <div class="col-xs-12">
+                <h2 class="center_text">Log In</h2>
+            </div>
+            <div class="col-xs-12">
+                <?= $message ?>
+                <form action="" method="post">
+                User name: <input type='text' name="username"> <br>
+                Password: <input type='password' name="password">
+                <br>
+                <input type="submit" name="submit" value="Log in">        
+                </form>
+                <p>If you don't have an account please contact our webmaster.</p>
+            </div>
+        </div>
     </div>
+    
     
     </main>
     </body>

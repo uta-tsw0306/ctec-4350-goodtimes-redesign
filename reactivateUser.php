@@ -22,7 +22,7 @@ if (isset($_GET['UID'])) { // note that the spelling 'UID' is based on the query
 	// vaUIDate the product id -- check to see if it is greater than 0
 		if ($UID>0 ){
 			//compose the query
-			$sql = "UPDATE `USER` SET `active`=0 WHERE UID = ?"; // note that the spelling "UID" is based on the field name in the database product table.
+			$sql = "UPDATE `USER` SET `active`=1 WHERE UID = ?"; // note that the spelling "UID" is based on the field name in the database product table.
 
 			$stmt = $conn->stmt_init();
 
@@ -31,7 +31,7 @@ if (isset($_GET['UID'])) { // note that the spelling 'UID' is based on the query
 				$stmt->bind_param('i',$UID);
 
 				if ($stmt->execute()){ // $stmt->execute() will return true (successful) or false
-					$output = "<p>Success!<br>The selected user has been seccessfully deactivated.</p>";
+					$output = "<p>Success!<br>The selected user has been seccessfully reactivated.</p>";
 				} else {
 					$output = "<div class='error'>The database operation to delete the record has been failed.  Please try again or contact the system administrator.</div>";
 				}
