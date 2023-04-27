@@ -21,6 +21,7 @@
   --dark-blue: #013c6d;
   --primary-red: #e00053;
   --secondary-red: #970f36;
+  --sec-red-hover: #57091F;
   --gold: #f4d35e;
   --light-gray: #dedddd;
   --lightest-gray: #f1f1f1;
@@ -628,6 +629,23 @@ main p {
 
 }
 
+/*button on home page*/
+.btn.btn-primary {
+  background-color: #8B0034;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  /*margin: 4px 2px;*/
+  cursor: pointer;
+  border-radius: 35px;
+  display: block;
+  margin: 0 auto;
+  width: 30vw;
+}
+
 .button {
   background-color: var(--primary-btn);
   border: none;
@@ -651,13 +669,87 @@ main p {
   background-color: var(--light-gray);
 }
 
+/* subheading on Contact page */
+.contact-subhead {
+line-height: 2rem;
+margin-top: 0;
+}
+
 
 /* End of Body Styles */
 
+/* Contact & Booking Form Styles */
+
+.contact-form, .booking-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.booking-form {
+  margin-top: 2rem;
+}
+
+.upload-form {
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  margin-bottom: 15px;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #0077cc;
+}
+
+button[type="submit"] {
+  background-color: var(--secondary-red);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: var(--sec-red-hover);
+}
+
+input[type="submit"] {
+  background-color: var(--secondary-red);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: var(--sec-red-hover);
+}
+
+/* End of Form styles */
+
+
+
 /* Image styles */
-
-
-/* End of image styles */
 .hero-image {
   background-image: url("gtc1.png");
   background-position: center;
@@ -674,10 +766,83 @@ main p {
   color: var(--neutral-white);
   text-align: center;
 }
+/* End of Image styles */
+
+
+
+/* Banner Styles */
+
+.banner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--dark-blue);
+  color: #fff;
+  padding: 30px;
+}
+
+.banner-text {
+  flex-basis: 50%;
+  margin-right: 30px;
+}
+
+.banner-text h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+  color: var(--neutral-white);
+}
+
+.banner-box {
+  background-color: var(--secondary-red);
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.banner-text p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.banner-image {
+  flex-basis: 45%;
+  overflow: hidden;
+}
+
+.banner-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 767px) {
+  .banner {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .banner-text {
+    flex-basis: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .banner-image {
+    flex-basis: 100%;
+    margin-top: 0;
+  }
+
+}
+
+/* End of Banner Styles */
+
 
 
 /* Footer Styles */
-
 
 @media screen and (min-width: 768px) {
 
@@ -779,7 +944,6 @@ footer .align_left {
 }
 /* End of Footer Styles */
 
-
 /* Photo page styles */
 .centerImage{
     text-align: center;
@@ -810,5 +974,4 @@ footer .align_left {
 .width10{
     width: 10%;
 }
-/* End Photo page styles */
 
