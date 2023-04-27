@@ -53,6 +53,8 @@ if (isset($_GET['UID'])) { // note that the spelling 'UID' is based on the query
 ?>
 <br>
 
+<link rel="stylesheet" href="style.css">
+
  <?php 
         $thisUID = $_SESSION['UID'];
         $thisUserAdmin = $_SESSION['Admin'];

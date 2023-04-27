@@ -76,6 +76,7 @@ window.onload = init;
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <title>File upload</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -90,52 +91,67 @@ window.onload = init;
     ?>
 
 <div style="margin: 1em;"><?=$message?></div>
-    
-<form action="" method="post" enctype="multipart/form-data" name="uploadImage" id="uploadImage">
-    <p>
-        <h1>Photos and Videos Upload</h1>
-        <label for="media_type">Media Type:</label>
-        <input class = "width20" type="radio" id="media_photo" name="media_type" value="1">Photo&emsp;<input class = "width20" type="radio" id="media_video" name="media_type" value="2" >Video&emsp;
-        
-        <div id="formOutput">
 
-        </div>
+<div class="container home">
+                    <div class="row">
+
+
+                        <div class="col-xs-12 col-lg-6">
+                            <form action="" method="post" enctype="multipart/form-data" name="uploadImage" id="uploadImage" class="upload-form">
         
-        <div>
-		<label for="Name" id="NameLabel">Name: </label>
-		<input id="Name" type="text" name="Name" size="100">
-		</div>
-		
-		<div>
-		<label for="altTxt" id="altTxtLabel">Alt Text: </label>
-		<input id="altTxt" type="text" name="altTxt" size="100">
-		</div>
-		
-		<div>
-		<label for="caption" id="captionLabel">Caption: </label>
-		<input id="caption" type="text" name="caption" size="100">
-		</div>
-        
-        <div>
-        <label for="galleryBit">Does this go in the gallery?</label>
-        <input class = "width20" type="radio" id="galleryBit" name="galleryBit" value="0">No&emsp;<input class = "width20" type="radio" id="galleryBit" name="galleryBit" value="1" >Yes&emsp;    
-        </div>
-        
-        <div>
-		<label for="URL" id="URLLabel">URL (for youtube videos): </label>
-		<input id="URL" type="text" name="URL" size="100">
-		</div>
-        
-        <div>
-		<label for="image">Upload image:</label>
-        <input type="file" name="image" id="image" /> 
-        </div>
-        
-    </p>
-    <p>
-        <input type="submit" name="upload" id="upload" value="Upload" />
-    </p>
-</form>
+            
+                            <h1>Photos and Videos Upload</h1>
+                            <label for="media_type">Media Type:</label>
+                            <input class = "width20" type="radio" id="media_photo" name="media_type" value="1">Photo&emsp;
+                            
+                            <input class = "width20" type="radio" id="media_video" name="media_type" value="2" >Video
+                            
+                            <div id="formOutput">
+
+                            </div>
+                            
+                            <div>
+                            <label for="Name" id="NameLabel">Name: </label><br>
+                            <input id="Name" type="text" name="Name" size="60">
+                            </div>
+                            
+                            <div>
+                            <label for="altTxt" id="altTxtLabel">Alt Text: </label><br>
+                            <input id="altTxt" type="text" name="altTxt" size="60">
+                            </div>
+                            
+                            <div>
+                            <label for="caption" id="captionLabel">Caption: </label><br>
+                            <input id="caption" type="text" name="caption" size="60">
+                            </div>
+                            
+                            <div>
+                            <label for="galleryBit">Does this go in the gallery?</label>
+                            <input class = "width20" type="radio" id="galleryBit" name="galleryBit" value="0">No&emsp;<input class = "width20" type="radio" id="galleryBit" name="galleryBit" value="1" >Yes&emsp;    
+                            </div>
+                            
+                            <div>
+                            <label for="URL" id="URLLabel">URL (for youtube videos): </label>
+                            <input id="URL" type="text" name="URL" size="50">
+                            </div>
+                            
+                            <div>
+                            <label for="image">Upload image:</label><br>
+                            <input type="file" name="image" id="image" /> 
+                            </div>
+                            
+
+                            <p>
+                                <input type="submit" name="upload" id="upload" value="Upload" />
+                            </p>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </main>
+    
+
 
 
 

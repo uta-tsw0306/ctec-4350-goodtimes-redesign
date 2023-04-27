@@ -123,7 +123,7 @@ $defaultSortingField = "LinkCategory.CID";
 	$conn->close();
 ?>
 	
-		
+<link rel="stylesheet" href="style.css">	
 
 <div class='flexboxContainer'>
     <div>

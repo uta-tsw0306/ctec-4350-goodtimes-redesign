@@ -160,6 +160,7 @@ if (isset($_POST['Submit'])) {
 
 
 ?>
+<link rel="stylesheet" href="style.css">
 
 <?php 
         $thisUID = $_SESSION['UID'];
