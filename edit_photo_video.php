@@ -221,6 +221,7 @@ if (isset($_POST['upload'])) {
 
 
 ?>
+<link rel="stylesheet" href="style.css">
 
 <?php 
     if(is_session_started() === FALSE || empty($_SESSION['access'])){echo $basicNav;}
