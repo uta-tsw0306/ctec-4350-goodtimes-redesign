@@ -285,3 +285,148 @@ Stack trace:
 [26-Apr-2023 23:21:39 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/edit_photo_video.php:14) in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/edit_photo_video.php on line 191
 [26-Apr-2023 23:22:28 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/edit_photo_video.php:14) in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/edit_photo_video.php on line 193
 [26-Apr-2023 23:23:05 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/edit_photo_video.php:129) in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/edit_photo_video.php on line 193
+[04-May-2023 16:06:37 UTC] PHP Warning:  Undefined array key "One of the URL Types" in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/edit_photo_video.php on line 217
+[04-May-2023 16:08:04 UTC] PHP Warning:  Undefined array key "URLvideo" in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/edit_photo_video.php on line 222
+[04-May-2023 16:16:52 UTC] PHP Parse error:  syntax error, unexpected variable "$expected" in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/edit_photo_video.php on line 70
+[04-May-2023 16:22:51 UTC] PHP Warning:  Undefined variable $Notes in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/editUserForm.php on line 298
+[04-May-2023 16:24:08 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/editUser_admin.php:115
+Stack trace:
+#0 /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/editUser_admin.php(115): mysqli_stmt->bind_param('ssi', 'dskfaskdfhka', 'kadsJASLDJldlfa...', 0, 'note')
+#1 {main}
+  thrown in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/editUser_admin.php on line 115
+[04-May-2023 16:25:43 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Number of bind variables doesn't match number of fields in prepared statement in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/editUserForm.php:224
+Stack trace:
+#0 /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/editUserForm.php(224): mysqli_stmt->bind_result(4, '', '', '', '')
+#1 {main}
+  thrown in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/editUserForm.php on line 224
+[04-May-2023 16:27:24 UTC] PHP Warning:  Undefined variable $filename in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/edit_photo_video.php on line 119
+[04-May-2023 18:01:58 UTC] PHP Warning:  Undefined variable $conn in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php on line 15
+[04-May-2023 18:01:58 UTC] PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on null in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php on line 15
+[04-May-2023 18:01:58 UTC] PHP Warning:  Undefined variable $conn in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php on line 15
+[04-May-2023 18:01:58 UTC] PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on null in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php on line 15
+[04-May-2023 18:01:58 UTC] PHP Warning:  Undefined variable $conn in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php on line 15
+[04-May-2023 18:01:58 UTC] PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on null in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php on line 15
+[04-May-2023 18:01:58 UTC] PHP Warning:  Undefined variable $conn in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php on line 15
+[04-May-2023 18:01:58 UTC] PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on null in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php on line 15
+[04-May-2023 18:01:58 UTC] PHP Warning:  Undefined variable $conn in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php on line 15
+[04-May-2023 18:01:58 UTC] PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on null in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php on line 15
+[04-May-2023 18:01:58 UTC] PHP Warning:  Undefined variable $conn in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php on line 15
+[04-May-2023 18:01:58 UTC] PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on null in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php on line 15
+[04-May-2023 18:01:58 UTC] PHP Warning:  Undefined variable $conn in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php on line 15
+[04-May-2023 18:01:58 UTC] PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on null in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php on line 15
+[04-May-2023 18:01:58 UTC] PHP Warning:  Undefined variable $conn in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php on line 15
+[04-May-2023 18:01:58 UTC] PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on null in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php on line 15
+[04-May-2023 18:01:58 UTC] PHP Warning:  Undefined variable $conn in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php on line 15
+[04-May-2023 18:01:58 UTC] PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on null in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php on line 15
+[04-May-2023 18:01:58 UTC] PHP Warning:  Undefined variable $conn in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php on line 15
+[04-May-2023 18:01:58 UTC] PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on null in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php on line 15
+[04-May-2023 18:01:58 UTC] PHP Warning:  Undefined variable $conn in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php on line 15
+[04-May-2023 18:01:58 UTC] PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on null in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php on line 15
+[04-May-2023 18:01:58 UTC] PHP Warning:  Undefined variable $conn in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php on line 15
+[04-May-2023 18:01:58 UTC] PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on null in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php on line 15
+[04-May-2023 18:01:58 UTC] PHP Warning:  Undefined variable $conn in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php on line 15
+[04-May-2023 18:01:58 UTC] PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on null in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php on line 15
+[04-May-2023 18:01:58 UTC] PHP Warning:  Undefined variable $conn in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php on line 15
+[04-May-2023 18:01:58 UTC] PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on null in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php on line 15
+[04-May-2023 18:02:23 UTC] PHP Warning:  Undefined variable $conn in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php on line 15
+[04-May-2023 18:02:23 UTC] PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on null in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php on line 15
+[04-May-2023 18:02:23 UTC] PHP Warning:  Undefined variable $conn in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php on line 15
+[04-May-2023 18:02:23 UTC] PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on null in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php on line 15
+[04-May-2023 18:02:23 UTC] PHP Warning:  Undefined variable $conn in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php on line 15
+[04-May-2023 18:02:23 UTC] PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on null in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php on line 15
+[04-May-2023 18:02:23 UTC] PHP Warning:  Undefined variable $conn in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php on line 15
+[04-May-2023 18:02:23 UTC] PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on null in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php on line 15
+[04-May-2023 18:02:23 UTC] PHP Warning:  Undefined variable $conn in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php on line 15
+[04-May-2023 18:02:23 UTC] PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on null in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php on line 15
+[04-May-2023 18:02:23 UTC] PHP Warning:  Undefined variable $conn in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php on line 15
+[04-May-2023 18:02:23 UTC] PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on null in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php on line 15
+[04-May-2023 18:02:23 UTC] PHP Warning:  Undefined variable $conn in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php on line 15
+[04-May-2023 18:02:23 UTC] PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on null in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php on line 15
+[04-May-2023 18:02:23 UTC] PHP Warning:  Undefined variable $conn in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php on line 15
+[04-May-2023 18:02:23 UTC] PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on null in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php on line 15
+[04-May-2023 18:02:23 UTC] PHP Warning:  Undefined variable $conn in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php on line 15
+[04-May-2023 18:02:23 UTC] PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on null in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php on line 15
+[04-May-2023 18:02:23 UTC] PHP Warning:  Undefined variable $conn in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php on line 15
+[04-May-2023 18:02:23 UTC] PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on null in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php on line 15
+[04-May-2023 18:17:21 UTC] PHP Warning:  Undefined variable $response in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php on line 45
+[04-May-2023 18:17:21 UTC] PHP Warning:  Undefined variable $response in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php on line 45
+[04-May-2023 18:17:21 UTC] PHP Warning:  Undefined variable $response in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php on line 45
+[04-May-2023 18:17:21 UTC] PHP Warning:  Undefined variable $response in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php on line 45
+[04-May-2023 18:17:21 UTC] PHP Warning:  Undefined variable $response in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php on line 45
+[04-May-2023 18:17:21 UTC] PHP Warning:  Undefined variable $response in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php on line 45
+[04-May-2023 18:17:21 UTC] PHP Warning:  Undefined variable $response in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php on line 45
+[04-May-2023 18:17:21 UTC] PHP Warning:  Undefined variable $response in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php on line 45
+[04-May-2023 18:17:21 UTC] PHP Warning:  Undefined variable $response in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php on line 45
+[04-May-2023 18:17:21 UTC] PHP Warning:  Undefined variable $response in /home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/username_data.php on line 45

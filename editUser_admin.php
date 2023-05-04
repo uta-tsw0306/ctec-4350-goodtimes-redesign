@@ -22,10 +22,10 @@ if (isset($_POST['Submit'])) {
 	 // note that, in this array, the spelling of each item should match the form field names
 
 	// set up the expected array
-	$expected = array("UID", "UserName", "Password", "Admin"); // again, the spelling of each item should match the form field names
+	$expected = array("UID", "UserName", "Password", "Admin", "Notes"); // again, the spelling of each item should match the form field names
     
     // set up a label array, use the field name as the key and label as the value
-    $label = array ('UID'=>'UID', 'UserName'=>'UserName', "Password"=>'Password', 'Admin'=>'Admin');
+    $label = array ('UID'=>'UID', 'UserName'=>'UserName', "Password"=>'Password', 'Admin'=>'Admin', 'Notes'=>'Notes');
 
 	$missing = array();
 	
@@ -88,7 +88,7 @@ if (isset($_POST['Submit'])) {
 			// Ensure $pid contains an integer. 
 			$UID = intval($UID); 
 
-			$sql = "UPDATE `USER` SET `Uname`=?,`password`=?,`admin`=? WHERE UID=?";
+			$sql = "UPDATE `USER` SET `Uname`=?,`password`=?,`admin`=?, `notes`=? WHERE UID=?";
 				
 			//echo("URL: $URL, AT: $anchorText, CID: $categoryID, UID: $UID");
 			
@@ -97,7 +97,7 @@ if (isset($_POST['Submit'])) {
 			    if(empty($Zip)){$Zip=0;}
 
 				// Note: user input could be an array, the code to deal with array values should be added before the bind_param statment.
-				$stmt->bind_param('ssii', $UserName, $Password, $Admin, $UID);
+				$stmt->bind_param('ssisi', $UserName, $Password, $Admin, $Notes, $UID);
 				$stmt_prepared = 1;// set up a variable to signal that the query statement is successfully prepared.
 			}
 
@@ -106,13 +106,13 @@ if (isset($_POST['Submit'])) {
 		    $UserImageURL="";
 		    if(!isset($_POST[$Admin])){ $Admin = 0;}
 			// no existing pid ==> this means no existing record to deal with, then it must be a new record ==> use an insert query
-			$sql = "INSERT INTO `USER`(`Uname`, `password`, `admin`) values (?, ?, ?)";
+			$sql = "INSERT INTO `USER`(`Uname`, `password`, `admin`, `notes`) values (?, ?, ?, ?)";
 
 			if($stmt->prepare($sql)){
 
 				// Note: user input could be an array, the code to deal with array values should be added before the bind_param statment.
 
-				$stmt->bind_param('ssi', $UserName, $Password, $Admin);
+				$stmt->bind_param('ssis', $UserName, $Password, $Admin, $Notes);
 				$stmt_prepared = 1; // set up a variable to signal that the query statement is successfully prepared.
 			}
 		}
@@ -160,7 +160,6 @@ if (isset($_POST['Submit'])) {
 
 
 ?>
-<link rel="stylesheet" href="style.css">
 
 <?php 
         $thisUID = $_SESSION['UID'];

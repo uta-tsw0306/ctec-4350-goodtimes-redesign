@@ -99,7 +99,7 @@ if (isset($_POST['username']) && isset($_POST['password']) && !empty($_POST['use
     $message = "<div class='error'>Please enter both the user name and password to log in.</div>";
     
 }else {
-    $message = "<div class=\"center\">Please use the form below to log in to the forum</div>";
+    $message = "<div class=\"center\">Please use the form below to log in</div>";
     
 }
 ?>    
