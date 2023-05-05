@@ -31,7 +31,7 @@
   --off-black: #212529;
   --text-primary: var(--light);
   --light-text: var(--neutral-white);
-  --navbutton-hover: var(rgba(235,235,235,92));
+  --navbutton-hover: #ABABAB;
   --primary-btn: var(--dark-gray);
 }
 
@@ -429,10 +429,6 @@ a:visited {
   color: var(--primary-blue);
 }
 
-nav ul a:hover { /* hovering over li */
-
-}
-
 .navbar-toggler { 
   border: 0 none; 
   background-color: var(--secondary);
@@ -483,11 +479,11 @@ nav ul a:hover { /* hovering over li */
 /* hovering over the navigation bar tabs */
 #main-navigation li a:hover {
     box-shadow: 0 -5px 0px var(--lightest-gray) inset,
-    100vw 0 0 rgba(235,235,235,92)inset;
+    100vw 0 0 var(--navbutton-hover)inset;
 }
 
 button.navbar-toggler:hover {
-  background-color: rgba(235,235,235,92);
+  background-color: var(--navbutton-hover);
   transition-duration: 0.4s;
 }
 
