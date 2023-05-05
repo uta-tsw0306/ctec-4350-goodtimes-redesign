@@ -122,7 +122,7 @@ NATURAL JOIN USER as U";
 
 	$conn->close();
 ?>
-	
+
 		
 
 <div class='flexboxContainer'>

@@ -20,44 +20,45 @@
         </head>
 
         <body>
-        <?php echo $$basicNav; ?>
+        <?php echo $basicNav; ?>
 
             <main>
+            <div class="page-title">
+                <h1>Contact Us</h1>
+            </div>
 
-                <div class="container home">
+                <div class="container">
                     <div class="row">
                         <div class="col-xs-12">
-                            <h2 class="center_text">Contact Us</h2>
+                            <h2 class="center_text contact">We'd Love to Hear From You!</h2>
+                            <p class="contact_pg">Please contact us with any questions, comments, or feedback you may have and we will do our best to get back to you as soon as possible!</p>
                         </div>
                         <div class="col-xs-12 col-lg-6">
-                            <h4 class="contact-subhead">The Goodtimes Chorus of Arlington</h4>
-                            <p><u>Rehearsal Information</u><br>
-                            Epworth United Methodist Church<br>
-                            1400 S Cooper St Arlington, TX 76013<br><br>
 
+                            <p class="contact-phone"><b><u>Phone</u></b><br><a href="tel:+6822333606">(682) 233-3606</a></p>
+
+                            <p class="contact-phone"><b><u>Email</u></b><br><a href="mailto:gtchorus@gmail.com" >gtchorus@gmail.com</a></p>
+                            <!--
+                            <a href="mailto:gtchorus@gmail.com" class="btn btn-primary" title="Email Us">Email Us</a>
+                            -->
+                            <p><b><u>Mailing Address</u></b><br>
+                            P.O. Box 1522<br>
+                            Arlington, TX 76004
+                            </p>
+
+                            <p><b><u>Location</u></b><br>
+                            Epworth United Methodist Church<br>
+                            1400 S Cooper St Arlington, TX 76013
+                            </p>
+
+                            <p><b><u>Rehearsals</u></b><br>
                             Tuesdays from 7:00pm to 9:00pm
                             </p>
 
                         </div>
                         <div class="col-xs-12 col-lg-6">
-                        <form action="submit-form.php" method="POST" class="contact-form">
-
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" placeholder="First and Last Name" required>
-
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-
-                        <label for="phone">Phone:</label>
-                        <input type="tel" id="phone" name="phone"  placeholder="123-456-7890" required>
-
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-
-                        <button type="submit">Send</button>
-                        </form>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3356.6447092162944!2d-97.11830932436656!3d32.72206748679227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e7d15206e84af%3A0x4b3fa8ca9175949c!2sEpworth%20United%20Methodist%20Church!5e0!3m2!1sen!2sus!4v1682811355175!5m2!1sen!2sus" width="" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="google-map"></iframe>
                         </div>
-
                     </div>
                 </div>
             </main>

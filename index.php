@@ -26,37 +26,55 @@
                 <div class="hero-image">
                     <div class="hero-text">
                         <h1>Singing in Harmony Since 1962</h1>
-                        <a href="join.php" class="btn btn-primary">Join Us!</a>
+                        <p>Welcome to the Goodtimes Chorus website where we are proud to be a part of the vibrant and passionate community of barbershop harmony singers!</p>
+                        <div class="flex-buttons">
+                            <a href="videos.php" class="btn btn-primary" title="Watch Videos" id="btn-1">Watch Videos</a>
+                            <a href="support.php" class="btn btn-primary" title="Donate" id="btn-2">Donate</a>
+                        </div>
                     </div>
+
                 </div>
                 <div class="container home">
                     <div class="row">
                         <div class="col-xs-12">
-                            <h2 class="center_text">The Goodtimes Chorus of Arlington, TX</h2>
+                            <h1 class="center_text addMargin">Connect With Us</h1>
                         </div>
-                        <div class="col-xs-12 col-lg-5">
-                            <img src="gtchorus1.jpg" alt="Choir singing in formal attire">
+                        <div class="col-xs-12 col-lg-6 homepgBox">
+                            <div class="info-box">
+                                <h2 class="heading center_text">All Singers Welcome!</h2>
+                                <p>Ready to harmonize? Become a chorus member and share your voice with the community. Whether you're an experienced or inexperienced singer, we're always thrilled to have new men and women join us!</p>
+                                <div class="button_div">
+                                    <a href="join.php" class="btn btn-primary" title="Join Us!" id="btn-2">Join Us!</a>
+                                </div>
+                            </div>
                         </div>
+
                         <div class="col-xs-12 col-lg-6">
-                            <p class="home_pg_text">The Goodtimes Chorus (GTC) is an a cappella chorus based in Arlington, Texas. We are a chapter of the <a href="https://www.barbershop.org/">Barbershop Harmony Society (BHS)</a> - formerly known as the S.P.E.B.S.Q.S.A. - in the highly competitive <a href="https://www.swd.org/">Southwest District of Champions</a>. Founded in 1962, our mission has been to spread good times and the joys of four-part harmony throughout the Dallas/Fort Worth Metroplex. We take great pride in our many awards over the years, and we remain dedicated to continual improvement. It's both lots of fun and lots of hard work, as we strive to be the best we can be.
-
-                            </p>
-                        </div>
-
-                        <div class="col-xs-12 col-lg-7">
-                            <h2 class="heading center_text">All Singers Welcome!</h2>
-                            <p>Ready to harmonize? Become a member of the Goodtimes Chorus and share your voice with the community. Whether you're an experienced or inexperienced singer, we are always thrilled to have new men and women join our musical family!</p>
-                            <div class="button_div">
-                                <button class="button">Join</button>
+                            <div class="info-box">
+                                <h2 class="heading center_text">Hire Us</h2>
+                                <p>Experience the joy of a capella music like never before. From intimate gatherings to grand celebrations, our tailored performances are designed to fit your event, your venue, and your theme. Hire Us Today!</p>
+                                <div class="button_div">
+                                <a href="booking.php" class="btn btn-primary" title="Book an Event" id="btn-2">Book an Event</a>
+                                </div>
                             </div>
                         </div>
-
-                        <div class="col-xs-12 col-lg-5">
-                            <h2 class="heading center_text">Hire Us</h2>
-                            <p>Experience the joy of a capella music like never before. From intimate gatherings to grand celebrations, our tailored performances are designed to fit your event, your venue, and your theme.</p>
-                            <div class="button_div">
-                                <button class="button">Book</button>
+                        <div class="col-xs-12">
+                            <div class="mission_div">
+                            <h1 class="center_text">Our Mission</h1>
+                            <p>The Goodtimes Chorus is a group of talented singers who are passionate about achieving musical excellence, creating a sense of fellowship, and serving the community through the power of music. Our mission is to bring people together through our shared love of singing and to provide a positive impact on the community.</p>
                             </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <h1 class="center_text addMargin">Videos</h1>
+                        </div>
+                        <div class="col-xs-12 col-lg-4 home-videos">
+                            <iframe  height="300px" src="https://www.youtube.com/embed/sBFLAzYKurg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <div class="col-xs-12 col-lg-4 home-videos">
+                            <iframe ] height="300px" src="https://www.youtube.com/embed/H4jQPFbFong" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <div class="col-xs-12 col-lg-4 home-videos">
+                            <iframe  height="300px" src="https://www.youtube.com/embed/vPsMnL8bBPw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
 
                     </div>

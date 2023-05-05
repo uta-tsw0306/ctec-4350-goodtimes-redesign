@@ -23,74 +23,32 @@
         <?php echo $basicNav; ?>
 
             <main>
-            <div class="banner">
-                <div class="banner-text">
-                    <h1>Join Our Musical Family!</h1>
-                    <p>From intimate gatherings to grand celebrations, our tailored performances are designed to fit your event, your venue, and your theme.</p>
-                    <p class="banner-box">Please fill out the form below to request a performance and we will be in contact shortly!</p>
-                </div>
-                <div class="banner-image">
-                    <img src="chorus_ptpg_4.jpg" alt="Male choir singing wearing green vests">
+            <div class="page-title">
+                <h1>Join Our Musical Family</h1>
+            </div>
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-xs-12 col-lg-6">
+                        <img src="chorus_ptpg_13.jpg" alt="Male choir singing during a rehearsal">
+                    </div>
+
+                    <div class="col-xs-12 col-lg-6">
+                        <p>If you love singing and want to be part of a fun and welcoming group, look no further!</p>
+                        
+                        <p>Don't let inexperience hold you back - we welcome singers of all levels, from beginners to experienced choristers. 
+                        
+                        <p>Whether you're already familiar with a cappella singing or just curious, we invite you to attend one of our rehearsals to sing along or simply listen.</p>
+
+                        <p>Please contact us to join the chorus.</p>
+
+                        <a href="contact.php" class="btn btn-primary" alt="Contact Us">Contact Us</a>
+
+                    </div>
+
                 </div>
             </div>
-                <div class="container home">
-                    <div class="row">
-                        <div class="col-xs-12 col-lg-6">
-                            <form action="submit-form.php" method="POST" class="booking-form">
 
-                            <u>Contact Information</u><br>
-
-                            <label for="name">Name*</label>
-                            <input type="text" id="name" name="name" placeholder="First and Last Name" required>
-
-                            <label for="email">Email*</label>
-                            <input type="email" id="email" name="email" required>
-
-                            <label for="phone">Phone*</label>
-                            <input type="tel" id="phone" name="phone"  placeholder="123-456-7890" required>
-
-                            <u>Event Information</u><br>
-
-                            <label for="date">Date*</label>
-                            <input type="text" id="date" name="date" placeholder="MM/DD/YY" required>
-
-                            <label for="time">Time*</label>
-                            <input type="text" id="time" name="time"  required>
-
-                            <label for="duration">Duration*</label>
-                            <input type="text" id="duration" name="duration" placeholder="How long will you need the choir?"  required>
-
-                            <label for="address">Address*</label>
-                            <input type="text" id="address" name="address" placeholder="Event address"  required>
-
-                            <label for="city">City*</label>
-                            <input type="text" id="city" name="city"  required>
-
-                            <label for="state">State</label>
-                            <input type="text" id="state" name="state"  required>
-
-                            <label for="zip">Zip Code</label>
-                            <input type="text" id="zip" name="zip"  required>
-
-                            <label for="theme">Performance Theme</label>
-                            <input type="text" id="theme" name="theme" placeholder="Theme of your event"  required>
-
-                            <label for="ensemble">Performance Ensemble*</label>
-
-                            <fieldset>
-                                <legend>Choose one option:</legend>
-                                <label><input type="checkbox" name="ensemble[]" value="quartet"> Quartet
-                                </label>
-                                <label><input type="checkbox" name="ensemble[]" value="fullChoir"> Full Choir
-                                </label>
-                            </fieldset><br>
-
-                            <button type="submit">Submit</button>
-                            </form>
-
-                        </div>
-                    </div>
-                </div>
             </main>
 
             <?php echo $footer; ?>

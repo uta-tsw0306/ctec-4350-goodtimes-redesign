@@ -23,74 +23,34 @@
         <?php echo $basicNav; ?>
 
             <main>
-            <div class="banner">
-                <div class="banner-text">
-                    <h1>Book the Goodtimes Chorus for your Event</h1>
-                    <p>From intimate gatherings to grand celebrations, our tailored performances are designed to fit your event, your venue, and your theme.</p>
-                    <p class="banner-box">Please fill out the form below to request a performance and we will be in contact shortly!</p>
-                </div>
-                <div class="banner-image">
-                    <img src="chorus_ptpg_4.jpg" alt="Male choir singing wearing green vests">
+
+            <div class="page-title">
+                <h1>Want to Book Goodtimes Chorus?</h1>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="col-xs-12 col-lg-6">
+                        <img src="chorus_ptpg_4.jpg" alt="Male choir singing wearing green vests">
+                    </div>
+
+                    <div class="col-xs-12 col-lg-6">
+
+                        <p>From intimate gatherings to grand celebrations, our tailored performances are designed to fit your event, your venue, and your theme. Choose from our sophisticated formal outfits or let us match our costumes to your event's unique style.</p>
+
+                        <p>Whether you're looking to create an upbeat atmosphere or to set a serene mood, the Goodtimes Chorus can deliver a performance that exceeds your expectations. We can adapt to any space, from cozy living rooms to stunning outdoor venues, and offer options ranging from a quartet to a full chorus.</p>
+
+                        <p>Please contact us to book an event.</p>
+
+                        <div>
+                            <a href="contact.php" class="btn btn-primary" title="Contact Us" id="btn-1">Contact Us</a>
+                        </div>  
+                    </div>
+
                 </div>
             </div>
-                <div class="container home">
-                    <div class="row">
-                        <div class="col-xs-12 col-lg-6">
-                            <form action="submit-form.php" method="POST" class="booking-form">
-
-                            <u>Contact Information</u><br>
-
-                            <label for="name">Name*</label>
-                            <input type="text" id="name" name="name" placeholder="First and Last Name" required>
-
-                            <label for="email">Email*</label>
-                            <input type="email" id="email" name="email" required>
-
-                            <label for="phone">Phone*</label>
-                            <input type="tel" id="phone" name="phone"  placeholder="123-456-7890" required>
-
-                            <u>Event Information</u><br>
-
-                            <label for="date">Date*</label>
-                            <input type="text" id="date" name="date" placeholder="MM/DD/YY" required>
-
-                            <label for="time">Time*</label>
-                            <input type="text" id="time" name="time"  required>
-
-                            <label for="duration">Duration*</label>
-                            <input type="text" id="duration" name="duration" placeholder="How long will you need the choir?"  required>
-
-                            <label for="address">Address*</label>
-                            <input type="text" id="address" name="address" placeholder="Event address"  required>
-
-                            <label for="city">City*</label>
-                            <input type="text" id="city" name="city"  required>
-
-                            <label for="state">State</label>
-                            <input type="text" id="state" name="state"  required>
-
-                            <label for="zip">Zip Code</label>
-                            <input type="text" id="zip" name="zip"  required>
-
-                            <label for="theme">Performance Theme</label>
-                            <input type="text" id="theme" name="theme" placeholder="Theme of your event"  required>
-
-                            <label for="ensemble">Performance Ensemble*</label>
-
-                            <fieldset>
-                                <legend>Choose one option:</legend>
-                                <label><input type="checkbox" name="ensemble[]" value="quartet"> Quartet
-                                </label>
-                                <label><input type="checkbox" name="ensemble[]" value="fullChoir"> Full Choir
-                                </label>
-                            </fieldset><br>
-
-                            <button type="submit">Submit</button>
-                            </form>
-
-                        </div>
-                    </div>
-                </div>
+            
             </main>
 
             <?php echo $footer; ?>
