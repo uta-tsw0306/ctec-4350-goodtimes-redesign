@@ -9,11 +9,11 @@ $nav = "
             <li><a href='index.php' title='Home'>Home</a></li>
             <li class='calendar-tab dropdown'><a href='calender.php' title='Calendar'>Calendar</a>
                 <ul class='calendar dropdown-content'>
-                    <li><a href='#' title='Title Goes Here'>Singing Valentines</a></li>
-                    <li><a href='#' title='Title Goes Here'>Concerts</a></li>
+                    <li><a href='valentines.php' title='Singing Valentines'>Singing Valentines</a></li>
+                    <li><a href='#' title='Concerts'>Concerts</a></li>
                 </ul>
             </li>
-             <li class='about-tab dropdown'><a href='#' title='About'>About</a>
+             <li class='about-tab dropdown'><a href='about.php' title='About'>About</a>
                 <ul class='about dropdown-content'>
                     <li><a href='mission.php' title='Mission and Vision'>Mission and Vision</a></li>
                     <li><a href='photos.php' title='Photo Gallery'>Photo Gallery</a></li>
@@ -23,14 +23,14 @@ $nav = "
             </li>
             <li class='connect-tab dropdown'><a href='connect.php' title='Connect'>Connect</a>
                 <ul class='connect dropdown-content'>
-                    <li><a href='contact.php' title='Contact'>Contact</a></li>
                     <li><a href='join.php' title='Join'>Join</a></li>
+                    <li><a href='contact.php' title='Contact'>Contact</a></li>
                 </ul>
             </li>
                 <li class='community-tab dropdown'><a href='#' title='Community'>Community</a>
                 <ul class='community dropdown-content'>
                     <li><a href='uta_scholarship.php' title='UTA Voice Scholarship'>UTA Voice Scholarship</a></li>
-                    <li><a href='sponsors/php' title='Our Supporters'>Our Supporters</a></li>
+                    <li><a href='sponsors.php' title='Our Supporters'>Our Supporters</a></li>
                     <li><a href='music_team.php' title='Music Team'>Music Team</a></li>
                 </ul>
             </li>
@@ -38,7 +38,7 @@ $nav = "
                 <ul class='support dropdown-content'>
                     <li><a href='support.php' title='Donate'>Donate</a></li>
                     <li><a href='booking.php' title='Book an Event'>Book an Event</a></li>
-                    <li><a href='#' title='Our First CD'>Our First CD</a></li>
+                    <li><a href='our-first-cd.php' title='Our First CD'>Our First CD</a></li>
                 </ul>
             </li>";
 
@@ -82,7 +82,7 @@ $footer = "
             <div class='footer-text'>
                 <h3>Location</h3>
                 <p class='footer-subhead'>Rehearsals</p>
-                <address><a href='https://goo.gl/maps/t8qsr49SpQfC7ELc8' target='_blank' title='Google Maps'>Epworth United Methodist Church <br> 1400 S Cooper St <br> Arlington, TX 76013</a></address><br>
+                <address><a href='https://www.google.com/maps/place/Epworth+United+Methodist+Church/@32.722063,-97.1157344,17z/data=!3m1!4b1!4m6!3m5!1s0x864e7d15206e84af:0x4b3fa8ca9175949c!8m2!3d32.722063!4d-97.1157344!16s%2Fg%2F1tnjjzz8' target='_blank' title='Google Maps'>Epworth United Methodist Church <br> 1400 S Cooper St <br> Arlington, TX 76013</a></address><br>
                 <p> Tuesdays 7:00PM - 9:00PM</p>
             </div>
         </div>
@@ -91,11 +91,11 @@ $footer = "
                 <h3>Sitemap</h3>
                 <div class='footer_links'>
                     <a href='index.php' title='Home' class='links'>Home</a><br>
+                    <a href='calender.php' title='Calendar' class='links'>Calendar</a><br>
                     <a href='about.php' title='About' class='links'>About</a><br>
-                    <a href='connect.php' title='Connect' class='links'>Connect</a><br>
-                    <a href='community.php' title='Community'class='links'>Community</a><br>
-                    <a href='support.php' title='Support Us' class='links'>Support Us</a><br>
-                    <a href='login.php' title='Login' class='links'>Login</a>
+                    <a href='contact.php' title='Connect' class='links'>Connect</a><br>
+                    <a href='uta_scholarship.php' title='Community' class='links'>Community</a><br>
+                    <a href='donate.php' title='Support Us'class='links'>Support Us</a><br>
                 </div>
             </div>
         </div>
@@ -103,14 +103,15 @@ $footer = "
             <div class=''>
                 <h3>Contact</h3>
                 <p class='footer-subhead'>Mailing Address</p>
-                <address><a href='https://goo.gl/maps/t8qsr49SpQfC7ELc8' target='_blank' title='Google Maps' class='links'>PO Box 1522 <br> Arlington, TX 76004</a>
+                <address><a href='#' class='links'>P.O. Box 1522 <br> Arlington, TX 76004</a>
                 </address>
-                <p>(682) -233-3606</p>
-                <p class='footer_text_center'><a href='mailto:username@domain.com' title='Webmaster's Email' target='_blank' class='links'>gtchorus@gmail.com</a></p>
+                <p>(682) 233-3606</p>
+                <p class='footer_text_center'><a href='gtchorus@gmail.com' title='Webmaster's Email' target='_blank' class='links'>gtchorus@gmail.com</a></p>
                 <ul class='social-media'>
-                    <li><a href='https://facebook.com' title='Facebook' target='_blank'><i class='fab fa-facebook'></i></a></li>
-                    <li><a href='https://twitter.com' title='Twitter' target='_blank'><i class='fab fa-twitter'></i></a></li>
-                    <li><a href='https://linkedin.com' title='Linked In' target='_blank'><i class='fab fa-linkedin'></i></a></li>
+                    <li><a href='https://www.facebook.com/GtChorus' title='Goodtimes Chorus Facebook' target='_blank'><i class='fab fa-facebook fa-2xl'></i></a></li>
+                    <li><a href='https://www.instagram.com/goodtimes_chorus/' title='Goodtimes Chorus Instagram' target='_blank'><i class='fab fa-instagram fa-2xl'></i></a></li>
+                    <li><a href='https://twitter.com/GtChorus' title='Goodtimes Chorus Twitter' target='_blank'><i class='fab fa-twitter fa-2xl'></i></a></li>
+                    <li><a href='https://www.youtube.com/@GoodtimeschorusOrgHome/videos' title='Goodtimes Chorus YouTube Channel' target='_blank'><i class='fab fa-youtube fa-2xl'></i></a></li>
                 </ul>
             </div>
         </div>
