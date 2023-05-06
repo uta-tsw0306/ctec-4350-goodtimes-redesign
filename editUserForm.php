@@ -319,8 +319,10 @@ if (isset($_GET['UID'])) { // note that the spelling 'UID' is based on the query
         ?>
 
 <div class="center">
-    
-<h2>Add a new user</h2>
+
+<div class="page-title">
+    <h1>Add a new user</h1>
+</div>
 
 <p>Spaces are not allowed in the UserName or Password. You will have to go back and fix any that you add.</p>
 <div id="detail"></div>

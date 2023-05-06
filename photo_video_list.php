@@ -101,7 +101,7 @@ ORDER BY PV.Added DESC";
 		}
 		
 		$output = "
-        <div class=\"title\">
+        <div class=\"title page-title\">
 		<h2  class=\"title\">Photo and Video List</h2>
 		</div>
         <table class=\"styled-table\">\n
