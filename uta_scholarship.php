@@ -33,16 +33,22 @@
         ?>
 
             <main>
+            <div class="page-title">
+                <h1>UTA Voice Scholarship</h1>
+            </div>
                 <div class="container">
                     <div class="row">
-                        <div class="col-xs-12">
-                            <h1>UTA Voice Scholarship</h1>
-                        </div>
 
+                        <div class="col-xs-12 col-lg-6">
+                        <img src="uta.jpeg" alt="Photo of the UTA Arlington Campus">
+                        </div>
+                        <div class="col-xs-12 col-lg-6">
+                            <p>Part of the Goodtimes Chorus' mission is to spread the joy of music, particularly the joy of singing. As a non-profit organization, we dedicate a portion of our earnings to provide community service. Among our recent initiatives, the members of the Arlington Chapter donated $10,000 to UTA to establish a Goodtimes Chorus Endowment. This endowment is a self-sustaining fund that provides permanent scholarships to voice majors at UTA.</p>
+                            <p>The first scholarship was awarded in 2017. The recipient of the scholarship, in the amount of $500.00, was Hunter Avant, a baritone in the UTA Chorus.</p>
+                        </div>
                         <div class="col-xs-12">
-                            <p>Part of the Goodtimes chorus mission is to spread the joy of music - in particular, the joy of singing. As a non-profit organization, we devote a portion of the money we earn to provide service to the community. Among our most recent endeavors, the members of the Arlington Chapter have donated $10,000 to UTA in order to establish a Goodtimes Chorus Endowment. This endowment is a self-sufficient fund, permanently providing scholarships to voice majors at UTA.</p>
-                            <p>The first scholarship was distributed in 2017. The recipient of this scholarship, in the amount of $500.00, was Hunter Avant, a Baritone in the UTA Chorus.</p>
-                            <p>The chorus will continue to make contributions to this Endowment so that larger scholarships can be handed out or multiple students can be supported. If you would like to assist in providing scholarships to future singers, the Goodtimes Chorus will be happy to apply your donation to this Endowment! Call our hotline at 682-233-3606.</p>
+                            <p>The chorus will continue to contribute to this Endowment so that larger scholarships can be awarded or multiple students can be supported. If you would like to assist in providing scholarships to future singers, the Goodtimes Chorus would be pleased to apply your donation to this Endowment! Please contact us. </p>
+                            <a href="contact.php" class="btn btn-primary" title="Contact Us" id="btn-1">Contact Us</a>
                         </div>
 
                        
