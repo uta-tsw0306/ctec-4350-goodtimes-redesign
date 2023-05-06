@@ -221,28 +221,3 @@ if (isset($_POST['upload'])) {
 
 
 ?>
-<link rel="stylesheet" href="style.css">
-
-<?php 
-    if(is_session_started() === FALSE || empty($_SESSION['access'])){echo $basicNav;}
-    else if ($_SESSION['access'] == true){
-        $thisUID = $_SESSION['UID'];
-        $thisUserAdmin = $_SESSION['Admin'];
-        if($thisUserAdmin){echo $adminNav;}
-        else {echo $loggedInNav;}
-    }else {echo $basicNav;}
-?>
-
-<main class='flexboxContainer'>
-    
-
-    <div class="title">   
-        <?= $output ?>
-    </div>
-
-</main>
-
-<?php print $footer; ?>
-
-</body>
-</html>
