@@ -1,7 +1,7 @@
 <?php
 	include ('shared.inc.php');
     include("dbconn.inc.php"); // database connection 
-    include ("shared_session.php");
+  include ("shared_session.php");
 ?>
 <!doctype html>
     <html>
@@ -22,26 +22,27 @@
         </head>
 
         <body>
-            <?php 
-                if(is_session_started() === FALSE || empty($_SESSION['access'])){echo $basicNav;}
-                else if ($_SESSION['access'] == true){
-                    $thisUID = $_SESSION['UID'];
-                    $thisUserAdmin = $_SESSION['Admin'];
-                    if($thisUserAdmin){echo $adminNav;}
-                    else {echo $loggedInNav;}
-                }else {echo $basicNav;}
-            ?>
+        <?php 
+            if(is_session_started() === FALSE || empty($_SESSION['access'])){echo $basicNav;}
+            else if ($_SESSION['access'] == true){
+                $thisUID = $_SESSION['UID'];
+                $thisUserAdmin = $_SESSION['Admin'];
+                if($thisUserAdmin){echo $adminNav;}
+                else {echo $loggedInNav;}
+            }else {echo $basicNav;}
+        ?>
 
             <main>
-            <div class="page-title">
-                <h1>Music Team</h1>
-            </div>
                 <div class="container">
                     <div class="row">
+                        <div class="col-xs-12">
+                            <h1>Music Team</h1>
+                        </div>
 
-                        <div class="col-xs-12 col-xl-4">
+                        <div class="col-xs-12">
                             
-                            <table id="musicTeam">
+                            
+                            <table>
                                 <tr>
                                     <td><h3 class="s_head">Administration</h3></td>
                                 </tr>
@@ -50,7 +51,7 @@
                                     <td class="team_name">David Weick</td>
                                 </tr>
                                 <tr>
-                                    <td>Immediate Past President</td>
+                                    <td>Immediate Past President	</td>
                                     <td class="team_name">Scott Simmons</td>
                                 </tr>
                                 <tr>
@@ -82,11 +83,8 @@
                                     <td class="team_name">Dan Ehrhorn</td>
                                 </tr>
                                 <tr>
-                            </table>
-                        </div>
-                        <div class="col-xs-12  col-xl-4">
-                            <table id="musicTeam">
-                                <td><h3 class="s_head">Music Team</h3></td>
+                                    <td><h3 class="s_head">Music Team</h3></td>
+                                </tr>
                                 <tr>
                                     <td>Chorus Director</td>
                                     <td class="team_name">Eddie Holmes</td>
@@ -103,10 +101,6 @@
                                     <td>Director Emeritus</td>
                                     <td class="team_name">Dick Kneeland</td>
                                 </tr>
-                            </table>
-                        </div>
-                        <div class="col-xs-12 col-xl-4">   
-                            <table id="musicTeam">  
                                 <tr>
                                     <td><h3 class="s_head">Section Leaders</h3></td>
                                 </tr>
@@ -127,8 +121,16 @@
                                     <td class="team_name">David Weick</td>
                                 </tr>
                             </table>
+                           
                         </div>
+
+                        
+
+                       
                     </div>
+                    	
+	
+                
                 </div>
             </main>
 

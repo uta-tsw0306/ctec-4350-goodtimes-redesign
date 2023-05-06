@@ -33,29 +33,27 @@
             ?>
 
             <main>
-            <div class="page-title">
-                <h1>Repertoire</h1>
-            </div>
-                <div class="container repertoire">
-                    
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h1>Repertoire</h1>
+                        </div>
                     <div class="row">
 
                         <div class="col-xs-6 col-lg-4">
-                            <h3 class="">Patriotic</h3>
-                            <div>
-                                <ul class="songs">
-                                    <li>Armed Forces Medley</li>
-                                    <li>God Bless America</li>
-                                    <li>O Canada</li>
-                                    <li>The Star-Spangled Banner</li>
-                                </ul>
-                            </div>
+                            <h3 class="s_head">Patriotic</h3>
+                            <ul class="songs">
+                                <li>Armed Forces Medley</li>
+                                <li>God Bless America</li>
+                                <li>O Canada</li>
+                                <li>The Star-Spangled Banner</li>
+                            </ul>
                         </div>
 
                         <div class="col-xs-6 col-lg-4">
-                            <h3 class="">Spiritual</h3>
+                            <h3 class="s_head">Spiritual</h3>
                             <ul class="songs">
-                                <li>I Believe</li>
+                                <li>I believe</li>
                                 <li>I'll Fly Away</li>
                                 <li>I'm Feelin' Fine</li>
                                 <li>Irish Blessing</li>
@@ -64,7 +62,7 @@
                         </div>
 
                         <div class="col-xs-6 col-lg-4">
-                            <h3 class="">Ballads</h3>
+                            <h3 class="s_head">Ballads</h3>
                             <ul class="songs">
                                 <li>Can You Feel The Love Tonight</li>
                                 <li>Kentucky Babe</li>
@@ -77,7 +75,7 @@
                         </div>
 
                         <div class="col-xs-6 col-lg-4">
-                            <h3 class="">Up-tunes/General</h3>
+                            <h3 class="s_head">Up-tunes/General</h3>
                             <ul class="songs">
                                 <li>Beach Boy Medley</li>
                                 <li>California Here I Come</li>
@@ -104,6 +102,13 @@
 
                         
                     </div>
+
+
+
+                    </div>
+
+
+
 
                 
                 </div>
