@@ -324,50 +324,57 @@ if (isset($_GET['UID'])) { // note that the spelling 'UID' is based on the query
     <h1>Add a new user</h1>
 </div>
 
-<p>Spaces are not allowed in the UserName or Password. You will have to go back and fix any that you add.</p>
-<div id="detail"></div>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
 
-    <p><?= $errMsg ?></p>
+        <p>Spaces are not allowed in the UserName or Password. You will have to go back and fix any that you add.</p>
+        <div id="detail"></div>
+        
+            <p><?= $errMsg ?></p>
+        
+        <form id="editUserForm" class="title" action="editUser_admin.php" method="POST">
+        * Required
+        	<input type="hidden" name="UID" value="<?=$UID?>">
+        	<input type="hidden" name="Edited" value="<?(empty($UserName))?>">
+        
+             
+        	    <div>
+        		<label for="UserName" id="UserNameLabel">User Name: </label>
+        		<input id="UserName" type="text" name="UserName" size="100" value="<?= htmlentities($UserName) ?>">
+        		</div>
+        		<span class="tips" id="UserNameTips">Your user name should contain 6-20 characters usng only letter, numbers, dots, and/or dashes.</span>
+        		
+        		<div>
+        		<label for="Password" id="PasswordLabel">Password: </label>
+        		<input id="Password" type="text" name="Password" size="100" value="<?= htmlentities($Password) ?>">
+        		</div>
+        		<span class="tips" id="PasswordTips">Password should contain 6-20 characters usng only letter, numbers, dots, and/or dashes.</span>
+        		
+        		<div>
+        		<label for="Admin" id="AdminLabel">Admin Privileges: </label>
+                <input class = "width20" type="radio" id="Admin" name="Admin" value="0" <?php if(!$Admin){echo("checked");} ?>>No&emsp;<input class = "width20" type="radio" id="Admin" name="Admin" value="1" <?php if($Admin){echo("checked");} ?>>Yes&emsp;
+        		</div>
+        		
+        		<div>
+        		<label for="Notes" id="NotesLabel">Notes: </label>
+        		<input id="Notes" type="text" name="Notes" size="100" value="<?= htmlentities($Notes) ?>">
+        		</div>
+        		
+        		<td colspan=2><br><input type=submit name="Submit" value="Submit New User Information">
+        
+        
+        </form>
+        
+        <div id="response">
+        
+        </div>
+    
 
-<form id="editUserForm" class="title" action="editUser_admin.php" method="POST">
-* Required
-	<input type="hidden" name="UID" value="<?=$UID?>">
-	<input type="hidden" name="Edited" value="<?(empty($UserName))?>">
-
-     
-	    <div>
-		<label for="UserName" id="UserNameLabel">User Name: </label>
-		<input id="UserName" type="text" name="UserName" size="100" value="<?= htmlentities($UserName) ?>">
-		</div>
-		<span class="tips" id="UserNameTips">Your user name should contain 6-20 characters usng only letter, numbers, dots, and/or dashes.</span>
-		
-		<div>
-		<label for="Password" id="PasswordLabel">Password: </label>
-		<input id="Password" type="text" name="Password" size="100" value="<?= htmlentities($Password) ?>">
-		</div>
-		<span class="tips" id="PasswordTips">Password should contain 6-20 characters usng only letter, numbers, dots, and/or dashes.</span>
-		
-		<div>
-		<label for="Admin" id="AdminLabel">Admin Privileges: </label>
-        <input class = "width20" type="radio" id="Admin" name="Admin" value="0" <?php if(!$Admin){echo("checked");} ?>>No&emsp;<input class = "width20" type="radio" id="Admin" name="Admin" value="1" <?php if($Admin){echo("checked");} ?>>Yes&emsp;
-		</div>
-		
-		<div>
-		<label for="Notes" id="NotesLabel">Notes: </label>
-		<input id="Notes" type="text" name="Notes" size="100" value="<?= htmlentities($Notes) ?>">
-		</div>
-		
-		<td colspan=2><br><input type=submit name="Submit" value="Submit New User Information">
 
 
-</form>
-
-<div id="response">
-
-</div>
-
-
-
+        </div>
+    </div>
 </div>
 </main>
 

@@ -33,26 +33,25 @@
             ?>
 
             <main>
+            <div class="page-title">
+                <h1>Mission and Vision</h1>
+            </div>
                 
-                <div class="page-title">
-                    <h1>Mission and Vision</h1>
-                </div>
-                
-                <div class="container">
+                <div class="container mission-page">
                     <div class="row">
-                        
                         <div class="col-xs-12 col-lg-6">
-                            <h1 class="heading center_text">Mission Statement:</h1>
-                            <p class="center_text">The Goodtimes Chorus exists to pursue musical excellence, encourage fellowship, and provide service to the Community.</p>
+                            <img src="chorus_ptpg_8.jpg" alt="Photo of Goodtimes Chorus choir dressed formally">
                         </div>
                         <div class="col-xs-12 col-lg-6">
-                            <h1 class="heading center_text">Vision Statement:</h1>
-                            <p class="center_text">To spread the joy of barbershop and other a cappella harmonies to our members and the community.</p>
+                            <h2 class="">Mission Statement:</h2>
+                            <p class="">The Goodtimes Chorus exists to pursue musical excellence, encourage fellowship, and provide service to the Community.</p>
+                            <h2 class="">Vision Statement:</h2>
+                            <p class="">To spread the joy of barbershop and other a cappella harmonies to our members and the community.</p>
+                        </div>
+                        <div class="col-xs-12 col-lg-6">
+                            
                         </div>
                     </div>
-
-
-
 
                 
                 </div>

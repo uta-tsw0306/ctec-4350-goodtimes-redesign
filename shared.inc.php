@@ -7,14 +7,16 @@ $nav = "
         <button class='navbar-toggler' type='button' data-target='#main-navigation'><i class='fa-solid fa-bars'></i></button>
         <ul id='main-navigation' class='navbar'>
             <li><a href='index.php' title='Home'>Home</a></li>
-            <li class='calendar-tab dropdown'><a href='calender.php' title='Calendar'>Calendar</a>
+            <li class='calendar-tab dropdown'><a href='#' title='Calendar'>Calendar</a>
                 <ul class='calendar dropdown-content'>
+                    <li><a href='calender.php' title='View Calendar'>View Calendar</a></li>
                     <li><a href='valentines.php' title='Singing Valentines'>Singing Valentines</a></li>
                     <li><a href='#' title='Concerts'>Concerts</a></li>
                 </ul>
             </li>
-             <li class='about-tab dropdown'><a href='about.php' title='About'>About</a>
+             <li class='about-tab dropdown'><a href='#' title='About'>About</a>
                 <ul class='about dropdown-content'>
+                    <li><a href='about.php' title='Who We Are'>Who We Are</a></li>
                     <li><a href='mission.php' title='Mission and Vision'>Mission and Vision</a></li>
                     <li><a href='photos.php' title='Photo Gallery'>Photo Gallery</a></li>
                     <li><a href='repertoire.php' title='Repertoire'>Repertoire</a></li>
@@ -24,6 +26,7 @@ $nav = "
             <li class='connect-tab dropdown'><a href='connect.php' title='Connect'>Connect</a>
                 <ul class='connect dropdown-content'>
                     <li><a href='join.php' title='Join'>Join</a></li>
+                    <li><a href='booking.php' title='Book an Event'>Book an Event</a></li>
                     <li><a href='contact.php' title='Contact'>Contact</a></li>
                 </ul>
             </li>
@@ -37,7 +40,6 @@ $nav = "
             <li class='support-tab dropdown dropdown'><a href='#' title='Support Us'>Support Us</a>
                 <ul class='support dropdown-content'>
                     <li><a href='support.php' title='Donate'>Donate</a></li>
-                    <li><a href='booking.php' title='Book an Event'>Book an Event</a></li>
                     <li><a href='our-first-cd.php' title='Our First CD'>Our First CD</a></li>
                 </ul>
             </li>";

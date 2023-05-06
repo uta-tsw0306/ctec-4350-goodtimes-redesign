@@ -101,9 +101,6 @@ ORDER BY PV.Added DESC";
 		}
 		
 		$output = "
-        <div class=\"title page-title\">
-		<h2  class=\"title\">Photo and Video List</h2>
-		</div>
         <table class=\"styled-table\">\n
 		<tr>
 		<th></th>
@@ -125,10 +122,14 @@ ORDER BY PV.Added DESC";
 ?>
 	
 		
-
-<div class='flexboxContainer'>
-    <div>
+<div class="page-title">
+    <h2  class="title">Photo and Video List</h2>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
         <?php echo $output ?>
+        </div>
     </div>
 </div>
 </main>
