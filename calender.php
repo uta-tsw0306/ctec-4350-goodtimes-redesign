@@ -13,7 +13,7 @@
             <meta name="description" content="">
             <meta name="author" content="Web Wise Media">
 
-            <title>Calendar | Goodtimes Chorus</title>
+            <title>Calender | Goodtimes Chorus</title>
 
             <link rel="stylesheet" href="style.css">
 
@@ -33,11 +33,13 @@
         }else {echo $basicNav;}
         ?>
             <main>
-		<div class="page-title">
-                <h1>Calendar</h1>
-           	</div>
                 <div class="container">
-         
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h1>Calender</h1>
+                        </div>
+                    </div>
+                    
                     <div class="row centerImage">
                         <div class="col-lg-1">
                             <span class="fa-solid fa-arrow-left"></span>
