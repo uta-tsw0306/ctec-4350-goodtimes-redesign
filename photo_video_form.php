@@ -64,9 +64,6 @@ $TID=""; $Name=""; $URL=""; $altTxt=""; $caption=""; $inGallery="";
 
 $errMsg = "";
 
-
-
-
 if (isset($_GET['PVID'])) { 
 
 	$PVID = intval($_GET['PVID']); 
@@ -139,7 +136,6 @@ if (isset($_GET['PVID'])) {
     
 <form action="edit_photo_video.php" method="post" enctype="multipart/form-data" name="uploadImage" id="uploadImage">
     <input type="hidden" name="PVID" value="<?=$PVID?>">
-    <p>
         <div class="page-title">
             <h1>Photos and Videos Upload</h1>
         </div>
