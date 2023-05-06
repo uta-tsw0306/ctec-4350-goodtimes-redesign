@@ -868,7 +868,7 @@ main p {
     flex-flow: row ;
     align-items: center;
     align-content: center;
-    justify-content: left;
+    justify-content: center;
   }
 }
 
@@ -949,6 +949,10 @@ main p {
 
 .center_text.contact {
   margin-bottom: 2rem;
+}
+
+.about-page p {
+  line-height: 2.5rem;
 }
 
 /* End of Body Styles */
