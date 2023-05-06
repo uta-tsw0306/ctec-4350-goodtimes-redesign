@@ -74,12 +74,11 @@
         }else {echo $basicNav;}
         ?>
             <main>
+                <div class="page-title">
+                    <h1>Videos of the Chorus</h1>
+                </div>
+                
                 <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <h1>Videos of the Chorus</h1>
-                        </div>
-                    </div>
                     
                     <div class="row centerImage">
                        <?php echo $photoRows ?>

@@ -33,11 +33,11 @@
         ?>
 
             <main>
+                 <div class="page-title">
+                    <h1>UTA Voice Scholarship</h1>
+                </div>
                 <div class="container">
                     <div class="row">
-                        <div class="col-xs-12">
-                            <h1>UTA Voice Scholarship</h1>
-                        </div>
 
                         <div class="col-xs-12">
                             <p>Part of the Goodtimes chorus mission is to spread the joy of music - in particular, the joy of singing. As a non-profit organization, we devote a portion of the money we earn to provide service to the community. Among our most recent endeavors, the members of the Arlington Chapter have donated $10,000 to UTA in order to establish a Goodtimes Chorus Endowment. This endowment is a self-sufficient fund, permanently providing scholarships to voice majors at UTA.</p>

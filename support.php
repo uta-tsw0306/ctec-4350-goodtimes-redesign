@@ -33,11 +33,11 @@
         ?>
 
             <main>
+            <div class="page-title">
+                <h2>Support Us</h2>
+            </div>
                 <div class="container support">
                     <div class="row">
-                        <div class="col-xs-12">
-                            <h2>Support Us</h2>
-                        </div>
                         <div class="col-xs-12 col-lg-5">
                             <img src="donate.jpg" alt="Male volunteer holding a donation box">
                         </div>
