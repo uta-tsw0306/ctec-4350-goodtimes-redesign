@@ -114,8 +114,8 @@ if (isset($_POST['username']) && isset($_POST['password']) && !empty($_POST['use
 	    
 	<div class="container">
         <div class="row centerImage">
-            <div class="col-xs-12">
-                <h2 class="center_text">Log In</h2>
+            <div class="col-xs-12 page-title">
+                <h1 class="center_text">Log In</h1>
             </div>
             <div class="col-xs-12">
                 <?= $message ?>

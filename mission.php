@@ -34,6 +34,10 @@
 
             <main>
                 
+                <div class="page-title">
+                    <h1>Mission and Vision</h1>
+                </div>
+                
                 <div class="container">
                     <div class="row">
                         

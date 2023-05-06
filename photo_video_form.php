@@ -140,7 +140,9 @@ if (isset($_GET['PVID'])) {
 <form action="edit_photo_video.php" method="post" enctype="multipart/form-data" name="uploadImage" id="uploadImage">
     <input type="hidden" name="PVID" value="<?=$PVID?>">
     <p>
-        <h1>Photos and Videos Upload</h1>
+        <div class="page-title">
+            <h1>Photos and Videos Upload</h1>
+        </div>
         <p>The media type, a name and a URL are reqired.</p>
         <label for="media_type">Media Type:</label>
         <input class = "width20" type="radio" id="media_photo" name="media_type" value="1" <?php if($TID == 1){echo("checked");} ?>>Photo&emsp;<input class = "width20" type="radio" id="media_video" name="media_type" value="2" <?php if($TID == 2){echo("checked");} ?>>Video&emsp;
