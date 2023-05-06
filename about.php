@@ -28,7 +28,7 @@
                 <h1>Who We Are</h1>
             </div>
 
-            <div class="container">
+            <div class="container about-page">
                 <div class="row">
                     
                     <div class="col-xs-12 ">
@@ -37,7 +37,10 @@
 
                     <div class="col-xs-12 ">
 
-                        <p>The Goodtimes Chorus (GTC) is an a cappella chorus based in Arlington, Texas. We are a chapter of the <a href="#" title="">Barbershop Harmony Society (BHS)</a> - formerly known as the S.P.E.B.S.Q.S.A. - in the highly competitive <a href="#" title="">Southwest District of Champions.</a> Founded in 1962, our mission has been to spread good times and the joys of four-part harmony throughout the Dallas/Fort Worth Metroplex. We take great pride in our many awards over the years, and we remain dedicated to continual improvement. It's both lots of fun and lots of hard work, as we strive to be the best we can be.</p>
+                        <p class="">The Goodtimes Chorus (GTC) is an a cappella chorus based in Arlington, Texas. We are a chapter of the <a href="https://www.barbershop.org/" title="Barbershop Harmony Society Website">Barbershop Harmony Society (BHS)</a> - formerly known as the S.P.E.B.S.Q.S.A. - in the highly competitive <a href="https://www.swd.org/" title="swd.org">Southwest District of Champions.</a> Founded in 1962, our mission has been to spread good times and the joys of four-part harmony throughout the Dallas/Fort Worth Metroplex. We take great pride in our many awards over the years, and we remain dedicated to continual improvement. It's both lots of fun and lots of hard work, as we strive to be the best we can be.</p>
+                        <p>Join us every Tuesday evening from 7 to 9 at Epworth United Methodist Church, located at 1400 South Cooper St., Arlington, TX, just north of Park Row and behind the Starbucks. Our friendly group welcomes newcomers with open arms.
+
+                        <p>Our rehearsals are led by a talented Director and Music Team who bring a wealth of humor, energy, and expertise to each session. For further details, please visit our contact page to get in touch with us.</p>
 
                         <div class="flex-buttons about">
                             <a href="videos.php" class="btn btn-primary" title="Watch Videos" id="btn-1">Watch Videos</a>
