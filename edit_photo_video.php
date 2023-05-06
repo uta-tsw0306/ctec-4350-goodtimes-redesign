@@ -54,6 +54,7 @@ if (isset($_POST['upload'])) {
           }
 } else{
     $upload = 0;
+    $filename = "";
 }
 	// ==========================
 	//vaUIDate user input
@@ -64,13 +65,13 @@ if (isset($_POST['upload'])) {
 	
 	$UID = $_SESSION['UID'];
 
-    $required = array("Name", "URL", "media_type");
+    $required = array("Name", "media_type");
 
 	// set up the expected array
-	$expected = array("PVID", "Name", "altTxt", "caption", "galleryBit", "URL", "media_type"); // again, the spelling of each item should match the form field names
+	$expected = array("PVID", "Name", "altTxt", "caption", "galleryBit", "URL", "media_type", "URLphoto", "URLvideo"); // again, the spelling of each item should match the form field names
     
     // set up a label array, use the field name as the key and label as the value
-    $label = array ('PVID'=>'PVID', 'Name'=>'Name', "altTxt"=>'Alt Txt', 'caption'=>'Caption', "galleryBit"=>'Gallery Bit', 'URL'=>'URL', 'media_type'=>'Media Type');
+    $label = array ('PVID'=>'PVID', 'Name'=>'Name', "altTxt"=>'Alt Txt', 'caption'=>'Caption', "galleryBit"=>'Gallery Bit', 'URL'=>'URL', 'media_type'=>'Media Type', "URLphoto"=>'URL Photo', "URLvideo"=>'URL Video',);
 
 
 	$missing = array();
@@ -116,6 +117,11 @@ if (isset($_POST['upload'])) {
 	//if (str_contains($URL, ' ')) {array_push ($missing, "URL");}
 	if (!$UID) {array_push ($missing, "UID");}
 	
+	if(!$filename){
+    	if($URLphoto){$URL = $URLphoto;}
+    	else if ($URLvideo){$URL = $URLvideo;}
+    	else{array_push ($missing, "URL");}}
+	
 	
 	//echo("Admin: $Admin");
 
@@ -128,6 +134,7 @@ if (isset($_POST['upload'])) {
 	if (empty($missing)){
 	    	//echo("hello right after empty missing");
 	    if(!$galleryBit){ $galleryBit = 0;}
+	    
 
 		//========================
 		// processing user input
@@ -208,9 +215,14 @@ if (isset($_POST['upload'])) {
 
 	} else { 
 		// $missing is not empty 
+		
 		$output = "<div class='center'><p>The following required fields are missing or incorrectly filled out in your form submission.  Please check your form again and fill them out.  Thank you.</p>\n";
 		foreach($missing as $m){
 			$output .= "<p>{$label[$m]}</p>\n";
+		}
+		
+		foreach($expected as $key){
+			$output .= "<b>{$label[$key]}</b>: {$$key} <br>"; 
 		}
         	$output .= "</ul><br><a class=\"btn btn-secondary\" onclick=\"history.go(-1);\">Go back</a></div>\n";
 	}
@@ -221,3 +233,27 @@ if (isset($_POST['upload'])) {
 
 
 ?>
+
+<?php 
+    if(is_session_started() === FALSE || empty($_SESSION['access'])){echo $basicNav;}
+    else if ($_SESSION['access'] == true){
+        $thisUID = $_SESSION['UID'];
+        $thisUserAdmin = $_SESSION['Admin'];
+        if($thisUserAdmin){echo $adminNav;}
+        else {echo $loggedInNav;}
+    }else {echo $basicNav;}
+?>
+
+<main class='flexboxContainer'>
+    
+
+    <div class="title">   
+        <?= $output ?>
+    </div>
+
+</main>
+
+<?php print $footer; ?>
+
+</body>
+</html>

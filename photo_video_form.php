@@ -140,77 +140,54 @@ if (isset($_GET['PVID'])) {
 <div class="container">
     <div class="row">
         <div class="col-xs-12">
+    
+          <form action="edit_photo_video.php" method="post" enctype="multipart/form-data" name="uploadImage" id="uploadImage">
+              <input type="hidden" name="PVID" value="<?=$PVID?>">
+              <p>
+                  <h1>Photos and Videos Upload</h1>
+                  <p>The media type, a name and a URL are reqired.</p>
+                  <label for="media_type">Media Type:</label>
+                  <input class = "width20" type="radio" id="media_photo" name="media_type" value="1" <?php if($TID == 1){echo("checked");} ?>>Photo&emsp;<input class = "width20" type="radio" id="media_video" name="media_type" value="2" <?php if($TID == 2){echo("checked");} ?>>Video&emsp;
 
-            <form action="edit_photo_video.php" method="post" enctype="multipart/form-data" name="uploadImage" id="uploadImage">
-            <input type="hidden" name="PVID" value="<?=$PVID?>">
-            
-            <h1>Photos and Videos Upload</h1>
-            <label for="media_type">Media Type:</label>
-            <input class = "width20" type="radio" id="media_photo" name="media_type" value="1" <?php if($TID == 1){echo("checked");} ?>>Photo&emsp;<input class = "width20" type="radio" id="media_video" name="media_type" value="2" <?php if($TID == 2){echo("checked");} ?>>Video&emsp;
-            
-            <div id="formBase">
-            
-                <div>
-                <label for="Name" id="NameLabel">Name: </label>
-                <input id="Name" type="text" name="Name" size="100" value="<?= htmlentities($Name)?>">
-                </div>
-                
-                <div>
-                <label for="altTxt" id="altTxtLabel">Alt Text: </label>
-                <input id="altTxt" type="text" name="altTxt" size="100" value="<?= htmlentities($altTxt)?>">
-                </div>
-                
-                <div>
-                <label for="caption" id="captionLabel">Caption: </label>
-                <input id="caption" type="text" name="caption" size="100" value="<?= htmlentities($caption)?>">
-                </div>
-                
-                <div>
-                <label for="galleryBit">Does this go in the gallery?</label>
-                <input class = "width20" type="radio" id="galleryBit" name="galleryBit" value="0" <?php if(!$inGallery){echo("checked");} ?>>
-                    No&emsp;<input class = "width20" type="radio" id="galleryBit" name="galleryBit" value="1" <?php if($inGallery){echo("checked");} ?>>Yes&emsp;    
-                </div>
-            
+                  <div id="formBase">
+
+                      <div>
+                  <label for="Name" id="NameLabel">Name: </label>
+                  <input id="Name" type="text" name="Name" size="100" value="<?= htmlentities($Name)?>">
+                  </div>
+
+                  <div>
+                  <label for="altTxt" id="altTxtLabel">Alt Text: </label>
+                  <input id="altTxt" type="text" name="altTxt" size="100" value="<?= htmlentities($altTxt)?>">
+                  </div>
+
+                  <div>
+                  <label for="caption" id="captionLabel">Caption: </label>
+                  <input id="caption" type="text" name="caption" size="100" value="<?= htmlentities($caption)?>">
+                  </div>
+
+                  <div>
+                  <label for="galleryBit">Does this go in the gallery?</label>
+                  <input class = "width20" type="radio" id="galleryBit" name="galleryBit" value="0" <?php if(!$inGallery){echo("checked");} ?>>
+                      No&emsp;<input class = "width20" type="radio" id="galleryBit" name="galleryBit" value="1" <?php if($inGallery){echo("checked");} ?>>Yes&emsp;    
+                  </div>
+
             </div>
-            
+        
             <div id= "URLinput">
             <label for="URL" id="URLLabel">URL (for youtube videos): </label>
-            <input id="URL" type="text" name="URL" size="100" value="<?=$URL?>" >
+            <input id="URL" type="text" name="URLvideo" size="100" value="<?=$URL?>" >
             <p>In this box you must put the Video ID of the YouTube Video. The video ID will be located in the URL of the video page, right after the v= URL parameter. In this case, the URL of the video is: https://www.youtube.com/watch?v=aqz-KE-bpKQ. Therefore, the ID of the video is aqz-KE-bpKQ. If this is not input correctly the Video will not work.</p>
             </div>
-            
+        
             <div id = "imgUpload">
             <label for="image">Upload image:</label>
             <input type="file" name="image" id="image" /> 
-            <input type="hidden" name="URL" value="<?=$URL?>">
-            </div>
+            <input type="hidden" name="URLphoto" value="<?=$URL?>">
             
-            </p>
-        <div id="submit_button">
-            <p>
-                <input type="submit" name="upload" id="upload" value="Upload" />
-            </p>
-        </div>
-            
-    </form>
-
-
+          </form>
         </div>
     </div>
 </div>
-    
-
-
-
-
-<pre>
-<?php
-// for debugging purpose
-/*
-if (array_key_exists('upload', $_POST)) {
-  print_r($_FILES);
-  } */
-?>
-</pre>
 </body>
 </html>
