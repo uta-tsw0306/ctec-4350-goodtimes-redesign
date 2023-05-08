@@ -1,5 +1,51 @@
 <?php
 	include ('shared.inc.php');
+	include("dbconn.inc.php"); 
+    include ("shared_session.php");	
+    
+      $conn = dbConnect();
+        $photoRows = "";
+    
+    	$sql = "SELECT `PVID`, `UID`, `TID`, `Added`, `Name`, `URL`, `altTxt`, `caption`, `inGallery` 
+            FROM `PHOTOS_VIDEOS` 
+            WHERE `TID` = 2
+            ORDER BY `added` DESC
+            LIMIT 3";
+                	
+    	/* create a prepared statement */
+    	$stmt = $conn->stmt_init();
+    		
+    	if ($stmt->prepare($sql)) {
+    
+    		/* execute statement */
+    		$stmt->execute();
+    
+    		/* bind result variables */
+    		$stmt->bind_result($PVID, $UID, $TID, $Added, $Name, $URL, $altTxt, $caption, $inGallery);
+    
+    		
+            print("<ul>");
+    		/* fetch values */
+    		while ($stmt->fetch()) {
+    		       $photoRows .= 
+    		       "
+    		       <div class=\"col-xs-12 col-lg-4 home-videos\">
+                        <iframe  height=\"300px\" src=\"https://www.youtube.com/embed/$URL\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>
+                   </div>
+    		       ";
+    			
+    		}
+    		print("</ul>");
+    
+    		/* close statement */
+    		$stmt->close();
+    
+    	} else {
+    		print ("query failed");
+    	}
+    
+    /* close connection */
+    $conn->close();
 ?>
 <!doctype html>
     <html>
@@ -20,7 +66,15 @@
         </head>
 
         <body>
-        <?php echo $basicNav; ?>
+        <?php 
+        if(is_session_started() === FALSE || empty($_SESSION['access'])){echo $basicNav;}
+        else if ($_SESSION['access'] == true){
+            $thisUID = $_SESSION['UID'];
+            $thisUserAdmin = $_SESSION['Admin'];
+            if($thisUserAdmin){echo $adminNav;}
+            else {echo $loggedInNav;}
+        }else {echo $basicNav;}
+        ?>
 
             <main>
                 <div class="hero-image">
@@ -67,15 +121,8 @@
                         <div class="col-xs-12">
                             <h1 class="center_text addMargin">Videos</h1>
                         </div>
-                        <div class="col-xs-12 col-lg-4 home-videos">
-                            <iframe  height="300px" src="https://www.youtube.com/embed/sBFLAzYKurg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </div>
-                        <div class="col-xs-12 col-lg-4 home-videos">
-                            <iframe ] height="300px" src="https://www.youtube.com/embed/H4jQPFbFong" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </div>
-                        <div class="col-xs-12 col-lg-4 home-videos">
-                            <iframe  height="300px" src="https://www.youtube.com/embed/vPsMnL8bBPw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </div>
+                        
+                        <?php echo $photoRows; ?>
 
                     </div>
                 </div>

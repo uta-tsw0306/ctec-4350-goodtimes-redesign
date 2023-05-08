@@ -96,8 +96,8 @@ $defaultSortingField = "LinkCategory.CID";
 		}
 		
 		$output = "
-        <div class=\"title\">
-		<h2  class=\"title\">User List</h2>
+        <div class=\"page-title\">
+		<h1>User List</h1>
 		</div>
         <table class=\"styled-table\">\n
 		<tr>
@@ -123,7 +123,7 @@ $defaultSortingField = "LinkCategory.CID";
 	$conn->close();
 ?>
 	
-<link rel="stylesheet" href="style.css">	
+		
 
 <div class='flexboxContainer'>
     <div>

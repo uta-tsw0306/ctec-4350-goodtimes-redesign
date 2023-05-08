@@ -17,10 +17,10 @@ $conn = dbConnect();
 ?>
 
 <script>
-function confirmDel(title, UID) {
+function confirmDel(title, PVID) {
 // javascript function to ask for deletion confirmation
 
-	url = "deleteUser.php?UID="+UID;
+	url = "deletePhoto_Video.php?PVID="+PVID;
 	var agree = confirm("Delete this item: <" + title + "> ? ");
 	if (agree) {
 		// redirect to the deletion script
@@ -70,7 +70,8 @@ $defaultSortingField = "LinkCategory.CID";
 // Retrieve the product & category info
 	$sql = "SELECT PV.PVID, PV.UID, PV.TID, PV.Added, PV.Name, PV.URL, PV.altTxt, PV.caption, PV.inGallery, U.Uname, U.notes 
 FROM PHOTOS_VIDEOS as PV
-NATURAL JOIN USER as U";
+NATURAL JOIN USER as U
+ORDER BY PV.Added DESC";
 
 
 	$stmt = $conn->stmt_init();
@@ -100,9 +101,6 @@ NATURAL JOIN USER as U";
 		}
 		
 		$output = "
-        <div class=\"title\">
-		<h2  class=\"title\">Photo and Video List</h2>
-		</div>
         <table class=\"styled-table\">\n
 		<tr>
 		<th></th>
@@ -122,12 +120,16 @@ NATURAL JOIN USER as U";
 
 	$conn->close();
 ?>
-
+	
 		
-
-<div class='flexboxContainer'>
-    <div>
+<div class="page-title">
+    <h2  class="title">Photo and Video List</h2>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
         <?php echo $output ?>
+        </div>
     </div>
 </div>
 </main>

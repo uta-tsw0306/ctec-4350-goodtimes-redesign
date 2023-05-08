@@ -31,6 +31,8 @@ function init(){
 	document.getElementById('Password').addEventListener('focus', showTips, false);
 	document.getElementById('Password').addEventListener('blur', showTips, false);
 	
+	document.getElementById('UserName').addEventListener('keyup', getOp, false);
+	
 	document.getElementById('editUserForm').addEventListener('submit', process, false);
        
 	}
@@ -67,103 +69,103 @@ function showTips(evt){
 		this.style.backgroundColor = bgColor;
 	}
 	
-	function addErrorMessage(fieldId, msg){
-		//console.log(msg);
-		
-		// highlight the lable
-		document.getElementById(fieldId+"Label").style.color = "red";
-
-		// check if an error message span is available
-		if (document.getElementById(fieldId + "ErrMsg"))
-		{
-			// an error message span is already available, use it
-			document.getElementById(fieldId + "ErrMsg").innerHTML = msg;
-			document.getElementById(fieldId + "ErrMsg").style.display = "block";
-		} else {
-			
-			// otherwise, create the error message span
-			var messageSpan = document.createElement("span");
-			messageSpan.className = "errMsg"; // set the CSS class to use
-			messageSpan.id = fieldId + "ErrMsg"; // set the id
-			messageSpan.innerHTML = msg;
-
-			var inputLabel = document.getElementById(fieldId+'Label');
-			inputLabel.parentNode.appendChild(messageSpan);
-			
-		}
-		
-	}
-
-	function removeErrorMessage (fieldId){
-		if (document.getElementById(fieldId + "ErrMsg"))
-		{
-			document.getElementById(fieldId+"Label").style.color = "black";
-			document.getElementById(fieldId + "ErrMsg").style.display = "none";
-		}
-		
-	}
-
-	function process(evt){
-		
-		// data validation
-		var err = 0;
-
-		// get user input
-		var UserName = document.getElementById('UserName').value;
-		var Password = document.getElementById('Password').value;
-
-		var UserNamePattern = /^[A-Z 0-9 \.\-']{6,20}$/i;
-		var PasswordPattern = /^[A-Z 0-9 \.\-']{6,20}$/i;
-
-        console.log("Username: " + UserNamePattern.test(UserName))
-        console.log("Password: " + UserNamePattern.test(Password))
-        
-        
-		if (UserNamePattern.test(UserName)) {
-			removeErrorMessage('UserName');
-		} else {
-			addErrorMessage('UserName', 'The user name should be 6-20 characters usng only letter, numbers, dots, and/or dashes.');
-			err ++;
-		}
-		
-		if (UserNamePattern.test(Password)) {
-			removeErrorMessage('Password');
-		} else {
-			addErrorMessage('Password', 'The password should be 6-20 characters usng only letter, numbers, dots, and/or dashes.');
-			err ++;
-		}
-
-		// password
-
-
-		
-
-
-
-		// action
-		var message = "";
-		if (err == 0) // data are all valid
-		{
-            form.submit();
-			
-		} else {
-			message = "There are errors.";
-		}
-
-		document.getElementById('response').innerHTML = message;
-
-		// disable submit button
-
-
-		// prevent form submission
-		if (evt.preventDefault)
-		{
-			evt.preventDefault();
-		} else {
-			evt.returnValue = false;
-		}
+function addErrorMessage(fieldId, msg){
+	//console.log(msg);
 	
+	// highlight the lable
+	document.getElementById(fieldId+"Label").style.color = "red";
+
+	// check if an error message span is available
+	if (document.getElementById(fieldId + "ErrMsg"))
+	{
+		// an error message span is already available, use it
+		document.getElementById(fieldId + "ErrMsg").innerHTML = msg;
+		document.getElementById(fieldId + "ErrMsg").style.display = "block";
+	} else {
+		
+		// otherwise, create the error message span
+		var messageSpan = document.createElement("span");
+		messageSpan.className = "errMsg"; // set the CSS class to use
+		messageSpan.id = fieldId + "ErrMsg"; // set the id
+		messageSpan.innerHTML = msg;
+
+		var inputLabel = document.getElementById(fieldId+'Label');
+		inputLabel.parentNode.appendChild(messageSpan);
+		
 	}
+	
+}
+
+function removeErrorMessage (fieldId){
+	if (document.getElementById(fieldId + "ErrMsg"))
+	{
+		document.getElementById(fieldId+"Label").style.color = "black";
+		document.getElementById(fieldId + "ErrMsg").style.display = "none";
+	}
+	
+}
+
+function process(evt){
+	
+	// data validation
+	var err = 0;
+
+	// get user input
+	var UserName = document.getElementById('UserName').value;
+	var Password = document.getElementById('Password').value;
+
+	var UserNamePattern = /^[A-Z 0-9 \.\-']{6,20}$/i;
+	var PasswordPattern = /^[A-Z 0-9 \.\-']{6,20}$/i;
+
+    console.log("Username: " + UserNamePattern.test(UserName))
+    console.log("Password: " + UserNamePattern.test(Password))
+    
+    
+	if (UserNamePattern.test(UserName)) {
+		removeErrorMessage('UserName');
+	} else {
+		addErrorMessage('UserName', 'The user name should be 6-20 characters usng only letter, numbers, dots, and/or dashes.');
+		err ++;
+	}
+	
+	if (UserNamePattern.test(Password)) {
+		removeErrorMessage('Password');
+	} else {
+		addErrorMessage('Password', 'The password should be 6-20 characters usng only letter, numbers, dots, and/or dashes.');
+		err ++;
+	}
+
+	// password
+
+
+	
+
+
+
+	// action
+	var message = "";
+	if (err == 0) // data are all valid
+	{
+        form.submit();
+		
+	} else {
+		message = "There are errors.";
+	}
+
+	document.getElementById('response').innerHTML = message;
+
+	// disable submit button
+
+
+	// prevent form submission
+	if (evt.preventDefault)
+	{
+		evt.preventDefault();
+	} else {
+		evt.returnValue = false;
+	}
+
+}
 
 function confirmDel(title, UID) {
 // javascript function to ask for deletion confirmation
@@ -179,6 +181,59 @@ function confirmDel(title, UID) {
 		return;
 	}
 }
+
+function getOp(evt){
+	
+    //console.log(document.getElementById('UserName').value);
+	// get the selected value
+	selectedItem = document.getElementById('UserName').value;
+	
+
+	if (selectedItem == "")
+	{
+		// clear the secondary list
+		document.getElementById("detail").innerHTML = "";
+		
+		return false;// stop running the function here.
+	}
+
+	// set up XMLHttpRequest object 
+	pageRequest = GetXmlHttpObject();
+    if (pageRequest==null){
+      alert ("Your browser does not support AJAX! Please visit ...");
+      // how to still allow users to access resources? 
+      return;  // stop the (function) code right here
+    } 
+
+	// monitor the change of readyState 
+    pageRequest.addEventListener('readystatechange', function () {
+		if (pageRequest.readyState == 4){// once it reaches 4 (request completed), process the server response
+		var chContent = pageRequest.responseText;
+		//insert server response to the div "list_level2".
+		
+		document.getElementById("UserNameTips").innerHTML = "Your user name should contain 6-20 characters usng only letter, numbers, dots, and/or dashes. <br><br>" + chContent;
+		}
+	}, false);
+	
+	
+
+	// set up the URL
+	url = "username_data.php?q="+selectedItem;
+	pageRequest.open("GET", url, true);
+	pageRequest.send(null);
+	//console.log(url);
+
+}
+
+function GetXmlHttpObject(){
+	var xmlHttp=null;
+	if (window.XMLHttpRequest) { // non-IE
+	  xmlHttp = new XMLHttpRequest();
+	} else if (window.ActiveXObject) { // IE
+		xmlHttp = new ActiveXObject("Microsoft.XMLHTTP"); 
+	}
+	return xmlHttp;
+    }
 
 window.onload = init;
 </script>
@@ -200,6 +255,7 @@ $UID = ""; // place holder for product id information.  Set it as empty initally
 $UserName="";
 $Password="";
 $Admin="";
+$Notes="";
 
 $errMsg = "";
 
@@ -212,7 +268,7 @@ if (isset($_GET['UID'])) { // note that the spelling 'UID' is based on the query
 	if ($UID > 0){
 			
 		//compose a select query
-		$sql = "SELECT `UID`, `Uname`, `password`, `admin` FROM `USER` WHERE `UID` = ?"; // note that the spelling "lid" is based on the field name in my product table (database).
+		$sql = "SELECT `UID`, `Uname`, `password`, `notes`, `admin` FROM `USER` WHERE `UID` = ?"; // note that the spelling "lid" is based on the field name in my product table (database).
 			
 		$stmt = $conn->stmt_init();
 
@@ -220,7 +276,7 @@ if (isset($_GET['UID'])) { // note that the spelling 'UID' is based on the query
 			$stmt->bind_param('i',$UID);
 			$stmt->execute();
 				
-			$stmt->bind_result($UID, $UserName, $Password, $Admin); // bind the five pieces of information necessary for the form.
+			$stmt->bind_result($UID, $UserName, $Password, $Notes, $Admin); // bind the five pieces of information necessary for the form.
 			
 			$stmt->store_result();
 				
@@ -248,10 +304,10 @@ if (isset($_GET['UID'])) { // note that the spelling 'UID' is based on the query
 ?>
 
 <html>
-<link rel="stylesheet" href="style.css">
 <body>
-<main>
-    	<?php 
+<main class='flexboxContainer'>
+    
+    <?php 
 
         if(is_session_started() === FALSE || empty($_SESSION['access'])){echo $basicNav;}
         else if ($_SESSION['access'] == true){
@@ -262,59 +318,63 @@ if (isset($_GET['UID'])) { // note that the spelling 'UID' is based on the query
         }else {echo $basicNav;}
         ?>
 
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12">
+<div class="center">
 
-				<h2>Add a new user</h2>
+<div class="page-title">
+    <h1>Add a new user</h1>
+</div>
 
-				<p>Spaces are not allowed in the UserName or Password. You will have to go back and fix any that you add.</p>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
 
-					<p><?= $errMsg ?></p>
-
-					<form id="editUserForm" class="title" action="editUser_admin.php" method="POST">
-					<p>* Required</p>
-						<input type="hidden" name="UID" value="<?=$UID?>">
-						<input type="hidden" name="Edited" value="<?(empty($UserName))?>">
-
-						
-							
-							<label for="UserName" id="UserNameLabel">User Name: </label><br>
-							<input id="UserName" type="text" name="UserName" size="60" value="<?= htmlentities($UserName) ?>"><br>
-							
-							<span class="tips" id="UserNameTips">Your user name should contain 6-20 characters usng only letter, numbers, dots, and/or dashes.</span>
-							
-							
-							<label for="Password" id="PasswordLabel">Password: </label><br>
-							<input id="Password" type="text" name="Password" size="60" value="<?= htmlentities($Password) ?>"><br>
-							
-							<span class="tips" id="PasswordTips">Password should contain 6-20 characters usng only letter, numbers, dots, and/or dashes.</span>
-							
-							
-							<label for="Admin" id="AdminLabel">Admin Privileges: </label>
-							<input class = "width20" type="radio" id="Admin" name="Admin" value="0" <?php if(!$Admin){echo("checked");} ?>>No&emsp;<input class = "width20" type="radio" id="Admin" name="Admin" value="1" <?php if($Admin){echo("checked");} ?>>Yes&emsp;
-							
-							
-							<td colspan=2><br><input type=submit name="Submit" value="Submit New User Information">
-
-
-					</form>
-
-					<div id="response">
-
-					</div>
-
-
-				</div>
-
-			</div>
-
-		</div>
+        <p>Spaces are not allowed in the UserName or Password. You will have to go back and fix any that you add.</p>
+        <div id="detail"></div>
+        
+            <p><?= $errMsg ?></p>
+        
+        <form id="editUserForm" class="title" action="editUser_admin.php" method="POST">
+        * Required
+        	<input type="hidden" name="UID" value="<?=$UID?>">
+        	<input type="hidden" name="Edited" value="<?(empty($UserName))?>">
+        
+             
+        	    <div>
+        		<label for="UserName" id="UserNameLabel">User Name: </label>
+        		<input id="UserName" type="text" name="UserName" size="100" value="<?= htmlentities($UserName) ?>">
+        		</div>
+        		<span class="tips" id="UserNameTips">Your user name should contain 6-20 characters usng only letter, numbers, dots, and/or dashes.</span>
+        		
+        		<div>
+        		<label for="Password" id="PasswordLabel">Password: </label>
+        		<input id="Password" type="text" name="Password" size="100" value="<?= htmlentities($Password) ?>">
+        		</div>
+        		<span class="tips" id="PasswordTips">Password should contain 6-20 characters usng only letter, numbers, dots, and/or dashes.</span>
+        		
+        		<div>
+        		<label for="Admin" id="AdminLabel">Admin Privileges: </label>
+                <input class = "width20" type="radio" id="Admin" name="Admin" value="0" <?php if(!$Admin){echo("checked");} ?>>No&emsp;<input class = "width20" type="radio" id="Admin" name="Admin" value="1" <?php if($Admin){echo("checked");} ?>>Yes&emsp;
+        		</div>
+        		
+        		<div>
+        		<label for="Notes" id="NotesLabel">Notes: </label>
+        		<input id="Notes" type="text" name="Notes" size="100" value="<?= htmlentities($Notes) ?>">
+        		</div>
+        		
+        		<td colspan=2><br><input type=submit name="Submit" value="Submit New User Information">
+        
+        
+        </form>
+        
+        <div id="response">
+        
+        </div>
     
 
 
 
-
+        </div>
+    </div>
 </div>
 </main>
 
