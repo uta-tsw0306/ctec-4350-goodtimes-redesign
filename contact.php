@@ -9,7 +9,7 @@
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
             <meta name="keywords" content="">
-            <meta name="description" content="">
+            <meta name="description" content="Connect with the Goodtime Chorus and express any questions, comments, or any feedback you may have.">
             <meta name="author" content="Web Wise Media">
 
             <title>Contact | Goodtimes Chorus</title>

@@ -9,7 +9,7 @@
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
             <meta name="keywords" content="">
-            <meta name="description" content="">
+            <meta name="description" content="Get Goodtimes Chorus' first CD titled Where the Goodtimes are and experience the full a Capella repertoire ">
             <meta name="author" content="Web Wise Media">
 
             <title>Our First CD | Goodtimes Chorus</title>

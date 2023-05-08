@@ -9,7 +9,7 @@
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
             <meta name="keywords" content="">
-            <meta name="description" content="">
+            <meta name="description" content="Take part in supporting the Goodtime Chorus and help this non-profit organization continue to spread the love of a Capella music.">
             <meta name="author" content="Web Wise Media">
 
             <title>Support | Goodtimes Chorus</title>

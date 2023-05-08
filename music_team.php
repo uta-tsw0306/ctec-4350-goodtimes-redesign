@@ -9,7 +9,7 @@
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
             <meta name="keywords" content="">
-            <meta name="description" content="">
+            <meta name="description" content="Learn about the members of Goodtimes chorus vocal harmony group. Meet the members of the acapella group.">
             <meta name="author" content="Web Wise Media">
 
             <title>Music Team | Goodtimes Chorus</title>
@@ -38,7 +38,7 @@
                 </div>
                 <div class="container">
                     <div class="row">
-                        <div class="col-xs-12 col-lg-6">
+                        <div class="col-xs-12">
                             
                             <table id="musicTeam">
                                 <tr>
@@ -83,7 +83,7 @@
                                 <tr>
                             </table>
                         </div>
-                        <div class="col-xs-12  col-lg-6">
+                        <div class="col-xs-12">
                             <table id="musicTeam">
                                 <td><h3 class="s_head">Music Team</h3></td>
                                 <tr>
@@ -104,7 +104,7 @@
                                 </tr>
                             </table>
                         </div>
-                        <div class="col-xs-12 col-lg-6">   
+                        <div class="col-xs-12">   
                             <table id="musicTeam">  
                                 <tr>
                                     <td><h3 class="s_head">Section Leaders</h3></td>

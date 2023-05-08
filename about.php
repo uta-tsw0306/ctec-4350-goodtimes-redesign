@@ -9,7 +9,7 @@
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
             <meta name="keywords" content="">
-            <meta name="description" content="">
+            <meta name="description" content="Learn more about Goodtimes Chorus and their journey as an A Capella group and where they rehearse.">
             <meta name="author" content="Web Wise Media">
 
             <title>About | Goodtimes Chorus</title>

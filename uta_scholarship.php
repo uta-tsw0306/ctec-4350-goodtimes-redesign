@@ -9,7 +9,7 @@
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
             <meta name="keywords" content="">
-            <meta name="description" content="">
+            <meta name="description" content="Learn more about the acapella groups mission is to spread joy of music with Goodtimes chorus UTA scholarship. ">
             <meta name="author" content="Web Wise Media">
 
             <title>UTA Voice Scholarship | Goodtimes Chorus</title>

@@ -10,7 +10,7 @@
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
             <meta name="keywords" content="">
-            <meta name="description" content="">
+            <meta name="description" content="Discover Goodtimes Chorus' future performances and live rehearsals and other  acapella events.">
             <meta name="author" content="Web Wise Media">
 
             <title>Calender | Goodtimes Chorus</title>

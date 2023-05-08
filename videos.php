@@ -51,7 +51,7 @@
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
             <meta name="keywords" content="">
-            <meta name="description" content="">
+            <meta name="description" content="Discover the magic of A Capella with videos of the Goodtimes chorus' preforming together.">
             <meta name="author" content="Web Wise Media">
 
             <title>Videos | Goodtimes Chorus</title>

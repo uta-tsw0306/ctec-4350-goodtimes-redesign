@@ -9,7 +9,7 @@
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
             <meta name="keywords" content="">
-            <meta name="description" content="">
+            <meta name="description" content="Book Goodtimes Chorus for your event, and let them exceed your expectations with a Capella excellence.">
             <meta name="author" content="Web Wise Media">
 
             <title>Booking | Goodtimes Chorus</title>
