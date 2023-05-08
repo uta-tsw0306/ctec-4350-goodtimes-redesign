@@ -38,10 +38,9 @@
                 </div>
                 <div class="container">
                     <div class="row">
-                        <div class="col-xs-12">
+                        <div class="col-xs-12 col-lg-6">
                             
-                            
-                            <table>
+                            <table id="musicTeam">
                                 <tr>
                                     <td><h3 class="s_head">Administration</h3></td>
                                 </tr>
@@ -50,7 +49,7 @@
                                     <td class="team_name">David Weick</td>
                                 </tr>
                                 <tr>
-                                    <td>Immediate Past President	</td>
+                                    <td>Immediate Past President</td>
                                     <td class="team_name">Scott Simmons</td>
                                 </tr>
                                 <tr>
@@ -82,8 +81,11 @@
                                     <td class="team_name">Dan Ehrhorn</td>
                                 </tr>
                                 <tr>
-                                    <td><h3 class="s_head">Music Team</h3></td>
-                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-xs-12  col-lg-6">
+                            <table id="musicTeam">
+                                <td><h3 class="s_head">Music Team</h3></td>
                                 <tr>
                                     <td>Chorus Director</td>
                                     <td class="team_name">Eddie Holmes</td>
@@ -100,6 +102,10 @@
                                     <td>Director Emeritus</td>
                                     <td class="team_name">Dick Kneeland</td>
                                 </tr>
+                            </table>
+                        </div>
+                        <div class="col-xs-12 col-lg-6">   
+                            <table id="musicTeam">  
                                 <tr>
                                     <td><h3 class="s_head">Section Leaders</h3></td>
                                 </tr>
@@ -120,16 +126,8 @@
                                     <td class="team_name">David Weick</td>
                                 </tr>
                             </table>
-                           
                         </div>
-
-                        
-
-                       
                     </div>
-                    	
-	
-                
                 </div>
             </main>
 
