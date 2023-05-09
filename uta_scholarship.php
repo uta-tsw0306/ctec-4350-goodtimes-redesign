@@ -9,7 +9,7 @@
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
             <meta name="keywords" content="">
-            <meta name="description" content="Learn more about the acapella groups mission is to spread joy of music with Goodtimes chorus UTA scholarship. ">
+            <meta name="description" content="">
             <meta name="author" content="Web Wise Media">
 
             <title>UTA Voice Scholarship | Goodtimes Chorus</title>
@@ -38,16 +38,38 @@
                 </div>
                 <div class="container">
                     <div class="row">
-
                         <div class="col-xs-12">
-                            <p>Part of the Goodtimes chorus mission is to spread the joy of music - in particular, the joy of singing. As a non-profit organization, we devote a portion of the money we earn to provide service to the community. Among our most recent endeavors, the members of the Arlington Chapter have donated $10,000 to UTA in order to establish a Goodtimes Chorus Endowment. This endowment is a self-sufficient fund, permanently providing scholarships to voice majors at UTA.</p>
-                            <p>The first scholarship was distributed in 2017. The recipient of this scholarship, in the amount of $500.00, was Hunter Avant, a Baritone in the UTA Chorus.</p>
-                            <p>The chorus will continue to make contributions to this Endowment so that larger scholarships can be handed out or multiple students can be supported. If you would like to assist in providing scholarships to future singers, the Goodtimes Chorus will be happy to apply your donation to this Endowment! Call our hotline at 682-233-3606.</p>
+                            <p>The Goodtimes Chorus has donated $10,000 to UTA in order to establish a scholarship endowment. This is a self sufficient permanent fund, providing annual scholarships to music department singers at UTA. The winners are selected by audition.</p>
                         </div>
-
-                       
-                        
                     </div>
+                    
+                    <div class="row">
+                        <div class="col-xs-12 col-lg-3">
+                            <img src="Emma_Gervasi.jpg" alt="Emma Gervasi">
+                        </div>
+                        
+                        <div class="col-xs-12 col-lg-3">
+                            <p>Emma Gervasi won the scholarship in 2021. She is a graduate of Martin High School. Emma has just finished her junior year studying Musical Theatre with a Business Administration minor and sings soprano.</p>
+                        </div>
+                        <div class="col-xs-12 col-lg-3">
+                            <img src="Killian_Watt.jpg" alt="Killian Watt">
+                        </div>
+                        <div class="col-xs-12 col-lg-3">
+                           <p>The 2922 recipient of the scholarship is Killian Watt. Killian sings baritone and is active in the A Cappella Choir, the opera group, and too many other activities to contemplate.</p>
+                        </div>
+                    </div>
+                
+                    
+                    <div class="row">
+                        <div class="col-xs-12 col-lg-2">
+                            <br>
+                            <img src="QR_code.png" alt="QR Code">
+                        </div>
+                        <div class="col-xs-12 col-lg-10">
+                           <p>We will continue to make contributions to this Endowment so that larger scholarships can be handed out. If you would like to assist in providing scholarships to future singers at UTA, you can speak to any of the chorus members or click on this QR code with your phone.</p>
+                        </div>
+                    </div>
+
 
 
 

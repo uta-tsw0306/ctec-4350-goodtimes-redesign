@@ -53,7 +53,7 @@
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
             <meta name="keywords" content="">
-            <meta name="description" content="Learn more about the Goodtimes chorus vocal harmony group. Read about their uta scholarship and singing valentines.">
+            <meta name="description" content="">
             <meta name="author" content="Web Wise Media">
 
             <title>Home | Goodtimes Chorus</title>
@@ -82,7 +82,6 @@
                         <h1>Singing in Harmony Since 1962</h1>
                         <p>Welcome to the Goodtimes Chorus website where we are proud to be a part of the vibrant and passionate community of barbershop harmony singers!</p>
                         <div class="flex-buttons">
-                            <a href="videos.php" class="btn btn-primary" title="Watch Videos" id="btn-1">Watch Videos</a>
                             <a href="support.php" class="btn btn-primary" title="Donate" id="btn-2">Donate</a>
                         </div>
                     </div>
@@ -96,7 +95,7 @@
                         <div class="col-xs-12 col-lg-6 homepgBox">
                             <div class="info-box">
                                 <h2 class="heading center_text">All Singers Welcome!</h2>
-                                <p>Ready to harmonize? Become a chorus member and share your voice with the community. Whether you're an experienced or inexperienced singer, we're always thrilled to have new men and women join us!</p>
+                                <p>Ready to harmonize? Become a chorus member and share your voice with the community. Whether you're an experienced or novice singer, we're always thrilled to have new men and women join us!</p>
                                 <div class="button_div">
                                     <a href="join.php" class="btn btn-primary" title="Join Us!" id="btn-2">Join Us!</a>
                                 </div>

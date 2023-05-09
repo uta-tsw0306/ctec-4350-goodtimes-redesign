@@ -9,7 +9,7 @@
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
             <meta name="keywords" content="">
-            <meta name="description" content="Read more about Goodtimes Barbershop Chorus mission statement and their vision as an acapella group.">
+            <meta name="description" content="">
             <meta name="author" content="Web Wise Media">
 
             <title>Mission & Vision | Goodtimes Chorus</title>

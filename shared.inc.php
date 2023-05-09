@@ -11,7 +11,6 @@ $nav = "
                 <ul class='calendar dropdown-content'>
                     <li><a href='calender.php' title='View Calendar'>View Calendar</a></li>
                     <li><a href='valentines.php' title='Singing Valentines'>Singing Valentines</a></li>
-                    <li><a href='#' title='Concerts'>Concerts</a></li>
                 </ul>
             </li>
              <li class='about-tab dropdown'><a href='#' title='About'>About</a>
@@ -85,7 +84,7 @@ $footer = "
                 <h3>Location</h3>
                 <p class='footer-subhead'>Rehearsals</p>
                 <address><a href='https://www.google.com/maps/place/Epworth+United+Methodist+Church/@32.722063,-97.1157344,17z/data=!3m1!4b1!4m6!3m5!1s0x864e7d15206e84af:0x4b3fa8ca9175949c!8m2!3d32.722063!4d-97.1157344!16s%2Fg%2F1tnjjzz8' target='_blank' title='Google Maps'>Epworth United Methodist Church <br> 1400 S Cooper St <br> Arlington, TX 76013</a></address><br>
-                <p> Tuesdays 7:00PM - 9:00PM</p>
+                <p> Tuesdays 7:00PM - 9:30PM</p>
             </div>
         </div>
         <div class='col-xs-12 col-md-4'>
@@ -96,19 +95,16 @@ $footer = "
                     <a href='calender.php' title='Calendar' class='links'>Calendar</a><br>
                     <a href='about.php' title='About' class='links'>About</a><br>
                     <a href='contact.php' title='Connect' class='links'>Connect</a><br>
-                    <a href='uta_scholarship.php' title='Community' class='links'>Community</a><br>
-                    <a href='donate.php' title='Support Us'class='links'>Support Us</a><br>
+                    <a href='sponsors.php' title='Community' class='links'>Community</a><br>
+                    <a href='support.php' title='Support Us'class='links'>Support Us</a><br>
                 </div>
             </div>
         </div>
         <div class='col-xs-12 col-md-4'>
             <div class=''>
                 <h3>Contact</h3>
-                <p class='footer-subhead'>Mailing Address</p>
-                <address><a href='#' class='links'>P.O. Box 1522 <br> Arlington, TX 76004</a>
-                </address>
                 <p>(682) 233-3606</p>
-                <p class='footer_text_center'><a href='gtchorus@gmail.com' title='Webmaster's Email' target='_blank' class='links'>gtchorus@gmail.com</a></p>
+                <p class='footer_text_center'><a href='mailto:gtchorus@gmail.com' title='Webmaster's Email' target='_blank' class='links'>gtchorus@gmail.com</a></p>
                 <ul class='social-media'>
                     <li><a href='https://www.facebook.com/GtChorus' title='Goodtimes Chorus Facebook' target='_blank'><i class='fab fa-facebook fa-2xl'></i></a></li>
                     <li><a href='https://www.instagram.com/goodtimes_chorus/' title='Goodtimes Chorus Instagram' target='_blank'><i class='fab fa-instagram fa-2xl'></i></a></li>
@@ -121,7 +117,7 @@ $footer = "
 </div>
 <div class='row legal'>
     <div class='col-sm-12'>
-        <p> Copyright &copy 2023 The Goodtimes Chorus. All rights reserved. </p>
+        <p> Copyright &copy 2023 The Goodtimes Chorus. All rights reserved. This site is produced for a class project.</p>
     </div>
 </div>
 </footer>";

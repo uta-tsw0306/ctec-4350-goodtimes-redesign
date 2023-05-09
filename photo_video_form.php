@@ -136,12 +136,8 @@ if (isset($_GET['PVID'])) {
     ?>
 
 <!--<div style="margin: 1em;"><//?=$message?></div>-->
-
-
-
-
 <div class="page-title">
-    <h1>Photos and Videos Upload</h1>
+   <h1>Photos and Videos Upload</h1>
 </div>
 
 <div class="container">
@@ -150,9 +146,10 @@ if (isset($_GET['PVID'])) {
     
             <form action="edit_photo_video.php" method="post" enctype="multipart/form-data" name="uploadImage" id="uploadImage">
                 <input type="hidden" name="PVID" value="<?=$PVID?>">
+                <p>
                     <p>The media type, a name and a URL are reqired.</p>
                     <label for="media_type">Media Type:</label>
-                    <input class = "width20" type="radio" id="media_photo" name="media_type" value="1" <?php if($TID == 1){echo("checked");} ?>>Photo&emsp;<input class = "width20" type="radio" id="media_video" name="media_type" value="2" <?php if($TID == 2){echo("checked");} ?>>Video&emsp;
+                    <input class = "" type="radio" id="media_photo" name="media_type" value="1" <?php if($TID == 1){echo("checked");} ?>>Photo&emsp;<input class = "" type="radio" id="media_video" name="media_type" value="2" <?php if($TID == 2){echo("checked");} ?>>Video&emsp;
                     
                     <div id="formBase">
                     
@@ -173,8 +170,8 @@ if (isset($_GET['PVID'])) {
                         
                         <div>
                         <label for="galleryBit">Does this go in the gallery?</label>
-                        <input class = "width20" type="radio" id="galleryBit" name="galleryBit" value="0" <?php if(!$inGallery){echo("checked");} ?>>
-                            No&emsp;<input class = "width20" type="radio" id="galleryBit" name="galleryBit" value="1" <?php if($inGallery){echo("checked");} ?>>Yes&emsp;    
+                        <input class = "" type="radio" id="galleryBit" name="galleryBit" value="0" <?php if(!$inGallery){echo("checked");} ?>>
+                            No&emsp;<input class = "" type="radio" id="galleryBit" name="galleryBit" value="1" <?php if($inGallery){echo("checked");} ?>>Yes&emsp;    
                         </div>
                     
                     </div>
@@ -204,5 +201,7 @@ if (isset($_GET['PVID'])) {
     </div>
 </div>
 
+<?php echo $footer; ?>
+<?php echo $js; ?>
 </body>
 </html>

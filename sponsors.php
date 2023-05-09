@@ -9,7 +9,7 @@
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
             <meta name="keywords" content="">
-            <meta name="description" content="Read about Goodtimes chorus supporters. The sponsors who support the acapella group.">
+            <meta name="description" content="">
             <meta name="author" content="Web Wise Media">
 
             <title>Sponsors | Goodtimes Chorus</title>
@@ -39,7 +39,7 @@
                 <div class="container support">
                     <div class="row">
                         <div class="col-xs-12">
-                            <p class>The members of the Arlington Goodtimes Chorus are pleased to recognize and thank the following individuals and firms who sponsor some or all of our events. Their contributions help us achieve our mission to...</p>
+                            <p class>The members of the Arlington Goodtimes Chorus are pleased to recognize and thank the following individuals and firms who sponsor some or all of our events. Their contributions help us achieve our mission to spread the joy of barbershop and other a cappella harmonies to our members and the community.</p>
                         </div>
                         <div class="col-xs-12 col-lg-4">
                             <p class="sponsors">

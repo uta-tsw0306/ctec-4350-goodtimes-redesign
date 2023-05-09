@@ -10,7 +10,7 @@
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
             <meta name="keywords" content="">
-            <meta name="description" content="Discover Goodtimes Chorus' future performances and live rehearsals and other  acapella events.">
+            <meta name="description" content="">
             <meta name="author" content="Web Wise Media">
 
             <title>Calender | Goodtimes Chorus</title>
@@ -38,38 +38,9 @@
                 </div>
                 <div class="container">
                     
-                    <div class="row centerImage">
-                        <div class="col-lg-1">
-                            <span class="fa-solid fa-arrow-left"></span>
-                        </div>
-                        <div class="col-lg-10">
-                            <p>The week of the 17th to the 23rd</p>
-                        </div>
-
-                        <div class="col-lg-1 leftArrow">
-                            <span class="fa-solid fa-arrow-right"></span>
-                        </div>
-                    </div>
-                    
                     <div class="row">
-                      <div class='col-xs-12 col-lg-2 dayBG'>
-                       <p>Monday the 17th</p>
-                      </div>
-                      <div class='col-xs-12 col-lg-2 dayBG'>
-                       <p>Tuesday the 18th</p>
-                       <p>Live rehearsal - 7-9:30pm</p>
-                      </div>
-                      <div class='col-xs-12 col-lg-2 dayBG'>
-                       <p>Wednesday the 19th</p>
-                      </div>
-                      <div class='col-xs-12 col-lg-2 dayBG'>
-                       <p>Thursday the 20th</p>
-                      </div>
-                      <div class='col-xs-12 col-lg-2 dayBG'>
-                       <p>Friday the 21st</p>
-                      </div>
-                      <div class='col-xs-12 col-lg-2 dayBG'>
-                       <p>Saturday the 22nd and Sunday the 23rd</p>
+                      <div class='col-xs-12 centerImage'>
+                       <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FChicago&src=ZTU4MzFiZTlhOGYyYmI2MTBiMTE0YzA0YTM1ZGI1OWFhNzg1YWE2NTkwOTY1MWM4MjhhZmFiMzVjOGQ3ODY3NEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23F09300" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
                       </div>
                     </div>
                 </div>

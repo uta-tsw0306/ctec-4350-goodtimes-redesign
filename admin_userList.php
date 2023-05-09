@@ -132,7 +132,9 @@ $defaultSortingField = "LinkCategory.CID";
 </div>
 </main>
 
-<?php print $footer; ?>
+<?php echo $footer; ?>
+
+<?php echo $js; ?>
 
 </body>
 </html>

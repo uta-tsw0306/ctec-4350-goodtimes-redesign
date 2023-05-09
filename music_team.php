@@ -9,7 +9,7 @@
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
             <meta name="keywords" content="">
-            <meta name="description" content="Learn about the members of Goodtimes chorus vocal harmony group. Meet the members of the acapella group.">
+            <meta name="description" content="">
             <meta name="author" content="Web Wise Media">
 
             <title>Music Team | Goodtimes Chorus</title>
@@ -40,7 +40,8 @@
                     <div class="row">
                         <div class="col-xs-12">
                             
-                            <table id="musicTeam">
+                            
+                            <table>
                                 <tr>
                                     <td><h3 class="s_head">Administration</h3></td>
                                 </tr>
@@ -49,7 +50,7 @@
                                     <td class="team_name">David Weick</td>
                                 </tr>
                                 <tr>
-                                    <td>Immediate Past President</td>
+                                    <td>Immediate Past President	</td>
                                     <td class="team_name">Scott Simmons</td>
                                 </tr>
                                 <tr>
@@ -81,11 +82,8 @@
                                     <td class="team_name">Dan Ehrhorn</td>
                                 </tr>
                                 <tr>
-                            </table>
-                        </div>
-                        <div class="col-xs-12">
-                            <table id="musicTeam">
-                                <td><h3 class="s_head">Music Team</h3></td>
+                                    <td><h3 class="s_head">Music Team</h3></td>
+                                </tr>
                                 <tr>
                                     <td>Chorus Director</td>
                                     <td class="team_name">Eddie Holmes</td>
@@ -102,10 +100,6 @@
                                     <td>Director Emeritus</td>
                                     <td class="team_name">Dick Kneeland</td>
                                 </tr>
-                            </table>
-                        </div>
-                        <div class="col-xs-12">   
-                            <table id="musicTeam">  
                                 <tr>
                                     <td><h3 class="s_head">Section Leaders</h3></td>
                                 </tr>
@@ -126,8 +120,16 @@
                                     <td class="team_name">David Weick</td>
                                 </tr>
                             </table>
+                           
                         </div>
+
+                        
+
+                       
                     </div>
+                    	
+	
+                
                 </div>
             </main>
 

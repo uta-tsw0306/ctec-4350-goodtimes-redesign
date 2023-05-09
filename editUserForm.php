@@ -12,7 +12,7 @@ include ("shared_session.php");
 
 	form div label:first-of-type {display: inline-block; width: 250px; text-align: right; padding: 0px 5px; }
 	
-	.tips {border: 10px solid #ddd; border-radius: 0 30px 30px 30px; padding: 30px; background-color: #ccffff; display: none; position: absolute;}
+	.tips {border: 10px solid #013c6d; border-radius: 0 30px 30px 30px; padding: 30px; background-color: #dedddd; display: none; position: absolute;}
 
 	#termsAndConditions {
 		display: none;
@@ -59,7 +59,7 @@ function showTips(evt){
 		if (evt.type == "focus")
 		{
 			var displayValue = "block";
-			var bgColor = "#ccffff";
+			var bgColor = "#95b9ff";
 		} else {
 			var displayValue = "none";
 			var bgColor = "white";
@@ -210,6 +210,8 @@ function getOp(evt){
 		if (pageRequest.readyState == 4){// once it reaches 4 (request completed), process the server response
 		var chContent = pageRequest.responseText;
 		//insert server response to the div "list_level2".
+		if((chContent == "That username is available!") == true){document.getElementById("submit").disabled = false; document.getElementById("submit").style.backgroundColor = "#970f36";}
+		else {document.getElementById("submit").disabled = true; document.getElementById("submit").style.backgroundColor = "#dedddd";}
 		
 		document.getElementById("UserNameTips").innerHTML = "Your user name should contain 6-20 characters usng only letter, numbers, dots, and/or dashes. <br><br>" + chContent;
 		}
@@ -328,7 +330,6 @@ if (isset($_GET['UID'])) { // note that the spelling 'UID' is based on the query
     <div class="row">
         <div class="col-xs-12">
 
-        <p>Spaces are not allowed in the UserName or Password. You will have to go back and fix any that you add.</p>
         <div id="detail"></div>
         
             <p><?= $errMsg ?></p>
@@ -340,20 +341,20 @@ if (isset($_GET['UID'])) { // note that the spelling 'UID' is based on the query
         
              
         	    <div>
-        		<label for="UserName" id="UserNameLabel">User Name: </label>
+        		<label for="UserName" id="UserNameLabel">User Name*: </label>
         		<input id="UserName" type="text" name="UserName" size="100" value="<?= htmlentities($UserName) ?>">
         		</div>
         		<span class="tips" id="UserNameTips">Your user name should contain 6-20 characters usng only letter, numbers, dots, and/or dashes.</span>
         		
         		<div>
-        		<label for="Password" id="PasswordLabel">Password: </label>
+        		<label for="Password" id="PasswordLabel">Password*: </label>
         		<input id="Password" type="text" name="Password" size="100" value="<?= htmlentities($Password) ?>">
         		</div>
         		<span class="tips" id="PasswordTips">Password should contain 6-20 characters usng only letter, numbers, dots, and/or dashes.</span>
         		
         		<div>
         		<label for="Admin" id="AdminLabel">Admin Privileges: </label>
-                <input class = "width20" type="radio" id="Admin" name="Admin" value="0" <?php if(!$Admin){echo("checked");} ?>>No&emsp;<input class = "width20" type="radio" id="Admin" name="Admin" value="1" <?php if($Admin){echo("checked");} ?>>Yes&emsp;
+                <input type="radio" id="Admin" name="Admin" value="0" <?php if(!$Admin){echo("checked");} ?>>No&emsp;&emsp;<input class = "" type="radio" id="Admin" name="Admin" value="1" <?php if($Admin){echo("checked");} ?>>Yes&emsp;
         		</div>
         		
         		<div>
@@ -361,8 +362,9 @@ if (isset($_GET['UID'])) { // note that the spelling 'UID' is based on the query
         		<input id="Notes" type="text" name="Notes" size="100" value="<?= htmlentities($Notes) ?>">
         		</div>
         		
-        		<td colspan=2><br><input type=submit name="Submit" value="Submit New User Information">
-        
+        		<div class = "center_text">
+        		<td colspan=2><br><input type=submit id="submit" name="Submit" value="Submit New User Information">
+                </div>
         
         </form>
         
@@ -376,6 +378,10 @@ if (isset($_GET['UID'])) { // note that the spelling 'UID' is based on the query
         </div>
     </div>
 </div>
+
+            <?php echo $footer; ?>
+
+            <?php echo $js; ?>
 </main>
 
 </body>

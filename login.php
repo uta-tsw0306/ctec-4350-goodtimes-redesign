@@ -7,6 +7,7 @@ if (isset($_GET['logout'])){
 }
 
 include("dbconn.inc.php"); // database connection 
+include ('shared.inc.php');
 //include("shared.php");
 $conn = dbConnect();
 
@@ -103,20 +104,23 @@ if (isset($_POST['username']) && isset($_POST['password']) && !empty($_POST['use
     
 }
 ?>    
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/d56145ddde.js">
 	</script>
 	
 	<body>
 
 	<main>
+	<?php 
+    echo $basicNav;
+    ?>
+	    
+	<div class="page-title">
+        <h1>Log In</h1>
+    </div>
 	    
 	<div class="container">
         <div class="row centerImage">
-            <div class="col-xs-12 page-title">
-                <h1 class="center_text">Log In</h1>
-            </div>
             <div class="col-xs-12">
                 <?= $message ?>
                 <form action="" method="post">

@@ -6,14 +6,10 @@ include ("shared_session.php");
 include("dbconn.inc.php"); // database connection 
 include("shared.inc.php"); // stored shared contents, such as HTML header and page title, page footer, etc. in variables
 
-print ("hello");
-
 // make database connection
 $conn = dbConnect();
 
 $PVID = ""; // place holder for product id information
-
-print ("hello");
 
 
 //See if a product id is available from the client side. If yes, then retrieve the info from the database based on the product id.  If not, present the form.
@@ -23,7 +19,6 @@ if (isset($_GET['PVID'])) { // note that the spelling 'PVID' is based on the que
 
 	$PVID = intval($_GET['PVID']); // force all input into an integer.  If the input is a string or empty, it will be converted to 0.
 	
-	echo($PVID);
 
 	// vaPVIDate the product id -- check to see if it is greater than 0
 		if ($PVID>0 ){
@@ -57,7 +52,6 @@ if (isset($_GET['PVID'])) { // note that the spelling 'PVID' is based on the que
 }
 
 ?>
-<br>
 
  <?php 
         $thisUID = $_SESSION['UID'];
@@ -71,7 +65,7 @@ if (isset($_GET['PVID'])) { // note that the spelling 'PVID' is based on the que
     <div class="center">   
         <?= $output ?>
         
-        <p>Back to the <a href='admin_userList.php'>user list page</a></p>
+        <p>Back to the <a href='photo_video_list.php'>photo and video list page</a></p>
     </div>
 
 </main>

@@ -32,7 +32,7 @@ if (isset($_POST['upload'])) {
             }
             
           // define constant for upload folder
-          define('UPLOAD_DIR', '/home/erm2015/CTEC4350.erm2015.uta.cloud/goodtimeChorus/images/');
+          define('UPLOAD_DIR', '/home/erm2015/CTEC4350.erm2015.uta.cloud/gtChorus2/images/');
           
           $filename = trim(addslashes($_FILES['image']['name']));
           $filename = str_replace(' ', '_', $filename);
